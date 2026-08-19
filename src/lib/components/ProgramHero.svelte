@@ -28,8 +28,23 @@ let { heading, programCode, subHeading = null , image } = $props();
     }
 
     .program-hero-image {
+        position: relative;
         flex: 1 1 50%;
         background: var(--hero-image) right / cover no-repeat;
+    }
+
+    .program-hero-image::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 85%,
+            rgba(0, 0, 0, .5) 90%,
+            rgba(0, 0, 0, 1) 100%
+        );
+        pointer-events: none;
     }
 
     .program-hero-content {

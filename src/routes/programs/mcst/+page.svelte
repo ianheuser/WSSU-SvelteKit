@@ -41,10 +41,12 @@
 			image = { asset('/images/' + program.label.toLowerCase() + '-hero.jpg') }
 		></ProgramHero>
 		
-		<HeadingAndText 
-			heading = { program.promoHeader }
-			paragraph = { program.promoBoxMainCopy }
-		></HeadingAndText>
+		{#if program.promoHeader && program.promoHeader.length > 0}
+			<HeadingAndText 
+				heading = { program.promoHeader }
+				paragraph = { program.promoBoxMainCopy }
+			></HeadingAndText>
+		{/if}
 		
 		<InquiryForm
 			heading = { program.leadFormHeader }
