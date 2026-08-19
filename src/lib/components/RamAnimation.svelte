@@ -88,7 +88,7 @@ and then comment out the :global(.dean-quote) style below.
 */
 
 :global(.dean-quote) {
-  margin-top: -100px;
+  /* margin-top: -100px; */
   z-index: 49;
 }
 
