@@ -57,7 +57,9 @@
 		<p>Through scholarships, grants, and financial aid, we make pursuing your graduate degree a reality.</p>
 	</section>
 
+	<!-- Hide Ram Animation
 	<RamAnimation />
+	-->
 
 	<section class="flex dean-quote">
 		<img src={ asset("/images/dean-boykin.jpg") } alt="Montrale Boykin, Dean, Graduate College" />
