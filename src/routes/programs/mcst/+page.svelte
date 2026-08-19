@@ -1,99 +1,91 @@
+
 <script>
-	import { handleLeadSubmit } from '$lib/scripts/lead-form.js';
 	import ProgramHero from '$lib/components/ProgramHero.svelte';
 	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
     import StatRow from '$lib/components/StatRow.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
-    // import HeadingAndText from '$lib/components/HeadingAndText.svelte';
+    import HeadingAndText from '$lib/components/HeadingAndText.svelte';
     import FinancialAid from '$lib/components/FinancialAid.svelte';
     import FindAPath from '$lib/components/FindAPath.svelte';
 	import { asset } from '$app/paths';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
+
+	import { programs } from '$lib/scripts/programs.js';
+	let programBadge = 'MCST';
+	const program = programs.find((program) => program.label == programBadge);
+	
+	if (!program) {
+		throw new Error('MCST program data not found');
+	}
 </script>
 
 <svelte:head>
-	<title>Master of Science in Computer Science and Information Technology | WSSU</title>
+	<title>{program.pageTitle} | WSSU</title>
 	<meta
 		name = "description"
-		content = "Explore the Master of Science in Computer Science and Information Technology program at Winston-Salem State University."
+		content = {program.pageDescription}
 	/>
 </svelte:head>
 
 <main>
-	<ProgramHero
-		heading = { "Master \n of Science" }
-		subHeading = "in Computer Science and Information Technology" 
-		programCode = "MCST"
-		image = { asset('/images/mcst-hero.jpg') }
-	></ProgramHero>
-	
-	<!--
-		<HeadingAndText 
-			heading = "5-Year (4+1) BS to MS MCST"
-			paragraph = "The 4+1 program lets qualified WSSU Computer Science majors complete both degrees in five years - saving time and tuition."
-		></HeadingAndText>
-	-->
 
-	<InquiryForm
-		heading = "Let's Get You Started"
-		description = "Tell us a little about yourself and our graduate team will reach out soon."
-		buttonLabel = "Submit"
-		image = { asset('/images/mcst-lead-form.jpg') }
-		imageAlt = "Graduate student meeting with an advisor"
-		thanksMessage = "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrows expert."
-	></InquiryForm>
+
+	{#if !program}
+		<h1>Program data not found</h1>
+	{:else}
+
+		<ProgramHero
+			heading = { program.heading }
+			subHeading = { program.subHeading }
+			programCode = { program.label }
+			image = { asset('/images/' + program.label.toLowerCase() + '-hero.jpg') }
+		></ProgramHero>
 		
-	<InnovatorsCareerPaths
-		image = { asset("/images/innovators.jpg") }
-		imageAlt = "Students collaborating in a lab"
-		innovationBullets = {[
-			"Evening classes",
-			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
-		]}
-		careerPathBullets = {[
-			"Cybersecurity Manager",
-			"Data Scientist",
-			"Senior Software Developer",
-			"Network Architect",
-			"Researcher or Educator"
-		]}
-	></InnovatorsCareerPaths>
+		<HeadingAndText 
+			heading = { program.promoHeader }
+			paragraph = { program.promoBoxMainCopy }
+		></HeadingAndText>
+		
+		<InquiryForm
+			heading = { program.leadFormHeader }
+			description = { program.leadFormCopy }
+			buttonLabel = "Get Connected"
+			image = { asset('/images/' + program.label.toLowerCase() + '-lead-form.jpg') }
+			imageAlt = { program.leadFormImageAlt }
+			thanksMessage = { program.leadFormPostSubmitCopy }
+		></InquiryForm>
+			
+		<InnovatorsCareerPaths
+			image = { asset("/images/innovators.jpg") }
+			imageAlt = "Students collaborating in a lab"
+			innovationBullets = {program.highlightsBullets}
+			careerPathBullets = {program.careerPathBullets}
+			highlightsHeader = { program.highlightsHeader }
+			careerPathHeader = { program.careerPathHeader }
+		></InnovatorsCareerPaths>
 
-	<StatRow
-		stats = {[
-			{
-				value: '99%',
-				description: 'job or doctoral placement rate'
-			},
-			{
-				value: '22%',
-				description: 'projected growth in computing careers'
-			},
-			{
-				value: '67%',
-				description: 'of graduate students receive paid research assistantships'
-			}
-		]}
-	></StatRow>
-	
-	<RealWorldApplication
-		heading = "Lead Every Room"
-		paragraph = "Gain the skills, confidence, and real-world opportunities to advance your career through courses in cryptography, database management, hardware security, data science, and artifical intelligence."
-		image = { asset('/images/mcst-real-world.jpg') }
-	></RealWorldApplication>
+		<StatRow
+			stats = {program.statisticsBar}
+		></StatRow>
+		
+		<RealWorldApplication
+			heading = { program.realWorldAppHeader }
+			paragraph = { program.realWorldAppCopy }
+			image = { asset('/images/' + program.label.toLowerCase() + '-real-world-application.jpg') }
+		></RealWorldApplication>
 
-	<FinancialAid
-		heading = "Affordability without Compromise"
-		paragraph = "Our graduate programs are among the most affordable in the Piedmont Triad region. From competitive tuition and financial aid to paid research assistantships funded through faculty grants, we offer options that put your graduate degree within reach."
-	></FinancialAid>
+		<FinancialAid
+			heading = { program.affordabilityHeader }
+			paragraph = { program.affordabilityCopy }
+		></FinancialAid>
 
-	<FindAPath
-		heading = "Depart to Serve"
-		subHeading = "The Experts &amp; Support Every Community Deserves."
-		description = 'Join WSSUs "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships and the Association for Computing Machinery.'
-		buttonLabel = "Let's Find a Path That Fits You"
-	></FindAPath>
+		<FindAPath
+			heading = { program.mottoHeader }
+			subHeading = { program.mottoSubHead }
+			description = { program.mottoCopy }
+			buttonLabel = "Let's Find a Path That Fits You"
+		></FindAPath>
+		
+	{/if}
 
 </main>

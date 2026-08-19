@@ -1,15 +1,18 @@
 <script>
-    let { innovationBullets , careerPathBullets, image, imageAlt } = $props();
+    let { innovationBullets , careerPathBullets, image, imageAlt, highlightsHeader, careerPathHeader } = $props();
 </script>
 
 <section class="flex innovators-section">
     <div class="innovators-copy flex column">
         <h2 class="white red-shadow">
-            Innovators.
-            <br />
-            Problem-Solvers.
-            <br />
-            Visionaries.
+            <!-- 
+                Innovators.
+                <br />
+                Problem-Solvers.
+                <br />
+                Visionaries.
+            -->
+            { highlightsHeader }
         </h2>
         <ul>
             {#each innovationBullets as bullet}
@@ -25,7 +28,7 @@
 
     <section class="flex career-paths">
     <div class="section-inner">
-        <h2 class="gold">One Degree. Multiple Career Paths.</h2>
+        <h2 class="gold">{ careerPathHeader }</h2>
         <ul>
             {#each careerPathBullets as bullet}
                 <li>{ bullet }</li>
