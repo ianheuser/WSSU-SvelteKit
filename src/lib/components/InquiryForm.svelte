@@ -1,7 +1,10 @@
 <script>
     import { handleLeadSubmit } from '$lib/scripts/lead-form.js';
     import { asset } from '$app/paths';
-    let { heading,image,description,buttonLabel,imageAlt,thanksMessage } = $props();
+    import { programs } from '$lib/scripts/programs.js';
+    
+    let { heading,image,description,buttonLabel,imageAlt,thanksMessage,programCode = "" } = $props();
+    let program = $derived(programCode.toLowerCase());
 </script>
 
 <section class="flex inquiry-section" id="contact">
@@ -28,24 +31,50 @@
           onsubmit={handleLeadSubmit}
         >
           <label>
-            <span>Name <b>*</b></span>
-            <input name="name" autocomplete="name" required />
+            <span>First Name <b>*</b></span>
+            <input name="firstName" autocomplete="given-name" required />
+          </label>
+          <label>
+            <span>Last Name <b>*</b></span>
+            <input name="lastName" autocomplete="family-name" required />
           </label>
           <label>
             <span>Email <b>*</b></span>
             <input name="email" type="email" autocomplete="email" required />
           </label>
           <label>
-            <span>Program of Interest <b>*</b></span>
-            <select name="program" required>
+            <span>Term <b>*</b></span>
+            <select name="term" required>
               <option value="">Select...</option>
-              <option value="undecided">Undecided</option>
-              <option value="mcst">Master of Science in Computer Science and Information Technology</option>
-              <option value="masters">Masters Degrees</option>
-              <option value="certificates">Certificates</option>
-              <option value="doctoral">Doctoral Degrees</option>
+              <option value="Spring 2027">Spring 2027</option>
+              <option value="Summer 2027">Summer 2027</option>
+              <option value="Fall 2027">Fall 2027</option>
+              <option value="Spring 2028">Spring 2028</option>
+              <option value="Summer 2028">Summer 2028</option>
+              <option value="Fall 2028">Fall 2028</option>
             </select>
           </label>
+          <label>
+            <span>Program of Interest <b>*</b></span>
+            <select name="program" id="programOfInterest" bind:value={program} required>
+              <option value="">Select...</option>
+              {#each programs as indProgram}
+                {#if indProgram.label.toLowerCase() != "fnp"}
+                  <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
+                {/if}
+              {/each}
+            </select>
+          </label>
+          {#if program === "msn" || program === "fnp" }
+            <label>
+              <span>Concentration <b>*</b></span>
+              <select name="concentration" required>
+                <option value="">Select...</option>
+                <option value="Executive Nurse Educator and Leadership">Executive Nurse Educator and Leadership</option>
+                <option value="Family Nurse Practitioner">Family Nurse Practitioner</option>
+              </select>
+            </label>
+          {/if}
           <button class="outline-button margin-top" type="submit">{buttonLabel}</button>
           
         </form>

@@ -50,6 +50,7 @@
 		image = { asset('/images/landing-form-photo.jpg') }
 		imageAlt = "Graduate student meeting with an advisor"
 		thanksMessage = "A member of our admissions team will be in touch soon with details about our programs."
+		programCode=""
 	></InquiryForm>
 
 	<section class="flex column aid-band" id="financial-aid">

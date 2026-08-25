@@ -11,8 +11,8 @@
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
 
 	import { programs } from '$lib/scripts/programs.js';
-	let programBadge = 'DA';
-	const program = programs.find((program) => program.label == programBadge);
+	let programCode = 'DA';
+	const program = programs.find((program) => program.label == programCode);
 	
 	if (!program) {
 		throw new Error('Data Analytics program data not found');
@@ -53,6 +53,7 @@
 			image = { asset('/images/' + program.label.toLowerCase() + '-lead-form.jpg') }
 			imageAlt = { program.leadFormImageAlt }
 			thanksMessage = { program.leadFormPostSubmitCopy }
+			programCode={ programCode }
 		></InquiryForm>
 			
 		<InnovatorsCareerPaths
