@@ -29,7 +29,6 @@
 
 <main>
 
-
 	{#if !program}
 		<h1>Program data not found</h1>
 	{:else}

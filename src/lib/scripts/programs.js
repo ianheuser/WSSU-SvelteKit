@@ -129,7 +129,7 @@ export const programs = [
         programCode: 'MBA',
         titleOverlay: "Master of Business Administration",
         promoHeader: "100% Online MBA",
-        promoBoxMainCopy: "Don\'t wait for a seat at the table. Take it. Build the leadership and strategy skills to move your career forward.",
+        promoBoxMainCopy: "Don't wait for a seat at the table. Take it. Build the leadership and strategy skills to move your career forward.",
         leadFormHeader: "Let's Get You Started",
         leadFormImage: '/images/mba-lead-form.jpg',
         leadFormImageAlt: 'A student posing for an individual class portrait',
@@ -174,20 +174,81 @@ export const programs = [
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.'
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        finalCTA: "Let's Find a Path That Fits You"
     },
-
     {
-		fullName: 'Master of Health Administration',
+		fullName: 'Master of Healthcare Administration',
         label: 'MHA',
         type: 'Master',
-        heading: 'Master of Health Administration',
-        subHeading: 'in Health Administration',
-		href: '/programs/mha'
+        heading: 'Master',
+        subHeading: 'of Healthcare Administration',
+		href: '/programs/mha',
+        programCode: 'MHA',
+        titleOverlay: "Master of Healthcare Administration",
+        promoHeader: "A mind for business. A heart for healthcare.",
+        promoBoxMainCopy: "As a student in one of the most affordable MHA programs in the nation, you'll be prepared to lead in the healthcare field. WSSU positions you to make a positive impact on the health of individuals, families, and the communities they serve.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormImage: '/images/mha-lead-form.jpg',
+        leadFormImageAlt: 'A student posing for an individual class portrait',
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.",
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/mha-highlights.jpg',
+        
+        highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
+        highlightsBullets: [
+            "Flexible online format",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Hospitals",
+            "Integrated Delivery Systems",
+            "Managed Care Organization",
+            "Long-Term Care Facilities",
+            "Home Health Agencies",
+            "Medical Practices",
+            "Federal And State Health Programs",
+            "Consulting Firms",
+            "Quality Control",
+            "Health Information Technology",
+            "Research & Grant Proposal"
+        ],
+
+        statisticsBar: [
+            {
+                value: "#1",
+                description: "No GRE MHA Program"
+            },
+            {
+                value: "Flexible",
+                description: "Online Format"
+            },
+            {
+                value: "Top",
+                description: "Growth Industry"
+            }
+        ],
+
+        realWorldAppHeader: "LEAD EVERY ROOM",
+        realWorldAppImage: '/images/mha-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change and Grant Management & Writing.",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+       
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        finalCTA: "Let's Find a Path That Fits You"
+    
 	},
-
-
-
     {
 		fullName: 'Master of Science in Computer Science and Information Technology',
         label: 'MCST',
@@ -261,39 +322,57 @@ export const programs = [
         type: 'Master',
         heading: 'Master of Science',
         subHeading: 'in Nursing',
-		href: '/programs/msn'
-	},
-	{
-        fullName: 'Master of Science in Nursing - Family Nurse Practitioner',
-        label: 'FNP',
-        type: 'Master',
-        heading: 'Master of Science in Nursing',
-        subHeading: 'Family Nurse Practitioner',
-		href: '/programs/fnp'
-	},
-    {
-		fullName: 'Master of Science in Occupational Therapy',
-        label: 'MSOT',
-        type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Occupational Therapy',
-		href: '/programs/msot'
-	},
-    {
-        fullName: 'Master of Science in Rehabilitation Counseling',
-        label: 'MSRC',
-        type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Rehabilitation Counseling',
-		href: '/programs/msrc'
-	},
-     {
-		fullName: 'Doctor of Nursing Practice',
-        label: 'DNP',
-        type: 'Doctorate',
-        heading: 'Doctor',
-        subHeading: 'of Nursing Practice',
-		href: '/programs/dnp'
+		href: '/programs/msn',
+        programCode: 'MSN',
+        titleOverlay: "Master of Science in Nursing",
+
+        promoHeader: "Fully Online MSN",
+        promoBoxMainCopy: "WSSU's MSN program prepares registered nurses for advanced roles in education and practice, offering flexible pathways that align with your professional goals.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormImage: '/images/msn-lead-form.jpg',
+        leadFormImageAlt: 'A student and professor working together on a project in a lab with a microscope.',
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.",
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.jpg',
+        highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
+
+        highlightsBullets: [
+            "100% online",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Executive Nurse Educator & Leadership (ENEL)",
+            "Family Nurse Practitioner (FNP)"
+        ],
+
+        statisticsBar: [
+            {
+                value: "Accredited",
+                description: "by the Commission of Collegiate Nursing Education (CCNE)"
+            },
+            {
+                value: "No GRE or MAT",
+                description: "required for admission"
+            }
+        ],
+
+        realWorldAppHeader: "LEAD EVERY ROOM",
+        realWorldAppImage: '/images/msn-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Nursing.",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        finalCTA: "Let's Find a Path That Fits You"
 	},
 
     {
@@ -368,5 +447,267 @@ export const programs = [
         mottoSubHead: "The Experts & Support Every Community Deserves.",
         mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
         finalCTA: "Let's Find a Path That Fits You"
+	},
+
+
+
+	{
+        fullName: 'Master of Science in Nursing - Family Nurse Practitioner',
+        label: 'FNP',
+        type: 'Master',
+        heading: 'Master of Science in Nursing',
+        subHeading: 'Family Nurse Practitioner',
+		href: '/programs/fnp',
+        programCode: 'fnp',
+        titleOverlay: "Master of Science in Nursing - Family Nurse Practitioner",
+        
+        promoHeader: "Advance Your MSN with an FNP Certificate",
+        promoBoxMainCopy: "Designed for MSN-prepared nurses, this Family Nurse Practitioner certificate deepens your clinical training and prepares you to practice primary care with confidence.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/fnp-lead-form.jpg',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.jpg',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "Evening classes",
+			"Faculty mentorship",
+			"Real-world projects",
+			"State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Family Nurse Practitioner",
+            "Primary Care Provider",
+            "Healthcare Leadership"
+        ],
+        
+        statisticsBar: [
+			{
+				value: 'Fully accredited',
+				description: 'Commission of Collegiate Nursing Education (CCNE)'
+			},
+			{
+				value: '35%',
+				description: 'Job Growth for Nurse Practitioners'
+			}
+		],
+        
+        realWorldAppImage: '/images/fnp-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+
+
+
+
+    {
+		fullName: 'Master of Science in Occupational Therapy',
+        label: 'MSOT',
+        type: 'Master',
+        heading: 'Master of Science',
+        subHeading: 'in Occupational Therapy',
+		href: '/programs/msot',
+
+        programCode: 'msot',
+        titleOverlay: "Master of Science in Occupational Therapy",
+        
+        promoHeader: "Elevate Your Expertise in Occupational Therapy",
+        promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msot-lead-form.jpg',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.jpg',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "Evening classes",
+			"Faculty mentorship",
+			"Real-world projects",
+			"State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Occupational Therapist",
+            "Rehabilitation Specialist",
+            "Pediatric Occupational Therapist",
+            "Geriatric Occupational Therapist"
+        ],
+        
+        statisticsBar: [
+			{
+				value: 'Fully accredited',
+				description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)'
+			}
+		],
+        
+        realWorldAppImage: '/images/msot-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+    {
+        fullName: 'Master of Science in Rehabilitation Counseling',
+        label: 'MSRC',
+        type: 'Master',
+        heading: 'Master of Science',
+        subHeading: 'in Rehabilitation Counseling',
+		href: '/programs/msrc',
+
+        programCode: 'msrc',
+        titleOverlay: "Master of Science in Rehabilitation Counseling",
+        
+        promoHeader: "One Degree. Five Areas of Focus.",
+        promoBoxMainCopy: "Choose from five concentration areas: Rehabilitation Counseling, Clinical Mental Health Counseling, Deaf and Hard of Hearing, Transition, and Vocational Evaluation. Curriculum is aligned with eligibility for the Certified Rehabilitation Counselor (CRC) exam and professional counseling licensure.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msrc-lead-form.jpg',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.jpg',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "100% online",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Student Disability Services",
+            "Nonprofit Leadership",
+            "K-12 Special Education",
+            "State Vocational Rehabilitation",
+            "Veteran Affairs",
+            "College Counseling Centers",
+            "Private Rehabilitation",
+            "Mental Health Counselor"
+        ],
+        
+        statisticsBar: [
+			{
+				value: 'Fully accredited',
+				description: 'by the CACREP'
+			},
+            {
+				value: '95%',
+				description: 'Post-Graduation Employment Rate'
+			},
+            {
+				value: '#3',
+				description: 'Online Counseling Program according to CACREP'
+			}
+		],
+        
+        realWorldAppImage: '/images/msrc-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+     {
+		fullName: 'Doctor of Nursing Practice',
+        label: 'DNP',
+        type: 'Doctorate',
+        heading: 'Doctor',
+        subHeading: 'of Nursing Practice',
+		href: '/programs/dnp',
+
+        programCode: 'dnp',
+        titleOverlay: "Doctor of Nursing Practice",
+        
+        promoHeader: "Two pathways. One DNP. ",
+        promoBoxMainCopy: "Choose from two pathways: Whether you are a nurse with a BSN or an MSN, our fully online DNP programs prepare you to lead in clinical practice, healthcare policy, and organizational leadership. Nurses with an BSN can expect to complete the program in 3 years, while nurses with an MSN can complete the program in 2 years.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msrc-lead-form.jpg',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.jpg',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "100% online",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Nurse Practitioner",
+            "Psychiatric Nurse",
+            "Nurse Educator",
+            "Certified Nurse-Midwife",
+            "Nurse Anesthetist",
+            "Clinical Nurse Specialist",
+            "Chief Nursing Officer"
+
+        ],
+        
+        statisticsBar: [
+			{
+				value: 'Fully accredited',
+				description: 'by theCommission of Collegiate (CCNE)'
+			}
+		],
+        
+        realWorldAppImage: '/images/msrc-real-world-application.jpg',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections. Our DNP graduates lead in underserved communities, advancing care where it's needed most.",
+        finalCTA: "Let's Find a Path That Fits You"
 	}
+
 ];
