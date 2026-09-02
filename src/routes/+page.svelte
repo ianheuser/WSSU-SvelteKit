@@ -1,9 +1,56 @@
 <script>
+	import { onMount } from 'svelte';
 	import { asset } from '$app/paths';
 	// import RamAnimation from '$lib/components/RamAnimation.svelte';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
 
+	const programTypeCount = 3;
+
 	let selectedProgramCode = $state('');
+	let activeProgramTypeIndex = $state(0);
+	/** @type {number | null} */
+	let previousProgramTypeIndex = $state(null);
+	let isProgramTypeSliderActive = $state(false);
+
+	onMount(() => {
+		const mediaQuery = window.matchMedia('(max-width: 1399.98px)');
+		/** @type {number | undefined} */
+		let rotationInterval;
+
+		function stopRotation() {
+			if (rotationInterval) {
+				window.clearInterval(rotationInterval);
+				rotationInterval = undefined;
+			}
+		}
+
+		function startRotation() {
+			stopRotation();
+			rotationInterval = window.setInterval(() => {
+				previousProgramTypeIndex = activeProgramTypeIndex;
+				activeProgramTypeIndex = (activeProgramTypeIndex + 1) % programTypeCount;
+			}, 6000);
+		}
+
+		function updateSliderState() {
+			stopRotation();
+			activeProgramTypeIndex = 0;
+			previousProgramTypeIndex = null;
+			isProgramTypeSliderActive = mediaQuery.matches;
+
+			if (mediaQuery.matches) {
+				startRotation();
+			}
+		}
+
+		updateSliderState();
+		mediaQuery.addEventListener('change', updateSliderState);
+
+		return () => {
+			stopRotation();
+			mediaQuery.removeEventListener('change', updateSliderState);
+		};
+	});
 
 	/**
 	 * @param {MouseEvent} event
@@ -13,6 +60,13 @@
 		event.preventDefault();
 		selectedProgramCode = programCode.toLowerCase();
 		document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+	}
+
+	/**
+	 * @param {number} index
+	 */
+	function isHiddenProgramType(index) {
+		return isProgramTypeSliderActive && activeProgramTypeIndex !== index;
 	}
 </script>
 
@@ -33,8 +87,20 @@
 	<section class="flex column program-finder" id="programs">
 		<h2>Find the program<br />that prepares you to lead</h2>
 
-		<div class="program-type-grid" aria-label="Program types">
-			<div class="program-type" id="certificatePrograms">
+		<div
+			class="program-type-grid"
+			class:program-type-slider={isProgramTypeSliderActive}
+			aria-label="Program types"
+		>
+		
+			<div
+				class="program-type"
+				class:current={activeProgramTypeIndex === 0}
+				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 0}
+				id="certificatePrograms"
+				aria-hidden={isHiddenProgramType(0) ? 'true' : undefined}
+				inert={isHiddenProgramType(0)}
+			>
 				<h3 class="neon-button blue">
 					Certificates
 				</h3>
@@ -51,7 +117,14 @@
 					</li>
 				</ul>
 			</div>
-			<div class="program-type" id="masterPrograms">
+			<div
+				class="program-type"
+				class:current={activeProgramTypeIndex === 1}
+				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 1}
+				id="masterPrograms"
+				aria-hidden={isHiddenProgramType(1) ? 'true' : undefined}
+				inert={isHiddenProgramType(1)}
+			>
 				<h3 class="neon-button gold">
 					Masters Degrees
 				</h3>
@@ -98,7 +171,14 @@
 					</li>
 				</ul>
 			</div>
-			<div class="program-type" id="doctoratePrograms">
+			<div
+				class="program-type"
+				class:current={activeProgramTypeIndex === 2}
+				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 2}
+				id="doctoratePrograms"
+				aria-hidden={isHiddenProgramType(2) ? 'true' : undefined}
+				inert={isHiddenProgramType(2)}
+			>
 				<h3 class="neon-button green">
 					Doctoral Degrees
 				</h3>
