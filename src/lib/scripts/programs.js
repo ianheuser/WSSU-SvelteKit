@@ -711,3 +711,24 @@ export const programs = [
 	}
 
 ];
+
+export const certificates = [
+    'Data Analytics',
+    'Family Nurse Practitioner Certificate | FNP'
+];
+
+export const masters = [
+    'Master of Arts in Teaching | MAT',
+    'Master of Business Administration | MBA',
+    'Master of Healthcare Administration | MHA',
+    'Master of Science in Computer Science and Information Technology | MCST',
+    '5-Year (4+1) BS-MS Degree Computer Science and Information Technology | MCST',
+    'Master of Science in Occupational Therapy | MSOT',
+    'Master of Science in Rehabilitation Counseling | MSRC',
+    'Master of Science in Nursing | MSN'
+];
+
+export const doctorates = [
+    'Doctor of Nursing Practice | DNP',
+    'Doctor of Physical Therapy | DPT'
+];

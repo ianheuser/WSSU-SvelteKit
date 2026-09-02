@@ -1,7 +1,19 @@
 <script>
-	import { resolve, asset } from '$app/paths';
-	import RamAnimation from '$lib/components/RamAnimation.svelte';
-    import InquiryForm from '$lib/components/InquiryForm.svelte';
+	import { asset } from '$app/paths';
+	// import RamAnimation from '$lib/components/RamAnimation.svelte';
+	import InquiryForm from '$lib/components/InquiryForm.svelte';
+
+	let selectedProgramCode = $state('');
+
+	/**
+	 * @param {MouseEvent} event
+	 * @param {string} programCode
+	 */
+	function selectProgram(event, programCode) {
+		event.preventDefault();
+		selectedProgramCode = programCode.toLowerCase();
+		document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+	}
 </script>
 
 <svelte:head>
@@ -22,23 +34,86 @@
 		<h2>Find the program<br />that prepares you to lead</h2>
 
 		<div class="program-type-grid" aria-label="Program types">
-			<div class="program-type">
-				<a class="neon-button gold" href={ resolve("/programs/mcst") }>
-					Masters Degrees
-				</a>
-				<p class="white">Build specialized skills that fit your goals</p>
-			</div>
-			<div class="program-type">
-				<a class="neon-button blue" href={ resolve("/programs/mcst") }>
+			<div class="program-type" id="certificatePrograms">
+				<h3 class="neon-button blue">
 					Certificates
-				</a>
-				<p class="white">Advance your expertise to lead in your field</p>
+				</h3>
+				<ul class="white program-list">
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'DA')}>
+							Data Analytics
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'FNP')}>
+							Family Nurse Practitioner Certificate | FNP
+						</a>
+					</li>
+				</ul>
 			</div>
-			<div class="program-type">
-				<a class="neon-button green" href={ resolve("/programs/mcst") }>
+			<div class="program-type" id="masterPrograms">
+				<h3 class="neon-button gold">
+					Masters Degrees
+				</h3>
+				<ul class="white program-list">
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MAT')}>
+							Master of Arts in Teaching | MAT
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MBA')}>
+							Master of Business Administration | MBA
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MHA')}>
+							Master of Healthcare Administration | MHA
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MCST')}>
+							Master of Science in Computer Science and Information Technology | MCST
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MCST')}>
+							5-Year (4+1) BS-MS Degree Computer Science and Information Technology | MCST
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MSOT')}>
+							Master of Science in Occupational Therapy | MSOT
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MSRC')}>
+							Master of Science in Rehabilitation Counseling | MSRC
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'MSN')}>
+							Master of Science in Nursing | MSN
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="program-type" id="doctoratePrograms">
+				<h3 class="neon-button green">
 					Doctoral Degrees
-				</a>
-				<p class="white">Earn the highest credential in your profession</p>
+				</h3>
+				<ul class="white program-list">
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'DNP')}>
+							Doctor of Nursing Practice | DNP
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'DPT')}>
+							Doctor of Physical Therapy | DPT
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -50,7 +125,7 @@
 		image = { asset('/images/landing-form-photo.jpg') }
 		imageAlt = "Graduate student meeting with an advisor"
 		thanksMessage = "A member of our admissions team will be in touch soon with details about our programs."
-		programCode=""
+		programCode={selectedProgramCode}
 	></InquiryForm>
 
 	<section class="flex column aid-band" id="financial-aid">
@@ -74,3 +149,11 @@
 		</blockquote>
 	</section>
 </main>
+
+<style>
+	.program-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+</style>

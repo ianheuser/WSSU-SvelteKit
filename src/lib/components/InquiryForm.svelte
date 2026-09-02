@@ -4,7 +4,11 @@
     import { programs } from '$lib/scripts/programs.js';
     
     let { heading,image,description,buttonLabel,imageAlt,thanksMessage,programCode = "" } = $props();
-    let program = $derived(programCode.toLowerCase());
+    let program = $state('');
+
+    $effect(() => {
+      program = programCode.toLowerCase();
+    });
 </script>
 
 <section class="flex inquiry-section" id="contact">
@@ -59,9 +63,7 @@
             <select name="program" id="programOfInterest" bind:value={program} required>
               <option value="">Select...</option>
               {#each programs as indProgram}
-                {#if indProgram.label.toLowerCase() != "fnp"}
-                  <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
-                {/if}
+                <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
               {/each}
             </select>
           </label>

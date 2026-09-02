@@ -169,7 +169,7 @@ select {
   overflow: hidden;
   padding: 76px 24px 72px;
   background:
-    linear-gradient(180deg, #d71935 0%, #d71935 40%, rgba(204, 17, 44, 0.78) 55%, #000 82%, #000 100%),
+    linear-gradient(180deg, #d71935 0%, #d71935 10%, rgba(204, 17, 44, 0.78) 20%, #000 52%, #000 100%),
     var(--black);
   color: var(--white);
   text-align: center;
