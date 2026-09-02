@@ -46,11 +46,11 @@ h1, h2 {
 
 
 h1 {
-  font-size: clamp(24px, 5.25vw, 56px);
+  font-size: clamp(28px, 6vw, 51px);
 }
 
 h2 {
-  font-size: clamp(24px, 4.8vw, 48px);
+  font-size: clamp(30px, 4.8vw, 42px);
   margin-top: 0px;
   max-width: 95vw;
 }
@@ -59,6 +59,18 @@ h3 {
   font-size: clamp(12px, 3vw, 36px);
   text-transform: uppercase;
   margin: 0px;
+}
+
+h3.neon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  font-family: "Tilt Neon", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  text-wrap-mode: nowrap;
+  font-size: 28px;
 }
 
 h4 {
@@ -169,7 +181,7 @@ select {
   overflow: hidden;
   padding: 76px 24px 72px;
   background:
-    linear-gradient(180deg, #d71935 0%, #d71935 10%, rgba(204, 17, 44, 0.78) 20%, #000 52%, #000 100%),
+    linear-gradient(180deg, #d71935 0%, #d71935 0%, rgba(204, 17, 44, 0.78) 10%, #000 30%, #000 100%),
     var(--black);
   color: var(--white);
   text-align: center;
@@ -182,7 +194,7 @@ select {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(var(--max), 100%);
+    width: 90%;
     column-gap: 5vw;
     row-gap: 1vw;
     margin-top: 25px;
@@ -197,54 +209,55 @@ select {
   min-height: 148px;
 }
 
-@media (max-width: 1399.98px) {
-  .program-type-grid.program-type-slider {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    align-items: start;
-    justify-content: center;
-    width: min(760px, 100%);
-    overflow: hidden;
-    column-gap: 0;
-    row-gap: 0;
-  }
-
-  .program-type-grid.program-type-slider .program-type {
-    grid-area: 1 / 1;
-    width: 100%;
-    min-height: 360px;
-    flex-basis: auto;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(110%);
-    transition:
-      transform 650ms ease,
-      opacity 220ms ease;
-  }
-
-  .program-type-grid.program-type-slider .program-type.current {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
-  }
-
-  .program-type-grid.program-type-slider .program-type.previous {
-    transform: translateX(-110%);
-  }
+.program-type-grid.program-type-slider {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  justify-content: center;
+  width: 95%;
+  overflow: hidden;
+  column-gap: 0;
+  row-gap: 0;
 }
 
-.neon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 20px;
-  border: 3px solid currentColor;
-  border-radius: 15px;
-  font-family: "Tilt Neon", sans-serif;
-  line-height: 1;
-  text-transform: uppercase;
-  text-wrap-mode: nowrap;
-  font-size: clamp(24px, 3vw, 28px);
+.program-type-grid.program-type-slider .program-type {
+  grid-area: 1 / 1;
+  width: 100%;
+  min-height: 360px;
+  flex-basis: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(110%);
+  transition:
+    transform 650ms ease,
+    opacity 220ms ease;
+}
+
+.program-type-grid.program-type-slider .program-type.current {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.program-type-grid.program-type-slider .program-type.previous {
+  transform: translateX(-110%);
+}
+
+.program-list li a {
+  font-size: 18px;
+}
+
+.program-list li a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.program-list {
+  width: 100%;
+}
+
+.program-list li {
+  padding: 5px 0px;
 }
 
 .gold {
@@ -655,4 +668,3 @@ p.white {
 
 
 }
-

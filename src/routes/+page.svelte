@@ -10,45 +10,15 @@
 	let activeProgramTypeIndex = $state(0);
 	/** @type {number | null} */
 	let previousProgramTypeIndex = $state(null);
-	let isProgramTypeSliderActive = $state(false);
 
 	onMount(() => {
-		const mediaQuery = window.matchMedia('(max-width: 1399.98px)');
-		/** @type {number | undefined} */
-		let rotationInterval;
-
-		function stopRotation() {
-			if (rotationInterval) {
-				window.clearInterval(rotationInterval);
-				rotationInterval = undefined;
-			}
-		}
-
-		function startRotation() {
-			stopRotation();
-			rotationInterval = window.setInterval(() => {
-				previousProgramTypeIndex = activeProgramTypeIndex;
-				activeProgramTypeIndex = (activeProgramTypeIndex + 1) % programTypeCount;
-			}, 6000);
-		}
-
-		function updateSliderState() {
-			stopRotation();
-			activeProgramTypeIndex = 0;
-			previousProgramTypeIndex = null;
-			isProgramTypeSliderActive = mediaQuery.matches;
-
-			if (mediaQuery.matches) {
-				startRotation();
-			}
-		}
-
-		updateSliderState();
-		mediaQuery.addEventListener('change', updateSliderState);
+		const rotationInterval = window.setInterval(() => {
+			previousProgramTypeIndex = activeProgramTypeIndex;
+			activeProgramTypeIndex = (activeProgramTypeIndex + 1) % programTypeCount;
+		}, 4500);
 
 		return () => {
-			stopRotation();
-			mediaQuery.removeEventListener('change', updateSliderState);
+			window.clearInterval(rotationInterval);
 		};
 	});
 
@@ -66,7 +36,7 @@
 	 * @param {number} index
 	 */
 	function isHiddenProgramType(index) {
-		return isProgramTypeSliderActive && activeProgramTypeIndex !== index;
+		return activeProgramTypeIndex !== index;
 	}
 </script>
 
@@ -88,20 +58,19 @@
 		<h2>Find the program<br />that prepares you to lead</h2>
 
 		<div
-			class="program-type-grid"
-			class:program-type-slider={isProgramTypeSliderActive}
+			class="program-type-grid program-type-slider"
 			aria-label="Program types"
 		>
 		
 			<div
 				class="program-type"
 				class:current={activeProgramTypeIndex === 0}
-				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 0}
+				class:previous={previousProgramTypeIndex === 0}
 				id="certificatePrograms"
 				aria-hidden={isHiddenProgramType(0) ? 'true' : undefined}
 				inert={isHiddenProgramType(0)}
 			>
-				<h3 class="neon-button blue">
+				<h3 class="blue neon">
 					Certificates
 				</h3>
 				<ul class="white program-list">
@@ -120,12 +89,12 @@
 			<div
 				class="program-type"
 				class:current={activeProgramTypeIndex === 1}
-				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 1}
+				class:previous={previousProgramTypeIndex === 1}
 				id="masterPrograms"
 				aria-hidden={isHiddenProgramType(1) ? 'true' : undefined}
 				inert={isHiddenProgramType(1)}
 			>
-				<h3 class="neon-button gold">
+				<h3 class="gold neon">
 					Masters Degrees
 				</h3>
 				<ul class="white program-list">
@@ -174,12 +143,12 @@
 			<div
 				class="program-type"
 				class:current={activeProgramTypeIndex === 2}
-				class:previous={isProgramTypeSliderActive && previousProgramTypeIndex === 2}
+				class:previous={previousProgramTypeIndex === 2}
 				id="doctoratePrograms"
 				aria-hidden={isHiddenProgramType(2) ? 'true' : undefined}
 				inert={isHiddenProgramType(2)}
 			>
-				<h3 class="neon-button green">
+				<h3 class="neon green">
 					Doctoral Degrees
 				</h3>
 				<ul class="white program-list">
