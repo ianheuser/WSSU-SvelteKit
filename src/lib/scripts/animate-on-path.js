@@ -1,27 +1,55 @@
-// Moves the ram head along the SVG path once the section scrolls into view.
+// Moves the ram head along the SVG path based on scroll progress through the section.
 // Returns a cleanup function for SvelteKit page teardown.
 export function initRamPathAnimation() {
-	const motionPath = document.querySelector('#js-motion-path');
-	const ramHead = document.querySelector('#js-path-ram');
+	const section = /** @type {HTMLElement | null} */ (document.querySelector('.path-proof-section'));
+	const motionPath = /** @type {SVGPathElement | null} */ (document.querySelector('#js-motion-path'));
+	const ramHead = /** @type {SVGImageElement | null} */ (document.querySelector('#js-path-ram'));
 	const pathBullets = Array.from(document.querySelectorAll('.path-proof-bullet'));
-	const duration = 8000;
-	let animationStart = null;
-	let animationStarted = false;
-	let startCheckFrame = null;
+	let scrollFrame = 0;
 	let disposed = false;
 
-	if (!motionPath || !ramHead) {
+	if (!section || !motionPath || !ramHead) {
 		return () => {};
 	}
 
+	/**
+	 * @param {number} value
+	 */
+	const clampProgress = (value) => Math.min(Math.max(value, 0), 1);
+
+	const getScrollProgress = () => {
+		const sectionRect = section.getBoundingClientRect();
+		const scrollY = window.scrollY;
+		const sectionTop = scrollY + sectionRect.top;
+		const startPoint = window.innerHeight * 0.9;
+		const endPoint = window.innerHeight * 0.28;
+		const startScroll = sectionTop - startPoint;
+		const naturalEndScroll = sectionTop + sectionRect.height - endPoint;
+		const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 0);
+		const endScroll = Math.min(naturalEndScroll, maxScroll);
+		const scrollRange = endScroll - startScroll;
+
+		if (scrollRange <= 0) {
+			return scrollY >= endScroll ? 1 : 0;
+		}
+
+		return clampProgress((scrollY - startScroll) / scrollRange);
+	};
+
+	/**
+	 * @param {number} progress
+	 */
 	const updateBulletLights = (progress) => {
 		pathBullets.forEach((bullet) => {
-			const lightProgress = Number(bullet.dataset.progress);
+			const lightProgress = Number(bullet.getAttribute('data-progress'));
 
 			bullet.classList.toggle('is-lit', progress >= lightProgress);
 		});
 	};
 
+	/**
+	 * @param {number} progress
+	 */
 	const placeRamOnPath = (progress) => {
 		const pathLength = motionPath.getTotalLength();
 		const point = motionPath.getPointAtLength(pathLength * progress);
@@ -30,81 +58,40 @@ export function initRamPathAnimation() {
 		updateBulletLights(progress);
 	};
 
-	const animateRam = (timestamp) => {
+	const updateFromScroll = () => {
+		scrollFrame = 0;
+
 		if (disposed) {
 			return;
 		}
 
-		if (animationStart === null) {
-			animationStart = timestamp;
-		}
-
-		const progress = Math.min((timestamp - animationStart) / duration, 1);
-
-		placeRamOnPath(progress);
-
-		if (progress < 1) {
-			window.requestAnimationFrame(animateRam);
-		}
+		placeRamOnPath(getScrollProgress());
 	};
 
-	const startRamAnimation = () => {
-		if (animationStarted) {
+	const scheduleScrollUpdate = () => {
+		if (scrollFrame) {
 			return;
 		}
 
-		animationStarted = true;
-		animationStart = null;
-		window.requestAnimationFrame(animateRam);
+		scrollFrame = window.requestAnimationFrame(updateFromScroll);
 	};
 
-	const checkRamAnimationStart = () => {
-		if (disposed || animationStarted) {
-			return;
-		}
-
-		const section = document.querySelector('.path-proof-section');
-
-		if (!section) {
-			return;
-		}
-
-		const sectionRect = section.getBoundingClientRect();
-		const triggerPoint = window.innerHeight * 0.5;
-
-		if (sectionRect.top <= triggerPoint && sectionRect.bottom >= triggerPoint) {
-			startRamAnimation();
-		}
-	};
-
-	const scheduleRamAnimationStartCheck = () => {
-		if (startCheckFrame) {
-			return;
-		}
-
-		startCheckFrame = window.requestAnimationFrame(() => {
-			startCheckFrame = null;
-			checkRamAnimationStart();
-		});
-	};
-
-	placeRamOnPath(0);
-	window.addEventListener('scroll', scheduleRamAnimationStartCheck, { passive: true });
-	window.addEventListener('resize', scheduleRamAnimationStartCheck);
-	window.addEventListener('load', scheduleRamAnimationStartCheck);
-	window.addEventListener('pageshow', scheduleRamAnimationStartCheck);
-	window.requestAnimationFrame(checkRamAnimationStart);
+	scheduleScrollUpdate();
+	window.addEventListener('scroll', scheduleScrollUpdate, { passive: true });
+	window.addEventListener('resize', scheduleScrollUpdate);
+	window.addEventListener('load', scheduleScrollUpdate);
+	window.addEventListener('pageshow', scheduleScrollUpdate);
 
 	return () => {
 		disposed = true;
-		window.removeEventListener('scroll', scheduleRamAnimationStartCheck);
-		window.removeEventListener('resize', scheduleRamAnimationStartCheck);
-		window.removeEventListener('load', scheduleRamAnimationStartCheck);
-		window.removeEventListener('pageshow', scheduleRamAnimationStartCheck);
+		window.removeEventListener('scroll', scheduleScrollUpdate);
+		window.removeEventListener('resize', scheduleScrollUpdate);
+		window.removeEventListener('load', scheduleScrollUpdate);
+		window.removeEventListener('pageshow', scheduleScrollUpdate);
 
-		if (startCheckFrame) {
-			window.cancelAnimationFrame(startCheckFrame);
-			startCheckFrame = null;
+		if (scrollFrame) {
+			window.cancelAnimationFrame(scrollFrame);
+			scrollFrame = 0;
 		}
 	};
 }

@@ -98,6 +98,9 @@ and then comment out the :global(.dean-quote) style below.
   background: var(--black);
 }
 
+#ram-path-proof {
+    padding-top: 50px;
+}
 .path-proof-svg {
   display: block;
   max-width: 600px;

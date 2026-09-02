@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { asset } from '$app/paths';
-	// import RamAnimation from '$lib/components/RamAnimation.svelte';
+	import RamAnimation from '$lib/components/RamAnimation.svelte';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
 
 	const programTypeCount = 3;
@@ -182,9 +182,7 @@
 		<p>Through scholarships, grants, and financial aid, we make pursuing your graduate degree a reality.</p>
 	</section>
 
-	<!-- Hide Ram Animation
 	<RamAnimation />
-	-->
 
 	<section class="flex dean-quote">
 		<img src={ asset("/images/dean-boykin.jpg") } alt="Montrale Boykin, Dean, Graduate College" />
