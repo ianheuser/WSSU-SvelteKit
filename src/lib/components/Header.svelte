@@ -192,7 +192,7 @@
 	</a>
 
 	<nav class="desktop-nav" aria-label="Primary navigation">
-		<a class="flickerOnRoll" href={ resolve("/programs/mcst") }>Programs</a>
+		<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
 		<a class="flickerOnRoll" href="#financial-aid">Financial Aid</a>
 		<a class="flickerOnRoll nav-contact" href="#contact">Contact</a>
 	</nav>
@@ -206,15 +206,15 @@
 </header>
 
 <nav bind:this={mobileNav} class="mobile-nav" aria-label="Mobile navigation" hidden>
-	<a class="flickerOnRoll" href={ resolve("/") }>Programs</a>
-	
+	<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
+	<!--
 		<div class="mobile-subnav">
 			{#each programs as program}
 				<a class="subnav-link" href={ resolve(program.href) }>{ program.fullName }</a>
 			{/each}
 		</div>
-	
-	<a class="flickerOnRoll" href="#financial-aid">Financial Aid</a>
+	-->
+	<a class="flickerOnRoll top-border" href="#financial-aid">Financial Aid</a>
 	<a class="flickerOnRoll top-border" href="#contact">Contact</a>
 </nav>
 
@@ -272,7 +272,7 @@
 .mobile-nav a:focus-visible {
   color: var(--red-bright);
 }
-
+/*
 .mobile-subnav {
   	display: flex;
     flex-direction: column;
@@ -289,7 +289,7 @@
   color: var(--white);
   opacity: 1;
 }
-
+*/
 .top-border {
   border-top: solid .5px #2d2d2d;
 }
