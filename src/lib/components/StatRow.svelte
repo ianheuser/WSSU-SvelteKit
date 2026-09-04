@@ -21,10 +21,12 @@
     <div class="stats-grid">
 
         {#each stats as stat}
-            <div class="stat-stack">
+
+            <div class="stat-stack" class:needs-approval={stat.needsApproval}>
                 <div class="stats flicker">{stat.value}</div>
                 <p>{stat.description}</p>
             </div>
+
         {/each}
 
     </div>
@@ -66,6 +68,10 @@
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
+}
+
+.needs-approval.stat-stack .stats{
+  color: #ff00ff;
 }
 
 @media( max-width: 980px ) {

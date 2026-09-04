@@ -4,7 +4,7 @@
 
 <section class="flex column lead-room-section">
     <h2 class="white">{heading}</h2>
-    <p>{paragraph}</p>
+    <p>{@html paragraph}</p>
 
     <div class="image-contain">
         <img src={ image } alt="Graduate student working at a laptop" />

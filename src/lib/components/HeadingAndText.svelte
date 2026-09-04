@@ -4,7 +4,7 @@
 
 <section class="flex column headingAndText ">
     <h2>{heading}</h2>
-    <p>{paragraph}</p>
+    <p>{@html paragraph}</p>
 </section>
 
 <style>

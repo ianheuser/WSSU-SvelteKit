@@ -5,7 +5,7 @@
 <section class="flex column find-a-path">
     <h2 class="red">{heading}</h2>
     <h4>{subHeading}</h4>
-    <p>{description}</p>
+    <p>{@html description}</p>
     <a class="outline-button gold line" href="#contact">
         {buttonLabel}
     </a>

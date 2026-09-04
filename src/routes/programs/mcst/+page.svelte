@@ -39,6 +39,7 @@
 			subHeading = { program.subHeading }
 			programCode = { program.label }
 			image = { asset('/images/' + program.label.toLowerCase() + '-hero.webp') }
+			type = { program.type }
 		></ProgramHero>
 		
 		{#if program.promoHeader && program.promoHeader.length > 0}

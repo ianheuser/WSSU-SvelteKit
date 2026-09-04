@@ -87,6 +87,16 @@ p {
     padding: 0px 0px 30px;
 }
 
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+li {
+    text-indent: 0;
+    text-align: center;
+}
 .program-finder p {
     font-size: 18px;
     margin: 0px;
@@ -207,6 +217,10 @@ select {
   align-items: center;
   gap: 16px;
   min-height: 148px;
+}
+
+.needs-approval {
+  color: #ff00ff;
 }
 
 .program-type-grid.program-type-slider {

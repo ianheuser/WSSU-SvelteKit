@@ -4,7 +4,7 @@
 
 <section class="flex column affordability" id="financial-aid" >
     <h2 class="red">{heading}</h2>
-    <p>{paragraph}</p>
+    <p>{@html paragraph}</p>
 </section>
 
 <style>

@@ -31,7 +31,12 @@
         <h2 class="gold">{ careerPathHeader }</h2>
         <ul>
             {#each careerPathBullets as bullet}
-                <li>{ bullet }</li>
+                {#if bullet == "Please Provide Career Path Options"}
+                    <li class="needs-approval">{ bullet }</li>
+                {:else}
+                    <li>{ bullet }</li>
+                {/if}
+                <!-- <li>{ bullet }</li> -->
             {/each}
         </ul>
     </div>

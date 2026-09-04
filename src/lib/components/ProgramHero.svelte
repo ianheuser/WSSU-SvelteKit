@@ -1,5 +1,13 @@
 <script> 
-let { heading, programCode, subHeading = null , image } = $props();
+let { heading, programCode, subHeading = null , image, type } = $props();
+let typeColor = $derived.by(() => {
+    if (type == 'Certificate') {
+        return 'blue';
+    } else if (type == 'Doctorate') {
+        return 'green';
+    }
+    return 'gold';
+});
 </script>
 
 <section class="flex program-hero">
@@ -7,7 +15,7 @@ let { heading, programCode, subHeading = null , image } = $props();
 
     <div class="program-hero-content">
         <p class="program-code">{ programCode }</p>
-        {#if heading}<h1 class="gold">{heading}</h1>{/if}
+        {#if heading}<h1 class={typeColor}>{heading}</h1>{/if}
         {#if subHeading}<h3>{ subHeading }</h3>{/if}
     </div>
 </section>

@@ -48,7 +48,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. <span class='needs-approval'>We offer competitive tuition and financial aid options that puts your graduate degree within reach.</span>",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -104,15 +104,15 @@ export const programs = [
         ],
         
         realWorldAppImage: '/images/mat-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teachers as Leaders, Teaching Diverse Classrooms, Psychology of Teaching and Learning, Middle School Philosophy and Organization.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Teaching Diverse Classrooms, Psychology of Teaching and Learning.</span>",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options, and additional funding may be available for eligible candidates pursuing a Middle Grades Math and Science or Special Education license to put your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">ensuring every child has access to excellent education.</span>',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -174,7 +174,7 @@ export const programs = [
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">supported by accessible faculty who provide research, conference, and networking opportunities.</span>',
         finalCTA: "Let's Find a Path That Fits You"
     },
     {
@@ -245,7 +245,7 @@ export const programs = [
        
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">with Advocate, Novant, AHEC, and NAHSE.</span>',
         finalCTA: "Let's Find a Path That Fits You"
     
 	},
@@ -292,20 +292,23 @@ export const programs = [
         statisticsBar: [
             {
 				value: '99%',
-				description: 'job or doctoral placement rate'
+				description: 'job or doctoral placement rate',
+                needsApproval: false
 			},
 			{
 				value: '22%',
-				description: 'projected growth in computing careers'
+				description: 'projected growth in computing careers',
+                needsApproval: false
 			},
 			{
 				value: '67%',
-				description: 'of graduate students receive paid research assistantships'
+				description: 'of graduate students receive paid research assistantships',
+                needsApproval: false
 			}
         ],
         
         realWorldAppImage: '/images/mcst-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in cryptography, database management, hardware security, data science, and artifical intelligence.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in cryptography, database management, hardware security, data science, and artificial intelligence.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -313,7 +316,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
+        mottoCopy: "Join WSSU's \"Ramily\" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class='needs-approval'>and the Association for Computing Machinery.</span>",
         finalCTA: "Let's Find a Path That Fits You"
 	},
 	{	
@@ -369,13 +372,13 @@ export const programs = [
 
         realWorldAppHeader: "LEAD EVERY ROOM",
         realWorldAppImage: '/images/msn-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Nursing.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>(Add Example Courses Here)</span>",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -449,7 +452,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships. Our Community Care Clinic, developed in partnership with the Intergenerational Center, is one of the largest and most comprehensive free, pro bono physical therapy clinics in NC, serving more than 25,000 clients since 2000. ',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -488,9 +491,7 @@ export const programs = [
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
-            "Family Nurse Practitioner",
-            "Primary Care Provider",
-            "Healthcare Leadership"
+            "Please Provide Career Path Options"
         ],
         
         statisticsBar: [
@@ -505,7 +506,7 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/fnp-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.</span>",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -513,7 +514,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class="needs-approval">that improve access to primary care and support better patient outcomes in underserved and rural communities.</span>',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -554,16 +555,14 @@ export const programs = [
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
-            "Occupational Therapist",
-            "Rehabilitation Specialist",
-            "Pediatric Occupational Therapist",
-            "Geriatric Occupational Therapist"
+            "Please Provide Career Path Options"
         ],
         
         statisticsBar: [
 			{
 				value: 'Fully accredited',
-				description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)'
+				description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
+                needsApproval: true
 			}
 		],
         
@@ -639,15 +638,16 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
+        realWorldAppCopy: "<h4 class='needs-approval'>Learn Today. Lead Tomorrow. Serve With Purpose.</h4><p>Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.</p>",
         realWorldAppHeader: "Lead Every Room",
+        realWorldAppSubHeader: "Learn Today. Lead Tomorrow. Serve With Purpose.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and two federal fellowships to put your graduate degree within reach:<ul><li>RSA Fellowship - Covers tuition and stipend offered</li><li>HBCU Fellowship - Covers tuition, fees, and books</li></ul>",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships.",
         finalCTA: "Let's Find a Path That Fits You"
 	},
      {
@@ -662,7 +662,7 @@ export const programs = [
         titleOverlay: "Doctor of Nursing Practice",
         
         promoHeader: "Two pathways. One DNP. ",
-        promoBoxMainCopy: "Choose from two pathways: Whether you are a nurse with a BSN or an MSN, our fully online DNP programs prepare you to lead in clinical practice, healthcare policy, and organizational leadership. Nurses with an BSN can expect to complete the program in 3 years, while nurses with an MSN can complete the program in 2 years.",
+        promoBoxMainCopy: "<ul><li><strong>BSN to DNP</strong></li><li>Who it's for: Nurses with a BSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately three years</li><li>Format: Fully online with clinical flexibility</li></ul><ul><li><strong>MSN to DNP</strong></li><li>Who it's for: Nurses with an MSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately two years</li><li>Format: Fully online with clinical flexibility</li></ul>",
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
@@ -696,17 +696,18 @@ export const programs = [
         
         statisticsBar: [
 			{
-				value: 'Fully accredited',
-				description: 'by theCommission of Collegiate (CCNE)'
+				value: 'Fully Accredited',
+				description: 'by the Commission of Collegiate Nursing Education (CCNE)',
+                needsApproval: true
 			}
 		],
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.</span>",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        affordabilityCopy: "WSSU nursing programs are among the most affordable in the Piedmont Triad region.  We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -716,23 +717,3 @@ export const programs = [
 
 ];
 
-export const certificates = [
-    'Data Analytics',
-    'Family Nurse Practitioner Certificate | FNP'
-];
-
-export const masters = [
-    'Master of Arts in Teaching | MAT',
-    'Master of Business Administration | MBA',
-    'Master of Healthcare Administration | MHA',
-    'Master of Science in Computer Science and Information Technology | MCST',
-    '5-Year (4+1) BS-MS Degree Computer Science and Information Technology | MCST',
-    'Master of Science in Occupational Therapy | MSOT',
-    'Master of Science in Rehabilitation Counseling | MSRC',
-    'Master of Science in Nursing | MSN'
-];
-
-export const doctorates = [
-    'Doctor of Nursing Practice | DNP',
-    'Doctor of Physical Therapy | DPT'
-];
