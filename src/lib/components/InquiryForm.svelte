@@ -13,7 +13,7 @@
 
 <section class="flex inquiry-section" id="contact">
 		<div class="campus-collage" aria-hidden="true">
-			<img class="left" src={ asset("/images/landing-campus-left.jpg") } alt="" />
+			<img class="left" src={ asset("/images/landing-campus-left.webp") } alt="" />
 		</div>
 
 		<div class="photo-card red">

@@ -243,6 +243,12 @@ select {
   transform: translateX(-110%);
 }
 
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .program-list li a {
   font-size: 18px;
 }
@@ -372,7 +378,7 @@ p.white {
   padding: 92px 24px;
   background: var(--red-bright);
   color: var(--white);
-  margin-top: 0px;
+  margin-top: -40px;
 }
 
 .dean-quote img {
@@ -647,6 +653,7 @@ p.white {
     gap: 14px;
     align-items: center;
     padding: 16px 14px 22px;
+    margin-top: -100px;
   }
 
   .dean-quote img {

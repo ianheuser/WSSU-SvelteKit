@@ -207,14 +207,13 @@
 
 <nav bind:this={mobileNav} class="mobile-nav" aria-label="Mobile navigation" hidden>
 	<a class="flickerOnRoll" href={ resolve("/") }>Programs</a>
-	<!-- USE THIS MENU IN TESTING TO GET AROUND PAGE TO PAGE -->
-	<!--
+	
 		<div class="mobile-subnav">
 			{#each programs as program}
 				<a class="subnav-link" href={ resolve(program.href) }>{ program.fullName }</a>
 			{/each}
 		</div>
-	-->
+	
 	<a class="flickerOnRoll" href="#financial-aid">Financial Aid</a>
 	<a class="flickerOnRoll top-border" href="#contact">Contact</a>
 </nav>

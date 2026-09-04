@@ -38,7 +38,7 @@
 			heading = { program.heading }
 			subHeading = { program.subHeading }
 			programCode = { program.label }
-			image = { asset('/images/' + program.label.toLowerCase() + '-hero.jpg') }
+			image = { asset('/images/' + program.label.toLowerCase() + '-hero.webp') }
 		></ProgramHero>
 		
 		{#if program.promoHeader && program.promoHeader.length > 0}
@@ -52,14 +52,14 @@
 			heading = { program.leadFormHeader }
 			description = { program.leadFormCopy }
 			buttonLabel = "Get Connected"
-			image = { asset('/images/' + program.label.toLowerCase() + '-lead-form.jpg') }
+			image = { asset('/images/' + program.label.toLowerCase() + '-lead-form.webp') }
 			imageAlt = { program.leadFormImageAlt }
 			thanksMessage = { program.leadFormPostSubmitCopy }
 			programCode={ programCode }
 		></InquiryForm>
 			
 		<InnovatorsCareerPaths
-			image = { asset("/images/innovators.jpg") }
+			image = { asset("/images/innovators.webp") }
 			imageAlt = "Students collaborating in a lab"
 			innovationBullets = {program.highlightsBullets}
 			careerPathBullets = {program.careerPathBullets}
@@ -74,7 +74,7 @@
 		<RealWorldApplication
 			heading = { program.realWorldAppHeader }
 			paragraph = { program.realWorldAppCopy }
-			image = { asset('/images/' + program.label.toLowerCase() + '-real-world-application.jpg') }
+			image = { asset('/images/' + program.label.toLowerCase() + '-real-world-application.webp') }
 		></RealWorldApplication>
 
 		<FinancialAid

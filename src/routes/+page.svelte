@@ -171,7 +171,7 @@
 		heading = "Ready to Step Into the Room?"
 		description = "Tell us a little about yourself and our graduate team can help you plan your next move."
 		buttonLabel = "Submit"
-		image = { asset('/images/landing-form-photo.jpg') }
+		image = { asset('/images/landing-form-photo.webp') }
 		imageAlt = "Graduate student meeting with an advisor"
 		thanksMessage = "A member of our admissions team will be in touch soon with details about our programs."
 		programCode={selectedProgramCode}
@@ -185,7 +185,7 @@
 	<RamAnimation />
 
 	<section class="flex dean-quote">
-		<img src={ asset("/images/dean-boykin.jpg") } alt="Montrale Boykin, Dean, Graduate College" />
+		<img src={ asset("/images/dean-boykin.webp") } alt="Montrale Boykin, Dean, Graduate College" />
 		<blockquote>
 			<p>
 				At WSSU, you'll be prepared and ready to lead in any room you enter. If you're looking for real economic
@@ -197,10 +197,4 @@
 	</section>
 </main>
 
-<style>
-	.program-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-</style>
+

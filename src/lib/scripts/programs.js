@@ -17,12 +17,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/data-analytics-lead-form.jpg',
+        leadFormImage: '/images/data-analytics-lead-form.webp',
         leadFormImageAlt: 'A classroom setting with students learning data analytics',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -43,7 +43,7 @@ export const programs = [
 			}
         ],
         
-        realWorldAppImage: '/images/data-analytics-real-world-application.jpg',
+        realWorldAppImage: '/images/data-analytics-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -72,12 +72,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/mat-lead-form.jpg',
+        leadFormImage: '/images/mat-lead-form.webp',
         leadFormImageAlt: 'Graduate student meeting with an advisor',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Arts in Teaching and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -103,7 +103,7 @@ export const programs = [
 			}
         ],
         
-        realWorldAppImage: '/images/mat-real-world-application.jpg',
+        realWorldAppImage: '/images/mat-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teachers as Leaders, Teaching Diverse Classrooms, Psychology of Teaching and Learning, Middle School Philosophy and Organization.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -131,13 +131,13 @@ export const programs = [
         promoHeader: "100% Online MBA",
         promoBoxMainCopy: "Don't wait for a seat at the table. Take it. Build the leadership and strategy skills to move your career forward.",
         leadFormHeader: "Let's Get You Started",
-        leadFormImage: '/images/mba-lead-form.jpg',
+        leadFormImage: '/images/mba-lead-form.webp',
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/mba-highlights.jpg',
+        highlightsImage: '/images/mba-highlights.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
         highlightsBullets: [
             "100% online",
@@ -167,7 +167,7 @@ export const programs = [
                 description: "AI, Business Analytics, and Leadership Concentrations"
             }
         ],
-        realWorldAppImage: '/images/mba-real-world-application.jpg',
+        realWorldAppImage: '/images/mba-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
         realWorldAppHeader: "Lead Every Room",
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -190,13 +190,13 @@ export const programs = [
         promoBoxMainCopy: "As a student in one of the most affordable MHA programs in the nation, you'll be prepared to lead in the healthcare field. WSSU positions you to make a positive impact on the health of individuals, families, and the communities they serve.",
         
         leadFormHeader: "Let's Get You Started",
-        leadFormImage: '/images/mha-lead-form.jpg',
+        leadFormImage: '/images/mha-lead-form.webp',
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/mha-highlights.jpg',
+        highlightsImage: '/images/mha-highlights.webp',
         
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
         highlightsBullets: [
@@ -237,7 +237,7 @@ export const programs = [
         ],
 
         realWorldAppHeader: "LEAD EVERY ROOM",
-        realWorldAppImage: '/images/mha-real-world-application.jpg',
+        realWorldAppImage: '/images/mha-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change and Grant Management & Writing.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -266,12 +266,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/mcst-lead-form.jpg',
+        leadFormImage: '/images/mcst-lead-form.webp',
         leadFormImageAlt: 'Graduate student meeting with an advisor',
         leadFormPostSubmitCopy: "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrows expert.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -304,7 +304,7 @@ export const programs = [
 			}
         ],
         
-        realWorldAppImage: '/images/mcst-real-world-application.jpg',
+        realWorldAppImage: '/images/mcst-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in cryptography, database management, hardware security, data science, and artifical intelligence.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -330,13 +330,13 @@ export const programs = [
         promoBoxMainCopy: "WSSU's MSN program prepares registered nurses for advanced roles in education and practice, offering flexible pathways that align with your professional goals.",
         
         leadFormHeader: "Let's Get You Started",
-        leadFormImage: '/images/msn-lead-form.jpg',
+        leadFormImage: '/images/msn-lead-form.webp',
         leadFormImageAlt: 'A student and professor working together on a project in a lab with a microscope.',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
 
         highlightsBullets: [
@@ -358,13 +358,17 @@ export const programs = [
                 description: "by the Commission of Collegiate Nursing Education (CCNE)"
             },
             {
-                value: "No GRE or MAT",
+                value: "No GRE",
+                description: "required for admission"
+            },
+            {
+                value: "No MAT",
                 description: "required for admission"
             }
         ],
 
         realWorldAppHeader: "LEAD EVERY ROOM",
-        realWorldAppImage: '/images/msn-real-world-application.jpg',
+        realWorldAppImage: '/images/msn-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Nursing.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -392,12 +396,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/dpt-lead-form.jpg',
+        leadFormImage: '/images/dpt-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor of Physical Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -436,7 +440,7 @@ export const programs = [
 			}
 		],
         
-        realWorldAppImage: '/images/dpt-real-world-application.jpg',
+        realWorldAppImage: '/images/dpt-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Anatomy, Orthopedics, Neurorehabilitation, Cardiopulmonary, Therapeutic Exercise.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -468,12 +472,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/fnp-lead-form.jpg',
+        leadFormImage: '/images/fnp-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -500,7 +504,7 @@ export const programs = [
 			}
 		],
         
-        realWorldAppImage: '/images/fnp-real-world-application.jpg',
+        realWorldAppImage: '/images/fnp-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -534,12 +538,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msot-lead-form.jpg',
+        leadFormImage: '/images/msot-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
@@ -563,7 +567,7 @@ export const programs = [
 			}
 		],
         
-        realWorldAppImage: '/images/msot-real-world-application.jpg',
+        realWorldAppImage: '/images/msot-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -593,12 +597,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msrc-lead-form.jpg',
+        leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "100% online",
@@ -634,7 +638,7 @@ export const programs = [
 			}
 		],
         
-        realWorldAppImage: '/images/msrc-real-world-application.jpg',
+        realWorldAppImage: '/images/msrc-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
         realWorldAppHeader: "Lead Every Room",
         
@@ -664,12 +668,12 @@ export const programs = [
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
 		leadFormButtonLabel: "Get Connected",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msrc-lead-form.jpg',
+        leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
         leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.jpg',
+        highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "100% online",
@@ -697,7 +701,7 @@ export const programs = [
 			}
 		],
         
-        realWorldAppImage: '/images/msrc-real-world-application.jpg',
+        realWorldAppImage: '/images/msrc-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
         realWorldAppHeader: "Lead Every Room",
         

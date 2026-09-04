@@ -30,7 +30,7 @@ let { heading, programCode, subHeading = null , image } = $props();
     .program-hero-image {
         position: relative;
         flex: 1 1 50%;
-        background: var(--hero-image) right / cover no-repeat;
+        background: var(--hero-image) center / cover no-repeat;
     }
 
     .program-hero-image::after {
@@ -106,7 +106,7 @@ let { heading, programCode, subHeading = null , image } = $props();
 
   .program-hero-image {
     flex-basis: 50%;
-    background-position: right;
+    background-position: center;
   }
 
   .program-hero-content {
