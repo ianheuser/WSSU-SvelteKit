@@ -70,7 +70,7 @@ h1, h2 {
 h1 {
   padding-bottom: 0px;
   margin-bottom: 0px;
-  font-size: clamp(22px, 4.85vw, 51px);
+  font-size: clamp(22px, 4.85vw, 60px);
 }
 
 h2 {
@@ -80,7 +80,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(12px, 3vw, 24px);
+  font-size: clamp(12px, 3vw, 31px);
   text-transform: uppercase;
   margin: 0px;
 }
@@ -112,7 +112,7 @@ p {
     font-size: clamp(12px, 2.8vw, 32px);
     margin: 0px;
     padding: 0px 0px 30px;
-    width: clamp(350px, 94%, 1100px);
+    width: clamp(350px, 85%, 1100px);
 }
 
 .career-paths ul {
