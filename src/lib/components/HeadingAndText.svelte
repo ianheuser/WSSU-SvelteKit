@@ -17,7 +17,6 @@
 }
 
 .headingAndText p {
-  width: clamp(300px, 70%, 750px);
   margin: 0px auto;
   padding-bottom: 0px;
 }

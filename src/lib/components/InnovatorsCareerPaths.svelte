@@ -28,6 +28,7 @@
         <h2 class="{sectionColor}">
             One Degree. Multiple<br /> Career Paths.
         </h2>
+        
         {#if careerPathColumns}
             {@html careerPathColumns}
         {:else}
