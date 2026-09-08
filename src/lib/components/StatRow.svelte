@@ -14,7 +14,7 @@
 				value: '67%',
 				description: 'of graduate students receive paid research assistantships'
 			}
-		] } = $props();
+		], sectionColor } = $props();
 </script>
 
 <section class="flex stats-band">
@@ -22,8 +22,8 @@
 
         {#each stats as stat}
 
-            <div class="stat-stack" class:needs-approval={stat.needsApproval}>
-                <div class="stats flicker">{stat.value}</div>
+            <div class="stat-stack" class:needs-approval={stat.needsApproval} >
+                <div class="stats flicker {sectionColor}">{stat.value}</div>
                 <p class="stat">{@html stat.description}</p>
             </div>
 
@@ -33,6 +33,16 @@
 </section>
 
 <style>
+  .stats.blue {
+    color: var(--blue);
+  }
+  .stats.gold {
+    color: var(--gold);
+  }
+  .stats.green {
+    color: var(--green);
+  }
+
 .stat {
   width: 100%;
 }

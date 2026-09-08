@@ -2,7 +2,7 @@
 let { heading, programCode, subHeading = null , image, reverse, sectionColor } = $props();
 </script>
 
-<section class="flex program-hero" class:reverse={reverse}>
+<section class="flex program-hero { sectionColor }" class:reverse={reverse} >
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
     <div class="program-hero-content">
@@ -65,7 +65,6 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         right: 0;
         bottom: 0;
         height: 5px;
-        background: var(--gold);
     }
 
 

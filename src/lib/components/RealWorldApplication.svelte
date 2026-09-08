@@ -1,8 +1,8 @@
 <script>
-  let { heading, paragraph, image } = $props();
+  let { heading, paragraph, image, sectionColor } = $props();
 </script>
 
-<section class="flex column lead-room-section">
+<section class="flex column lead-room-section background-{sectionColor}">
     <h2 class="white">{heading}</h2>
     <p>{@html paragraph}</p>
 
@@ -13,10 +13,11 @@
 
 <style>
 
+
+
 .lead-room-section {
   overflow: hidden;
   padding: 50px 0 0;
-  background-color: var(--gold);
   text-align: center;
 }
 
@@ -39,7 +40,6 @@
   right: 0px;
   top: 0px;
   height: 100px;
-  background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
   pointer-events: none;
 }
 

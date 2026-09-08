@@ -13,6 +13,30 @@
   scroll-padding-top: var(--header-height);
 }
 
+.lead-room-section.background-gold .image-contain:before {
+  background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
+}
+.lead-room-section.background-blue .image-contain:before {
+  background: linear-gradient(180deg, rgba(65,135,141, 1) 0%, rgba(65,135,141, 0) 20%);
+}
+.lead-room-section.background-green .image-contain:before {
+  background: linear-gradient(180deg, rgba(114,159,109, 1) 0%, rgba(114,159,109, 0) 20%);
+}
+
+.program-hero.gold::after {
+    background: var(--gold);
+}
+
+.program-hero.green::after {
+    background: var(--green);
+}
+
+.program-hero.blue::after {
+    background: var(--blue);
+}
+
+.
+
 * {
   box-sizing: border-box;
 }
@@ -304,6 +328,16 @@ select {
 
 .green {
   color: var(--green);
+}
+
+.background-gold {
+  background-color: var(--gold);
+}
+.background-blue {
+  background-color: var(--blue);
+}
+.background-green {
+  background-color: var(--green);
 }
 
 p.white {

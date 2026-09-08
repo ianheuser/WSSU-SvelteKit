@@ -64,16 +64,19 @@
 			careerPathBullets = {program.careerPathBullets}
 			highlightsHeader = { program.highlightsHeader }
 			careerPathHeader = { program.careerPathHeader }
+			sectionColor = { program.sectionColor }
 		></InnovatorsCareerPaths>
 
 		<StatRow
 			stats = {program.statisticsBar}
+			sectionColor = { program.sectionColor }
 		></StatRow>
 		
 		<RealWorldApplication
 			heading = { program.realWorldAppHeader }
 			paragraph = { program.realWorldAppCopy }
 			image = { asset('/images/' + program.label.toLowerCase() + '-real-world-application.webp') }
+			sectionColor = { program.sectionColor }
 		></RealWorldApplication>
 
 		<FinancialAid
