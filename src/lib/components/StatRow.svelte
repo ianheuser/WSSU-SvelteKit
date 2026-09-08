@@ -32,11 +32,6 @@
     color: var(--green);
   }
 
-
-
-.stat {
-  width: 100%;
-}
 .stats-band {
   padding: 62px 20px;
   background: var(--black);
@@ -73,8 +68,9 @@
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(18px,2.8vw,32px);
+  font-size: clamp(18px,2.4vw,32px);
   padding: 0px;
+  width: 100%;
 }
 
 .subText {

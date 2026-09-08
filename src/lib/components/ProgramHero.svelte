@@ -17,6 +17,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     .program-hero-content h1, .program-hero-content h3 {
         padding-left: 7%;
         padding-right: 0%;
+        width: 75%;
     }
 
     .program-hero.reverse .program-hero-content h1,

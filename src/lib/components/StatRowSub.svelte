@@ -23,17 +23,7 @@
     color: var(--green);
   }
 
-.subText {
-  font-size: 12px;
-  margin-top: 26px;
-  border-top: solid rgba(256, 256, 256, .5) .5px;
-  padding-top: 13px;
-  width: clamp(350px, 85%, 1100px);
-}
 
-.stat {
-  width: clamp(350px, 85%, 1100px);
-}
 .stats-band {
   padding: 62px 20px;
   background: var(--black);
@@ -70,8 +60,16 @@
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(18px,2.8vw,32px);
+  font-size: clamp(18px,2vw,24px);
   padding: 0px;
+  width: clamp(350px, 85%, 1100px);
+}
+.subText {
+  font-size: 12px;
+  margin-top: 26px;
+  border-top: solid rgba(256, 256, 256, .5) .5px;
+  padding-top: 13px;
+  width: clamp(350px, 85%, 1100px);
 }
 
 @media( max-width: 980px ) {

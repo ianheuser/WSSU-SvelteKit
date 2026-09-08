@@ -60,7 +60,7 @@ export const programs = [
 		fullName: 'Master of Arts in Teaching',
         label: 'MAT',
         type: 'Master',
-        heading: 'Master of Arts',
+        heading: 'Master <br />of Arts',
         subHeading: 'in Teaching',
 		href: '/programs/mat',
         programCode: 'MAT',
@@ -372,7 +372,7 @@ export const programs = [
         ,
         statisticsBar: [
             {
-                value: "Accredited",
+                value: "100%",
                 description: "by the Commission of Collegiate Nursing Education (CCNE)"
             },
             {
@@ -513,8 +513,8 @@ export const programs = [
         
         statisticsBar: [
 			{
-				value: 'Fully accredited',
-				description: 'Commission of Collegiate Nursing Education (CCNE)'
+				value: '100%',
+				description: 'Accredited by the Commission of Collegiate Nursing Education (CCNE)'
 			},
 			{
 				value: '35%',
