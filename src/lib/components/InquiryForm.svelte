@@ -13,17 +13,17 @@
 
 <section class="flex inquiry-section" id="contact">
 		<div class="campus-collage" aria-hidden="true">
-			<img class="left" src={ asset("/images/landing-campus-left.webp") } alt="" />
+			<enhanced:img class="left" src={ asset("/images/landing-campus-left.webp") } alt="" />
 		</div>
 
 		<div class="photo-card red">
 			<div class="red-line"></div>
-			<img src={ image } alt={ imageAlt } />
+			<enhanced:img src={ image } alt={ imageAlt } />
 		</div>
 
 		<div class="inquiry-copy flex column">
       <div class="form-message">
-        <h1 class="form-status red">Thank you for your submission!</h1>
+        <h2 class="red">Thank you for your submission!</h2>
         <p class="form-status red">{thanksMessage}</p>
       </div>
       <div class="form-content">
@@ -86,6 +86,10 @@
 
 <style>
 
+.form-content h2 {
+  width: 70%;
+}
+
 .form-message {
   display: none;
   text-align: center;
@@ -128,11 +132,6 @@ p.form-description {
   position: absolute;
   inset: 0;
   pointer-events: none;
-}
-
-.campus-collage img {
-  position: absolute;
-  object-fit: cover;
 }
 
 .campus-collage .left {
@@ -194,7 +193,7 @@ p.form-description {
   border-radius: 4px;
   background: var(--field);
   color: var(--black);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 22px;
 }
 
@@ -251,13 +250,12 @@ p.form-description {
   }
 
   .form-status {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .inquiry-section {
     padding-top: 32px;
   }
-
 
 }
 

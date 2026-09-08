@@ -9,7 +9,8 @@ export const programs = [
 		href: '/programs/data-analytics',
         programCode: 'DA',
         titleOverlay: "Certificate in Data Analytics",
-        
+        sectionColor: "blue",
+        heroReverse: false,
         promoHeader: "Data Analytics (Post-Bacc Certificate)",
         promoBoxMainCopy: "Boost your BS or BA degree with a Certificate in Data Analytics in just 12 semester hours. The program is designed for professionals in healthcare, computer science, business, education, or those working in any other field who want to advance their data analytical abilities.",
         
@@ -64,7 +65,8 @@ export const programs = [
 		href: '/programs/mat',
         programCode: 'MAT',
         titleOverlay: "Master of Arts in Teaching",
-        
+        sectionColor: "gold",
+        heroReverse: true,
         promoHeader: "No Education Degree Required",
         promoBoxMainCopy: "The Master of Arts in Teaching offers a nationwidelicensure pathway for anyone with a bachelor's degree who wants to become an educator and make a difference in the classroom.",
         
@@ -95,7 +97,7 @@ export const programs = [
         statisticsBar: [
             {
 				value: '92%',
-				description: 'teacher effectiveness rate'
+				description: 'teacher<br /> effectiveness rate'
 			},
 			{
 				value: '88%',
@@ -128,6 +130,8 @@ export const programs = [
 		href: '/programs/mba',
         programCode: 'MBA',
         titleOverlay: "Master of Business Administration",
+        sectionColor: "gold",
+        heroReverse: false,
         promoHeader: "100% Online MBA",
         promoBoxMainCopy: "Don't wait for a seat at the table. Take it. Build the leadership and strategy skills to move your career forward.",
         leadFormHeader: "Let's Get You Started",
@@ -174,7 +178,7 @@ export const programs = [
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">supported by accessible faculty who provide research, conference, and networking opportunities.</span>',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
         finalCTA: "Let's Find a Path That Fits You"
     },
     {
@@ -186,6 +190,8 @@ export const programs = [
 		href: '/programs/mha',
         programCode: 'MHA',
         titleOverlay: "Master of Healthcare Administration",
+        sectionColor: "gold",
+        heroReverse: true,
         promoHeader: "A mind for business. A heart for healthcare.",
         promoBoxMainCopy: "As a student in one of the most affordable MHA programs in the nation, you'll be prepared to lead in the healthcare field. WSSU positions you to make a positive impact on the health of individuals, families, and the communities they serve.",
         
@@ -258,7 +264,8 @@ export const programs = [
 		href: '/programs/mcst',
         programCode: 'MCST',
         titleOverlay: "Master of Science in Computer Science and Information Technology",
-        
+        sectionColor: "gold",
+        heroReverse: false,
         promoHeader: "",
         promoBoxMainCopy: "",
         
@@ -316,19 +323,20 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join WSSU's \"Ramily\" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class='needs-approval'>and the Association for Computing Machinery.</span>",
+        mottoCopy: "Join WSSU's \"Ramily\" network of 24,000 alumni and build lasting professional connections through corporate partnerships and the Association for Computing Machinery.",
         finalCTA: "Let's Find a Path That Fits You"
 	},
 	{	
         fullName: 'Master of Science in Nursing',
         label: 'MSN',
         type: 'Master',
-        heading: 'Master of Science',
+        heading: 'Master<br /> of Science',
         subHeading: 'in Nursing',
 		href: '/programs/msn',
         programCode: 'MSN',
         titleOverlay: "Master of Science in Nursing",
-
+        sectionColor: "gold",
+        heroReverse: true,
         promoHeader: "Fully Online MSN",
         promoBoxMainCopy: "WSSU's MSN program prepares registered nurses for advanced roles in education and practice, offering flexible pathways that align with your professional goals.",
         
@@ -391,7 +399,8 @@ export const programs = [
 		href: '/programs/dpt',
         programCode: 'dpt',
         titleOverlay: "Doctor of Physical Therapy",
-        
+        sectionColor: "green",
+        heroReverse: false,
         promoHeader: "700+ APPLICATIONS. 30 SEATS. ARE YOU ONE?",
         promoBoxMainCopy: "Our highly competitive program is one of the most affordable in the nation, combining innovative simulation technology with hands-on community clinic experience to prepare you for autonomous practice.",
         
@@ -438,13 +447,13 @@ export const programs = [
 				description: 'Nationally for Affordability'
 			},
 			{
-				value: 'Only HBCU',
-				description: 'in the Nation with a Residency Program'
+				value: 'Only',
+				description: 'HBCU in the Nation with a Residency Program'
 			}
 		],
         
         realWorldAppImage: '/images/dpt-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Anatomy, Orthopedics, Neurorehabilitation, Cardiopulmonary, Therapeutic Exercise.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Anatomy, Orthopedics, Neurorehabilitation, Cardiopulmonary, and Therapeutic Exercise.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -459,15 +468,16 @@ export const programs = [
 
 
 	{
-        fullName: 'Master of Science in Nursing - Family Nurse Practitioner',
+        fullName: 'Post-Graduate Certificate - Family Nurse Practitioner',
         label: 'FNP',
-        type: 'Master',
-        heading: 'Master of Science in Nursing',
+        type: 'Certificate',
+        heading: 'Post-Graduate Certificate',
         subHeading: 'Family Nurse Practitioner',
 		href: '/programs/fnp',
         programCode: 'fnp',
-        titleOverlay: "Master of Science in Nursing - Family Nurse Practitioner",
-        
+        titleOverlay: "Post-Graduate Certificate - Family Nurse Practitioner",
+        sectionColor: "blue",
+        heroReverse: false,
         promoHeader: "Advance Your MSN with an FNP Certificate",
         promoBoxMainCopy: "Designed for MSN-prepared nurses, this Family Nurse Practitioner certificate deepens your clinical training and prepares you to practice primary care with confidence.",
         
@@ -528,10 +538,10 @@ export const programs = [
         heading: 'Master of Science',
         subHeading: 'in Occupational Therapy',
 		href: '/programs/msot',
-
         programCode: 'msot',
         titleOverlay: "Master of Science in Occupational Therapy",
-        
+        sectionColor: "gold",
+        heroReverse: false,
         promoHeader: "Elevate Your Expertise in Occupational Therapy",
         promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
         
@@ -588,7 +598,8 @@ export const programs = [
 
         programCode: 'msrc',
         titleOverlay: "Master of Science in Rehabilitation Counseling",
-        
+        sectionColor: "gold",
+        heroReverse: false,
         promoHeader: "One Degree. Five Areas of Focus.",
         promoBoxMainCopy: "Choose from five concentration areas: Rehabilitation Counseling, Clinical Mental Health Counseling, Deaf and Hard of Hearing, Transition, and Vocational Evaluation. Curriculum is aligned with eligibility for the Certified Rehabilitation Counselor (CRC) exam and professional counseling licensure.",
         
@@ -657,7 +668,8 @@ export const programs = [
         heading: 'Doctor',
         subHeading: 'of Nursing Practice',
 		href: '/programs/dnp',
-
+        sectionColor: "green",
+        heroReverse: false,
         programCode: 'dnp',
         titleOverlay: "Doctor of Nursing Practice",
         

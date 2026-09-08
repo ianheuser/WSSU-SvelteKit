@@ -38,7 +38,8 @@
 			subHeading = { program.subHeading }
 			programCode = { program.label }
 			image = { asset('/images/' + program.label.toLowerCase() + '-hero.webp') }
-			type = { program.type }
+			reverse = { program.heroReverse }
+			sectionColor = { program.sectionColor }
 		></ProgramHero>
 		
 		<HeadingAndText 

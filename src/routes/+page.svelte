@@ -185,7 +185,7 @@
 	<RamAnimation />
 
 	<section class="flex dean-quote">
-		<img src={ asset("/images/dean-boykin.webp") } alt="Montrale Boykin, Dean, Graduate College" />
+		<enhanced:img src={ asset("/images/dean-boykin.webp") } alt="Montrale Boykin, Dean, Graduate College" />
 		<blockquote>
 			<p>
 				At WSSU, you'll be prepared and ready to lead in any room you enter. If you're looking for real economic

@@ -4,7 +4,7 @@
   --red: #cc112c;
   --red-bright: #d52334;
   --gold: #d7a80e;
-  --teal: #0f898f;
+  --blue: #0f898f;
   --green: #64a168;
   --field: #f8fafc;
   --muted: #6f7482;
@@ -27,7 +27,7 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--black);
-  font-family: "Open Sans", WSSXArial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0;
   text-align: center;
   min-width: 390px;
@@ -46,7 +46,9 @@ h1, h2 {
 
 
 h1 {
-  font-size: clamp(28px, 6vw, 51px);
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: clamp(22px, 4.85vw, 51px);
 }
 
 h2 {
@@ -56,9 +58,13 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(12px, 3vw, 36px);
+  font-size: clamp(12px, 3vw, 24px);
   text-transform: uppercase;
   margin: 0px;
+}
+
+.program-hero-content h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 h3.neon {
@@ -83,8 +89,8 @@ h4 {
 p {
     font-size: clamp(12px, 2.8vw, 21px);
     margin: 0px;
-    max-width: 90vw;
     padding: 0px 0px 30px;
+    width: 95%;
 }
 
 ul {
@@ -123,6 +129,14 @@ li {
 
 .gold {
   color: var(--gold);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
 }
 
 h2 span.white {
@@ -174,7 +188,7 @@ select {
   inset: 0;
   min-height: 42vw;
   overflow: hidden;
-  background:url("images/landing-hero.gif") center 42% / cover no-repeat;
+  background:url("/images/landing-hero.gif") center 42% / cover no-repeat;
 }
 
 .hero-title {
@@ -285,7 +299,7 @@ select {
 }
 
 .blue {
-  color: var(--teal);
+  color: var(--blue);
 }
 
 .green {

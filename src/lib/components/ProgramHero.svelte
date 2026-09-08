@@ -1,26 +1,19 @@
 <script> 
-let { heading, programCode, subHeading = null , image, type } = $props();
-let typeColor = $derived.by(() => {
-    if (type == 'Certificate') {
-        return 'blue';
-    } else if (type == 'Doctorate') {
-        return 'green';
-    }
-    return 'gold';
-});
+let { heading, programCode, subHeading = null , image, reverse, sectionColor } = $props();
 </script>
 
-<section class="flex program-hero">
+<section class="flex program-hero" class:reverse={reverse}>
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
     <div class="program-hero-content">
-        <p class="program-code">{ programCode }</p>
-        {#if heading}<h1 class={typeColor}>{heading}</h1>{/if}
+        <p class="program-code { sectionColor }">{ programCode }</p>
+        {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
         {#if subHeading}<h3>{ subHeading }</h3>{/if}
     </div>
 </section>
 
 <style>
+    
 
     .program-hero {
         height: clamp(250px, 50vw, 650px);
@@ -29,10 +22,6 @@ let typeColor = $derived.by(() => {
         color: var(--white);
         align-items: stretch;
         padding: 0px;
-    }
-
-    .program-hero h1 {
-        margin: 0 0 26px;
     }
 
     .program-hero-image {
@@ -87,7 +76,6 @@ let typeColor = $derived.by(() => {
         /* max-height: 140px; */
         border-radius: 50%;
         background: rgba(255, 255, 255, 1);
-        color: var(--gold);
         font-family: "Tilt Neon", sans-serif;
         font-size: 25px;
         font-weight: bold;
@@ -101,6 +89,7 @@ let typeColor = $derived.by(() => {
         left: -60px;
     }
 
+    
 @media (max-width: 720px){
 
     .program-code {
@@ -121,11 +110,6 @@ let typeColor = $derived.by(() => {
     flex-basis: 48%;
     min-height: 216px;
     padding: 0px 7% 0px 3%;
-  }
-
-
-  .program-hero h1 {
-    margin-bottom: 12px;
   }
 
   .program-hero-content > p:last-child {

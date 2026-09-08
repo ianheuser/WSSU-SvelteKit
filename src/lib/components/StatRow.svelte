@@ -24,7 +24,7 @@
 
             <div class="stat-stack" class:needs-approval={stat.needsApproval}>
                 <div class="stats flicker">{stat.value}</div>
-                <p>{stat.description}</p>
+                <p class="stat">{@html stat.description}</p>
             </div>
 
         {/each}
@@ -33,7 +33,9 @@
 </section>
 
 <style>
-
+.stat {
+  width: 100%;
+}
 .stats-band {
   padding: 62px 0 66px;
   background: var(--black);
@@ -57,14 +59,14 @@
 }
 
 .stats-grid > div {
-  flex: 0 1 260px;
+  flex: 0 1 100%;
 }
 
 .stats {
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(54px, 6vw, 96px);
+  font-size: clamp(21px, 4.9vw, 50px);
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;

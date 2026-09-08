@@ -5,14 +5,11 @@
 <section class="flex innovators-section">
     <div class="innovators-copy flex column">
         <h2 class="white red-shadow">
-            <!-- 
-                Innovators.
-                <br />
-                Problem-Solvers.
-                <br />
-                Visionaries.
-            -->
-            { highlightsHeader }
+            Innovators.
+            <br />
+            Problem-Solvers.
+            <br />
+            Visionaries.
         </h2>
         <ul>
             {#each innovationBullets as bullet}
@@ -22,13 +19,15 @@
     </div>
 
     <div class="photo-card red">
-        <img src={ image } alt={ imageAlt } />
+        <enhanced:img src={ image } alt={ imageAlt } />
     </div>
     </section>
 
     <section class="flex career-paths">
     <div class="section-inner">
-        <h2 class="gold">{ careerPathHeader }</h2>
+        <h2 class="gold">
+            One Degree. Multiple<br /> Career Paths.
+        </h2>
         <ul>
             {#each careerPathBullets as bullet}
                 {#if bullet == "Please Provide Career Path Options"}

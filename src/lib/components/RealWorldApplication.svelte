@@ -7,7 +7,7 @@
     <p>{@html paragraph}</p>
 
     <div class="image-contain">
-        <img src={ image } alt="Graduate student working at a laptop" />
+        <enhanced:img class="top-align" src={ image } alt="Graduate student working at a laptop" />
     </div>
 </section>
 
@@ -16,14 +16,14 @@
 .lead-room-section {
   overflow: hidden;
   padding: 50px 0 0;
-  background: linear-gradient(180deg, var(--gold) 0%, var(--gold) 54%, rgba(215, 168, 14, 0.36) 74%, rgba(215, 168, 14, 0) 100%);
+  background-color: var(--gold);
   text-align: center;
 }
 
-.lead-room-section img {
+.top-align {
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   aspect-ratio: 534/261;
 }
 
@@ -39,7 +39,7 @@
   right: 0px;
   top: 0px;
   height: 100px;
-  background: linear-gradient(0deg, rgba(213, 35, 52, 0) 0%, rgba(211, 30, 50, 0.25) 34%, var(--gold) 100%);
+  background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
   pointer-events: none;
 }
 

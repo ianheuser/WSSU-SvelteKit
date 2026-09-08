@@ -68,8 +68,8 @@
             height="218"
         />
     </svg>
-    <img class="red-blur right" src={ asset("/images/red-blur.png") } alt="" />
-    <img class="red-blur left" src={ asset("/images/red-blur.png") } alt="" />
+    <enhanced:img class="red-blur right" src={ asset("/images/red-blur.png") } alt="" />
+    <enhanced:img class="red-blur left" src={ asset("/images/red-blur.png") } alt="" />
 </section>
 
 <style>
