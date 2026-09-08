@@ -1,20 +1,6 @@
 <script>
     // Default values
-    let { stats = 
-        [
-			{
-				value: '99%',
-				description: 'job or doctoral placement rate'
-			},
-			{
-				value: '22%',
-				description: 'projected growth in computing careers'
-			},
-			{
-				value: '67%',
-				description: 'of graduate students receive paid research assistantships'
-			}
-		], sectionColor } = $props();
+    let { stats , sectionColor } = $props();
 </script>
 
 <section class="flex stats-band">
@@ -47,7 +33,7 @@
   width: 100%;
 }
 .stats-band {
-  padding: 62px 0 66px;
+  padding: 62px 20px;
   background: var(--black);
   color: var(--white);
   text-align: center;

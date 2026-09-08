@@ -67,6 +67,7 @@
 		></InnovatorsCareerPaths>
 
 		<StatRow
+			stats = {program.statisticsBar}
 			sectionColor = { program.sectionColor }
 		></StatRow>
 		
