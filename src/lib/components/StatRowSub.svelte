@@ -64,13 +64,13 @@
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(30px, 5vw, 65px); /* This should mirror H2s so they don't get larger than them */
+  font-size: clamp(30px,7vw,80px); /* This should mirror H2s so they don't get larger than them */
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(18px, 1.8vw, 32px);
+  font-size: clamp(18px,2.8vw,32px);
   padding: 0px;
 }
 
@@ -97,10 +97,6 @@ p.stat {
 .stat-stack {
   flex: 1 1 260px;
 }
-
-  .stats {
-    font-size: 30px;
-  }
 
 }
 </style>
