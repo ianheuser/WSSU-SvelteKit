@@ -524,7 +524,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class="needs-approval">that improve access to primary care and support better patient outcomes in underserved and rural communities.</span>',
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
