@@ -34,9 +34,9 @@
             <ul>
                 {#each careerPathBullets as bullet}
                     {#if bullet == "Please Provide Career Path Options"}
-                        <li class="needs-approval">{ bullet }</li>
+                        <li class="needs-approval">{@html bullet }</li>
                     {:else}
-                        <li>{ bullet }</li>
+                        <li>{@html bullet }</li>
                     {/if}
                     <!-- <li>{ bullet }</li> -->
                 {/each}

@@ -34,7 +34,7 @@ export const programs = [
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
-            "Entry Level Data Analyst"
+            "Entry Level Data Analyst" , "<span class='needs-approval'>Client Add Another Career?</span>"
         ],
         
         statisticsBar: [
