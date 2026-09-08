@@ -112,7 +112,12 @@ p {
     font-size: clamp(12px, 2.8vw, 32px);
     margin: 0px;
     padding: 0px 0px 30px;
-    width: clamp(350px, 90vw, 1100px);
+    width: clamp(350px, 90%, 1100px);
+}
+
+.dean-quote p {
+    font-size: clamp(12px, 2.8vw, 32px);
+    width: clamp(350px, 100%, 1100px);
 }
 
 ul {
