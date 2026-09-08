@@ -14,6 +14,16 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
 
 <style>
     
+    .program-hero-content h1, .program-hero-content h3 {
+        padding-left: 7%;
+        padding-right: 0%;
+    }
+
+    .program-hero.reverse .program-hero-content h1,
+    .program-hero.reverse .program-hero-content h3 {
+        padding-left: 0%;
+        padding-right: 7%;
+    }
 
     .program-hero {
         height: clamp(250px, 50vw, 650px);
@@ -22,6 +32,20 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         color: var(--white);
         align-items: stretch;
         padding: 0px;
+    }
+
+    .program-hero.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .program-hero.reverse .program-hero-image::after {
+        background: linear-gradient(
+            to left,
+            transparent 0%,
+            transparent 85%,
+            rgba(0, 0, 0, .5) 90%,
+            rgba(0, 0, 0, 1) 100%
+        );
     }
 
     .program-hero-image {
@@ -53,9 +77,12 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         min-height: inherit;
         align-items: flex-start;
         justify-content: center;
-        padding-left: 3%;
-        padding-right: 7%;
         text-align: left;
+    }
+
+    .program-hero.reverse .program-hero-content {
+        align-items: flex-end;
+        text-align: right;
     }
 
     .program-hero::after {
@@ -84,8 +111,13 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         ALIGN-ITEMS: end;
         padding-bottom: 18px;
         position: absolute;
-        top: -70px;
+        top: -88px;
         left: -60px;
+    }
+
+    .program-hero.reverse .program-code {
+        left: auto;
+        right: -60px;
     }
 
     
@@ -95,7 +127,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         width: 90px;
         height: 90px;
         padding-bottom: 14px;
-        top: -50px;
+        top: -60px;
         left: -45px;
         font-size: 18px;
     }

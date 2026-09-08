@@ -10,7 +10,7 @@ export const programs = [
         programCode: 'DA',
         titleOverlay: "Certificate in Data Analytics",
         sectionColor: "blue",
-        heroReverse: false,
+        heroReverse: true,
         promoHeader: "Data Analytics (Post-Bacc Certificate)",
         promoBoxMainCopy: "Boost your BS or BA degree with a Certificate in Data Analytics in just 12 semester hours. The program is designed for professionals in healthcare, computer science, business, education, or those working in any other field who want to advance their data analytical abilities.",
         
