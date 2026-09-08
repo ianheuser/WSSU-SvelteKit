@@ -29,6 +29,10 @@
     color: var(--green);
   }
 
+p.stat {
+  font-size: clamp(12px, 2.1vw, 24px);
+}
+
 .stat {
   width: 100%;
 }

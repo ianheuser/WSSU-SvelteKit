@@ -140,7 +140,6 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
   .program-hero-content {
     flex-basis: 48%;
     min-height: 216px;
-    padding: 0px 7% 0px 3%;
   }
 
   .program-hero-content > p:last-child {

@@ -21,13 +21,9 @@
 
   .find-a-path p {
     margin-bottom: 2vw;
-    width: clamp(390px,85%,650px);
+    width: clamp(390px,70%,950px);
   }
 
-  @media (max-width: 390px) {
-    .find-a-path p{
-      width: 95%;
-    }
-  }
+
 
 </style>
