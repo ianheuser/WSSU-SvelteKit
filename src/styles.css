@@ -495,11 +495,11 @@ p.white {
 }
 
 .dean-quote p {
-  margin: 0 auto 34px;
+  margin: 0 auto 14px;
 }
 
 .dean-quote cite {
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 600;
 }
@@ -762,7 +762,7 @@ p.white {
   }
 
   .dean-quote p {
-    margin-bottom: 8px;
+    padding-bottom: 0px;
   }
 
   .dean-quote cite {
