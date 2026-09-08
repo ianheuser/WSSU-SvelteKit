@@ -95,7 +95,7 @@
 				inert={isHiddenProgramType(1)}
 			>
 				<h3 class="gold neon">
-					Masters Degrees
+					Master's Degrees
 				</h3>
 				<ul class="white program-list">
 					<li>
