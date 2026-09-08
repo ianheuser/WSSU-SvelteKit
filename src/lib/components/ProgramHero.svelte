@@ -111,7 +111,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         ALIGN-ITEMS: end;
         padding-bottom: 18px;
         position: absolute;
-        top: -88px;
+        top: -68px;
         left: -60px;
     }
 
@@ -127,7 +127,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         width: 90px;
         height: 90px;
         padding-bottom: 14px;
-        top: -60px;
+        top: -50px;
         left: -45px;
         font-size: 18px;
     }
