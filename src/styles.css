@@ -115,6 +115,15 @@ p {
     width: clamp(350px, 90%, 1100px);
 }
 
+.career-paths ul {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    list-style: none;
+    font-size: clamp(22px, 2.6vw, 18px);
+    line-height: 1;
+}
+
 .dean-quote p {
     font-size: clamp(12px, 2.8vw, 32px);
     width: clamp(350px, 100%, 1100px);
