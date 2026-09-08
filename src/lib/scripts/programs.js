@@ -363,7 +363,7 @@ export const programs = [
             "Family Nurse Practitioner (FNP)"
         ],
         careerPathColumns: 
-            "<ul><li><strong>Executive Nurse Educator & Leadership (ENEL)</strong></li><li>Total semester hours: 39 hours</li><li>Clinical / practicum hours: 500 hours</li><li>Time to completion: 4 semesters (full-time)</li><li>Format: Fully online</li></ul><ul><li><strong>Family Nurse Practitioner (FNP)</strong></li><li class='needs-approval'>Total semester hours: XX hours</li><li class='needs-approval'>Clinical hours: XX hours</li><li>Time to completion: Approximately two to three years</li><li>Format: Fully online with clinical placements</li></ul>"
+            "<ul class='special'><li><strong>Executive Nurse Educator & Leadership (ENEL)</strong></li><li>Total semester hours: 39 hours</li><li>Clinical / practicum hours: 500 hours</li><li>Time to completion: 4 semesters (full-time)</li><li>Format: Fully online</li></ul><ul class='special'><li><strong>Family Nurse Practitioner (FNP)</strong></li><li class='needs-approval'>Total semester hours: XX hours</li><li class='needs-approval'>Clinical hours: XX hours</li><li>Time to completion: Approximately two to three years</li><li>Format: Fully online with clinical placements</li></ul>"
         ,
         statisticsBar: [
             {

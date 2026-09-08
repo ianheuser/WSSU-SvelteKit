@@ -85,26 +85,6 @@
         text-align: center;
     }
 
-    .career-paths ul {
-        display: flex;
-        flex-direction: column;
-        gap: 19px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-size: clamp(22px, 2.6vw, 37px);
-        line-height: 1;
-    }
-
-    .career-paths ul li:not(:last-child)::after, .innovators-copy ul li:not(:last-child)::after {
-        content: "";
-        display: block;
-        width: 18px;
-        height: 4px;
-        margin: 19px auto 0;
-        background: var(--red);
-    }
-
 @media (max-width: 980px){
 
     .innovators-section .photo-card {

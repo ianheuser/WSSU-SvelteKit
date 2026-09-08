@@ -30,7 +30,7 @@
   }
 
 p.stat {
-  font-size: clamp(12px, 2.1vw, 24px);
+  font-size: clamp(14px, 2.1vw, 21px);
 }
 
 .stat {
