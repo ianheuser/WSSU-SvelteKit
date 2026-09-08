@@ -148,7 +148,7 @@ p {
 
 .dean-quote p {
     font-size: clamp(12px, 2.8vw, 32px);
-    width: clamp(350px, 100%, 1100px);
+    width: clamp(250px, 100%, 1100px);
 }
 
 ul {
