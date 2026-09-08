@@ -75,6 +75,7 @@
 			paragraph = { program.realWorldAppCopy }
 			image = { asset('/images/' + program.label.toLowerCase() + '-real-world-application.webp') }
 			sectionColor = { program.sectionColor }
+			subheading = "Learn Today. Lead Tomorrow. Serve With Purpose." 
 		></RealWorldApplication>
 
 		<FinancialAid

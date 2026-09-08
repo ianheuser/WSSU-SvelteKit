@@ -98,7 +98,7 @@ p.stat {
 
   .stats-grid {
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 24px;
     width: min(100% - 28px, 590px);
   }
 

@@ -654,7 +654,7 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "<h4 class='needs-approval'>Learn Today. Lead Tomorrow. Serve With Purpose.</h4><p>Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.</p>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
         realWorldAppHeader: "Lead Every Room",
         realWorldAppSubHeader: "Learn Today. Lead Tomorrow. Serve With Purpose.",
         

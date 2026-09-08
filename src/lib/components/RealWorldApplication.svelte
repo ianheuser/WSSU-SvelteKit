@@ -1,9 +1,12 @@
 <script>
-  let { heading, paragraph, image, sectionColor } = $props();
+  let { heading, paragraph, image, sectionColor, subheading = '' } = $props();
 </script>
 
 <section class="flex column lead-room-section background-{sectionColor}">
     <h2 class="white">{heading}</h2>
+    {#if subheading != ''}
+        <h4 class="white needs-approval">{subheading}</h4>
+    {/if}
     <p>{@html paragraph}</p>
 
     <div class="image-contain">
