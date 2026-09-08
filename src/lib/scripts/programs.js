@@ -167,8 +167,13 @@ export const programs = [
         ],
         statisticsBar: [
             {
-                value: "100% Online",
-                description: "AI, Business Analytics, and Leadership Concentrations"
+                value: "100%",
+                description: "Online MBA"
+            },
+            {
+                value: "3",
+                description: "Concentrations",
+                subText: "AI, Business Analytics, and Leadership Concentrations"
             }
         ],
         realWorldAppImage: '/images/mba-real-world-application.webp',
@@ -570,13 +575,11 @@ export const programs = [
             "Please Provide Career Path Options"
         ],
         
-        statisticsBar: [
-			{
-				value: 'Fully accredited',
-				description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
-                needsApproval: true
-			}
-		],
+        statisticsBar: {
+            value: 'Fully accredited',
+            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
+            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
+        },
         
         realWorldAppImage: '/images/msot-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",

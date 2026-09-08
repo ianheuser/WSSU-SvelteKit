@@ -1,5 +1,5 @@
 <script>
-    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns } = $props();
+    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns = false } = $props();
 </script>
 
 <section class="flex innovators-section">

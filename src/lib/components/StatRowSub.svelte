@@ -1,24 +1,15 @@
 <script>
-    // Default values
     let { stats , sectionColor } = $props();
 </script>
 
-<section class="flex stats-band">
-    <div class="stats-grid">
-
-        {#each stats as stat}
-
-            <div class="stat-stack" class:needs-approval={stat.needsApproval} >
-                <div class="stats flicker {sectionColor}">{stat.value}</div>
-                <p class="stat">{@html stat.description}</p>
-                {#if stat.subText}
-                  <div class="subText">{@html stat.subText}</div>
-                {/if}
-            </div>
-
-        {/each}
-
-    </div>
+<section class="flex stats-band substitute">
+    <div class="stat-stack">
+          <div class="stats flicker {sectionColor}">{stats.value}</div>
+          <p class="stat">{@html stats.description}</p>
+          {#if stats.subText}
+            <div class="subText">{@html stats.subText}</div>
+          {/if}
+      </div>
 </section>
 
 <style>
@@ -32,10 +23,16 @@
     color: var(--green);
   }
 
-
+.subText {
+  font-size: 12px;
+  margin-top: 26px;
+  border-top: solid rgba(256, 256, 256, .5) .5px;
+  padding-top: 13px;
+  width: clamp(350px, 85%, 1100px);
+}
 
 .stat {
-  width: 100%;
+  width: clamp(350px, 85%, 1100px);
 }
 .stats-band {
   padding: 62px 20px;
@@ -59,7 +56,7 @@
   flex-direction: column;
 }
 
-.stats-grid > div {
+.stat-stack {
   flex: 0 1 100%;
 }
 p.stat {
@@ -70,14 +67,10 @@ p.stat {
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(30px, 4.8vw, 42px); /* This should mirror H2s so they don't get larger than them */
+  font-size: clamp(30px, 4.8vw, 42px);
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-}
-
-.needs-approval.stat-stack .stats{
-  color: #ff00ff;
 }
 
 @media( max-width: 980px ) {
@@ -100,7 +93,7 @@ p.stat {
     width: min(100% - 28px, 590px);
   }
 
-.stats-grid > div {
+.stat-stack {
   flex: 1 1 260px;
 }
 

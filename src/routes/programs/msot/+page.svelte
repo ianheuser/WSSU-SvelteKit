@@ -2,7 +2,7 @@
 <script>
 	import ProgramHero from '$lib/components/ProgramHero.svelte';
 	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
-    import StatRow from '$lib/components/StatRow.svelte';
+    import StatRowSub from '$lib/components/StatRowSub.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
     import HeadingAndText from '$lib/components/HeadingAndText.svelte';
     import FinancialAid from '$lib/components/FinancialAid.svelte';
@@ -65,10 +65,10 @@
 			sectionColor = { program.sectionColor }
 		></InnovatorsCareerPaths>
 
-		<StatRow
+		<StatRowSub
 			stats = {program.statisticsBar}
 			sectionColor = { program.sectionColor }
-		></StatRow>
+		></StatRowSub>
 		
 		<RealWorldApplication
 			heading = { program.realWorldAppHeader }
