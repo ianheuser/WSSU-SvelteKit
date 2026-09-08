@@ -1,9 +1,10 @@
 <script>
 	import { asset, resolve } from '$app/paths';
+  const homeHref = resolve('/');
 </script>
 
 <footer class="site-footer">
-	<a class="footer-brand" href={ resolve("/") }>
+	<a href={homeHref} class="footer-brand" aria-label="Winston-Salem State University Logo" >
 		<enhanced:img src={ asset("/images/centered-logo.png") } alt="Winston-Salem State University" />
 	</a>
 	<address>
