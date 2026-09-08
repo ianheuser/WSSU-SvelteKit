@@ -24,12 +24,6 @@
     width: clamp(390px,85%,650px);
   }
 
-  @media (max-width: 425px) {
-    h4 {
-      width: 75%;
-    }
-  }
-
   @media (max-width: 390px) {
     .find-a-path p{
       width: 95%;
