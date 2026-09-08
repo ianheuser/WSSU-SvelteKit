@@ -62,19 +62,21 @@
 .stats-grid > div {
   flex: 0 1 100%;
 }
-p.stat {
-  font-size: clamp(21px, 2vw, 32px);
-  padding: 0px;
-}
+
 .stats {
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(30px, 4.8vw, 42px); /* This should mirror H2s so they don't get larger than them */
+  font-size: clamp(30px, 5vw, 65px); /* This should mirror H2s so they don't get larger than them */
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
 }
+p.stat {
+  font-size: clamp(18px, 1.8vw, 32px);
+  padding: 0px;
+}
+
 
 .needs-approval.stat-stack .stats{
   color: #ff00ff;
