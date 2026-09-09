@@ -1,12 +1,12 @@
 <script>
-    let { heading,subHeading,description,buttonLabel } = $props();
+    let { heading,subHeading,description,buttonLabel, sectionColor } = $props();
 </script>
 
 <section class="flex column find-a-path">
     <h2 class="red">{heading}</h2>
     <h3>{subHeading}</h3>
     <p>{@html description}</p>
-    <a class="outline-button gold line" href="#contact">
+    <a class="outline-button { sectionColor } line" href="#contact">
         {buttonLabel}
     </a>
 </section>

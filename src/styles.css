@@ -457,6 +457,16 @@ p.white {
   color: var(--gold);
 }
 
+.outline-button.blue {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.outline-button.green {
+  border-color: var(--green);
+  color: var(--green);
+}
+
 .form-status {
   min-height: 1.4em;
   margin: 0;

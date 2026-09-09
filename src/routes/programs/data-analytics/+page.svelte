@@ -89,6 +89,7 @@
 			subHeading = { program.mottoSubHead }
 			description = { program.mottoCopy }
 			buttonLabel = "Let's Find a Path That Fits You"
+			sectionColor = { program.sectionColor }
 		></FindAPath>
 		
 	{/if}
