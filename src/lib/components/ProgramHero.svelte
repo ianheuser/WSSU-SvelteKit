@@ -5,10 +5,14 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
 <section class="flex program-hero { sectionColor }" class:reverse={reverse} >
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
-    <div class="program-hero-content">
+    <div class="program-hero-content { programCode }">
         <p class="program-code { sectionColor }">{ programCode }</p>
-        {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
-        {#if subHeading}<h3 class="hero">{ subHeading }</h3>{/if}
+        
+        <div class="left-aligned-content" class:reverse={reverse}>
+            {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
+            {#if subHeading}<h3 class="hero">{ subHeading }</h3>{/if}
+        </div>
+
     </div>
 </section>
 
@@ -17,19 +21,26 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     .program-hero-content h1, .program-hero-content h3 {
         padding-left: 7%;
         padding-right: 0%;
+    }
+
+    .reverse.left-aligned-content h1, .reverse.left-aligned-content h3 {
+        padding-left: 0%;
+    }
+
+    .left-aligned-content {
         width: 85%;
     }
 
+    .reverse.left-aligned-content {
+        position: relative;
+        text-align: left;
+        width: min-content;
+    }
+
     h3.hero {
-        font-size: clamp(18px, 3vw, 35px);
+        font-size: clamp(14px, 3vw, 35px);
     }
-/*
-    .program-hero.reverse .program-hero-content h1,
-    .program-hero.reverse .program-hero-content h3 {
-        padding-left: 0%;
-        padding-right: 7%;
-    }
-*/
+
     .program-hero {
         height: clamp(250px, 50vw, 650px);
         overflow: hidden;
@@ -86,7 +97,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     }
 
     .program-hero.reverse .program-hero-content {
-        align-items: flex-end;
+        align-items: center;
         text-align: left;
     }
 
