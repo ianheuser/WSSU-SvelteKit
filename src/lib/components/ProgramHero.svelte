@@ -8,7 +8,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     <div class="program-hero-content">
         <p class="program-code { sectionColor }">{ programCode }</p>
         {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
-        {#if subHeading}<h3>{ subHeading }</h3>{/if}
+        {#if subHeading}<h3 class="hero">{ subHeading }</h3>{/if}
     </div>
 </section>
 
@@ -17,15 +17,19 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     .program-hero-content h1, .program-hero-content h3 {
         padding-left: 7%;
         padding-right: 0%;
-        width: 75%;
+        width: 85%;
     }
 
+    h3.hero {
+        font-size: clamp(18px, 3vw, 35px);
+    }
+/*
     .program-hero.reverse .program-hero-content h1,
     .program-hero.reverse .program-hero-content h3 {
         padding-left: 0%;
         padding-right: 7%;
     }
-
+*/
     .program-hero {
         height: clamp(250px, 50vw, 650px);
         overflow: hidden;
@@ -83,7 +87,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
 
     .program-hero.reverse .program-hero-content {
         align-items: flex-end;
-        text-align: right;
+        text-align: left;
     }
 
     .program-hero::after {

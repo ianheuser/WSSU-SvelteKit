@@ -4,12 +4,12 @@
 </script>
 
 <section class="flex stats-band">
-    <div class="stats-grid">
+    
 
         {#each stats as stat}
 
             <div class="stat-stack" class:needs-approval={stat.needsApproval} class:single-element={stats.length === 1}>
-                <div class="stats flicker {sectionColor}">{stat.value}</div>
+                <div class="stats flicker {sectionColor}">{@html stat.value}</div>
                 <p class="stat">{@html stat.description}</p>
                 {#if stat.subText}
                   <div class="subText">{@html stat.subText}</div>
@@ -18,7 +18,7 @@
 
         {/each}
 
-    </div>
+    
 </section>
 
 <style>
@@ -37,14 +37,8 @@
   background: var(--black);
   color: var(--white);
   text-align: center;
-}
-
-.stats-grid {
-  display: flex;
+  justify-content: space-evenly;
   align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 58px;
 }
 
 .stat-stack {
@@ -59,21 +53,21 @@
   gap: 20px;
 }
 
-.stats-grid > div {
-  flex: 0 1 100%;
+.stat-stack.single-element {
+  flex: unset;
 }
 
 .stats {
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(30px,7vw,90px); /* This should mirror H2s so they don't get larger than them */
+  font-size: clamp(30px,6vw,65px); 
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(12px,2.4vw,32px);
+  font-size: clamp(12px,1.8vw,20px);
   padding: 0px;
   width: 100%;
 }
@@ -103,12 +97,8 @@ p.stat {
 
   .stats-grid {
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 5px;
     width: min(100% - 28px, 590px);
-  }
-
-  .stats-grid > div {
-    flex: 1 1 260px;
   }
 
   .stat-stack.single-element {

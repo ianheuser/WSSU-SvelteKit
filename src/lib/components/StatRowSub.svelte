@@ -4,7 +4,7 @@
 
 <section class="flex stats-band substitute">
     <div class="stat-stack">
-          <div class="stats flicker {sectionColor}">{stats.value}</div>
+          <div class="stats flicker {sectionColor}">{@html stats.value}</div>
           <p class="stat">{@html stats.description}</p>
           {#if stats.subText}
             <div class="subText">{@html stats.subText}</div>
@@ -54,13 +54,12 @@
   display: block;
   color: var(--gold);
   font-family: "Tilt Neon", sans-serif;
-  font-size: clamp(30px,7vw,80px); /* This should mirror H2s so they don't get larger than them */
-  font-weight: 400;
+  font-size: clamp(30px,6vw,65px); 
   line-height: 1;
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(12px,2vw,24px);
+  font-size: clamp(12px,1.8vw,20px);
   padding: 0px;
   width: clamp(350px, 85%, 1100px);
 }

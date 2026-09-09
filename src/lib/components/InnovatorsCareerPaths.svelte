@@ -103,6 +103,7 @@
 
     .career-paths {
         padding-top: 270px;
+        padding-bottom: 45px;
     }
 }
 

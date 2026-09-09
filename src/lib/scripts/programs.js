@@ -68,7 +68,7 @@ export const programs = [
         sectionColor: "gold",
         heroReverse: true,
         promoHeader: "No Education Degree Required",
-        promoBoxMainCopy: "The Master of Arts in Teaching offers a nationwidelicensure pathway for anyone with a bachelor's degree who wants to become an educator and make a difference in the classroom.",
+        promoBoxMainCopy: "The Master of Arts in Teaching offers a nationwide licensure pathway for anyone with a bachelor's degree who wants to become an educator and make a difference in the classroom.",
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
@@ -106,7 +106,7 @@ export const programs = [
         ],
         
         realWorldAppImage: '/images/mat-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Teaching Diverse Classrooms, Psychology of Teaching and Learning.</span>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teaching Diverse Classrooms, Psychology of Teaching and Learning.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -445,17 +445,17 @@ export const programs = [
 				value: '98%',
 				description: 'Graduation Rate'
 			},
+            {
+				value: 'Top 15',
+				description: 'Nationally for Affordability'
+			},
 			{
 				value: '100%',
 				description: 'Employment Rate'
 			},
 			{
-				value: 'Top 15',
-				description: 'Nationally for Affordability'
-			},
-			{
 				value: 'Only',
-				description: 'HBCU in the Nation with a Residency Program'
+				description: 'HBCU in the Nation<br />with a Residency Program'
 			}
 		],
         
@@ -513,12 +513,12 @@ export const programs = [
         
         statisticsBar: [
 			{
-				value: '100%',
-				description: 'Accredited by the Commission of Collegiate Nursing Education (CCNE)'
+				value: 'Fully<br />Accredited',
+				description: 'by the Commission of Collegiate<br />Nursing Education (CCNE)'
 			},
 			{
-				value: '35%',
-				description: 'Job Growth for Nurse Practitioners'
+				value: '35% Job<br />Growth',
+				description: 'projected for nurse<br />practitioners through 2034'
 			}
 		],
         
@@ -549,7 +549,7 @@ export const programs = [
         titleOverlay: "Master of Science in Occupational Therapy",
         sectionColor: "gold",
         heroReverse: false,
-        promoHeader: "Elevate Your Expertise in Occupational Therapy",
+        promoHeader: "Elevate Your Expertise<br /> in Occupational Therapy",
         promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
         
         leadFormHeader: "Let's Get You Started",
@@ -639,17 +639,17 @@ export const programs = [
         ],
         
         statisticsBar: [
-			{
-				value: 'Fully accredited',
-				description: 'by the CACREP'
-			},
             {
 				value: '95%',
-				description: 'Post-Graduation Employment Rate'
+				description: 'Post-Graduation<br/ >Employment Rate'
+			},
+			{
+				value: 'Fully<br />Accredited',
+				description: 'by CACREP'
 			},
             {
 				value: '#3',
-				description: 'Online Counseling Program according to CACREP'
+				description: 'Online Counseling Program<br /> according to CACREP'
 			}
 		],
         
@@ -711,16 +711,14 @@ export const programs = [
 
         ],
         
-        statisticsBar: [
-			{
-				value: 'Fully Accredited',
-				description: 'by the Commission of Collegiate Nursing Education (CCNE)',
-                needsApproval: true
-			}
-		],
+        statisticsBar: {
+            value: 'Fully Accredited',
+            description: 'by the Commission of Collegiate Nursing Education (CCNE)',
+            needsApproval: true
+        },
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.</span>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",

@@ -1,13 +1,19 @@
 <script>
-    let { heading, paragraph } = $props();
+    let { heading, content } = $props();
 </script>
 
 <section class="flex column headingAndText ">
     <h2>{@html heading}</h2>
-    <p>{@html paragraph}</p>
+    <div class="columns">{@html content}</div>
 </section>
 
 <style>
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
 
 .headingAndText {
   padding: 50px 0px;
@@ -16,16 +22,14 @@
   text-align: center;
 }
 
-.headingAndText p {
-  margin: 0px auto;
-  padding-bottom: 0px;
-}
 .headingAndText h2 {
   margin-bottom: 10px;
 }
 
 @media (max-width: 720px){
-
+  .columns {
+    flex-direction: column;
+  }
   .headingAndText {
     padding: 30px 0px;
   }

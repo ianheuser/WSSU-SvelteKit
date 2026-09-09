@@ -105,7 +105,6 @@
 }
 
 p.form-description {
-    font-size: clamp(12px, 2.8vw, 21px);
     margin: 0px;
     width: 100%;
     padding: 0px 20px 30px;
