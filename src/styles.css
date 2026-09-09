@@ -433,7 +433,6 @@ p.white {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    max-width: 310px;
     padding: 13px 44px;
     border: 3px solid var(--red);
     border-radius: 1.3vw;
