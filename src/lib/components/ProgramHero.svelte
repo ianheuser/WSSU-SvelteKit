@@ -24,7 +24,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     }
 
     .reverse.left-aligned-content h1, .reverse.left-aligned-content h3 {
-        padding-left: 0%;
+        padding-left: clamp(7%, 7vw, 30%);
     }
 
     .left-aligned-content {
@@ -34,7 +34,6 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     .reverse.left-aligned-content {
         position: relative;
         text-align: left;
-        width: min-content;
     }
 
     h3.hero {

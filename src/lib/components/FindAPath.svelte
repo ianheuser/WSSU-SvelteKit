@@ -7,7 +7,7 @@
     <h3>{subHeading}</h3>
     <p>{@html description}</p>
     <a class="outline-button { sectionColor } line" href="#contact">
-        {buttonLabel}
+        Let's Find a Path<br />That Fits You
     </a>
 </section>
 
@@ -17,7 +17,10 @@
   .find-a-path .outline-button {
     margin-top: 20px;
     margin-bottom: 20px;
+    width:clamp(220px, 42vw, 550px);
+    font-size:clamp(14px, 3vw, 32px);
   }
+
 
   .find-a-path p {
     margin-bottom: 2vw;

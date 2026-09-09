@@ -440,7 +440,7 @@ p.white {
     background: transparent;
     cursor: pointer;
     font-family: "Tilt Neon", sans-serif;
-    font-size: clamp(21px, 2vw, 34px);
+    font-size: clamp(14px, 3vw, 32px);
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
