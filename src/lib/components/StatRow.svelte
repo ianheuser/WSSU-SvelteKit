@@ -8,7 +8,7 @@
 
         {#each stats as stat}
 
-            <div class="stat-stack" class:needs-approval={stat.needsApproval} >
+            <div class="stat-stack" class:needs-approval={stat.needsApproval} class:single-element={stats.length === 1}>
                 <div class="stats flicker {sectionColor}">{stat.value}</div>
                 <p class="stat">{@html stat.description}</p>
                 {#if stat.subText}
@@ -54,6 +54,11 @@
   flex-direction: column;
 }
 
+.stat-stack.single-element {
+  flex-direction: row;
+  gap: 20px;
+}
+
 .stats-grid > div {
   flex: 0 1 100%;
 }
@@ -68,7 +73,7 @@
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(18px,2.4vw,32px);
+  font-size: clamp(12px,2.4vw,32px);
   padding: 0px;
   width: 100%;
 }
@@ -85,7 +90,7 @@ p.stat {
 @media( max-width: 980px ) {
 
   .stats-grid {
-    gap: 24px;
+    gap: 18px;
   }
 
 }
@@ -102,9 +107,15 @@ p.stat {
     width: min(100% - 28px, 590px);
   }
 
-.stats-grid > div {
-  flex: 1 1 260px;
-}
+  .stats-grid > div {
+    flex: 1 1 260px;
+  }
+
+  .stat-stack.single-element {
+    flex: unset;
+    gap: 20px;
+  }
 
 }
+
 </style>

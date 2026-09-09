@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 p.stat {
-  font-size: clamp(18px,2vw,24px);
+  font-size: clamp(12px,2vw,24px);
   padding: 0px;
   width: clamp(350px, 85%, 1100px);
 }
@@ -75,7 +75,7 @@ p.stat {
 @media( max-width: 980px ) {
 
   .stats-grid {
-    gap: 24px;
+    gap: 18px;
   }
 
 }
