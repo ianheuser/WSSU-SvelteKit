@@ -47,7 +47,7 @@
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  /* flex: 0 1 100%; */
+  flex: 0 1 100%; 
 }
 
 .stat-stack.single-element {
@@ -72,6 +72,7 @@ p.stat {
   font-size: clamp(12px,1.8vw,20px);
   padding: 0px;
   width: 100%;
+  max-width: 300px;
 }
 
 .needs-approval.stat-stack .stats{

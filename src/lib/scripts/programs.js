@@ -173,7 +173,7 @@ export const programs = [
             {
                 value: "3",
                 description: "Concentrations",
-                subText: "AI, Business Analytics,<br /> and Leadership Concentrations"
+                subText: "AI, Business Analytics,<br />and Leadership Concentrations"
             }
         ],
         realWorldAppImage: '/images/mba-real-world-application.webp',
@@ -304,17 +304,17 @@ export const programs = [
         statisticsBar: [
             {
 				value: '99%',
-				description: 'job or doctoral<br /> placement rate',
+				description: 'job or doctoral<br />placement rate',
                 needsApproval: false
 			},
 			{
 				value: '22%',
-				description: 'projected growth<br /> in computing careers',
+				description: 'projected growth<br />in computing careers',
                 needsApproval: false
 			},
 			{
 				value: '67%',
-				description: 'of graduate students receive<br /> paid research assistantships',
+				description: 'of graduate students receive paid research assistantships',
                 needsApproval: false
 			}
         ],
@@ -373,7 +373,7 @@ export const programs = [
         statisticsBar: [
             {
                 value: "100%",
-                description: "by the Commission of Collegiate<br /> Nursing Education (CCNE)"
+                description: "by the Commission of Collegiate Nursing Education (CCNE)"
             },
             {
                 value: "No GRE",
@@ -455,7 +455,7 @@ export const programs = [
 			},
 			{
 				value: 'Only',
-				description: 'HBCU in the Nation<br />with a Residency Program'
+				description: 'HBCU in the Nation with a Residency Program'
 			}
 		],
         
@@ -514,11 +514,11 @@ export const programs = [
         statisticsBar: [
 			{
 				value: 'Fully<br />Accredited',
-				description: 'by the Commission of Collegiate<br />Nursing Education (CCNE)'
+				description: 'by the Commission of Collegiate Nursing Education (CCNE)'
 			},
 			{
 				value: '35% Job<br />Growth',
-				description: 'projected for nurse<br />practitioners through 2034'
+				description: 'projected for nurse practitioners through 2034'
 			}
 		],
         
@@ -641,7 +641,7 @@ export const programs = [
         statisticsBar: [
             {
 				value: '95%',
-				description: 'Post-Graduation<br/ >Employment Rate'
+				description: 'Post-Graduation Employment Rate'
 			},
 			{
 				value: 'Fully<br />Accredited',
@@ -649,7 +649,7 @@ export const programs = [
 			},
             {
 				value: '#3',
-				description: 'Online Counseling Program<br /> according to CACREP'
+				description: 'Online Counseling Program according to CACREP'
 			}
 		],
         
