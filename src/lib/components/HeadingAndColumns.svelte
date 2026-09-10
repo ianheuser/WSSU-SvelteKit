@@ -8,12 +8,6 @@
 </section>
 
 <style>
-.columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
 
 .headingAndText {
   padding: 50px 0px;

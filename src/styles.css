@@ -123,37 +123,6 @@ li {
     font-size: var(--base-font-size);
 }
 
-.career-paths ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
-    font-size: clamp(24px, 2.8vw, 32px);
-    line-height: 1;
-}
-
-  .career-paths ul li:not(:last-child)::after, .innovators-copy ul li:not(:last-child)::after {
-      content: "";
-      display: block;
-      width: 18px;
-      height: 4px;
-      margin: 19px auto 0;
-      background: var(--red);
-  }
-
-.career-paths ul.special {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    list-style: none;
-    font-size: clamp(14px, 2.8vw, 18px);
-    line-height: 1;
-}
-
-.career-paths ul.special li:not(:last-child)::after {
-      display: none;
-  }
-
 .dean-quote p {
     font-size: clamp(12px, 2.8vw, 32px);
     width: clamp(250px, 100%, 1100px);
@@ -355,6 +324,55 @@ select {
 .program-list li a:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.career-paths ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    font-size: clamp(24px, 2.8vw, 32px);
+    line-height: 1;
+}
+
+.career-paths ul li:not(:last-child)::after, .innovators-copy ul li:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 4px;
+    margin: 19px auto 0;
+    background: var(--red);
+}
+
+ul.special, .headingAndText div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  font-size: clamp(14px, 2.8vw, 18px);
+  line-height: 1;
+}
+
+ul.special li:not(:last-child)::after {
+  display: none;
+}
+
+@media (max-width: 980px){
+
+  .columns {
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 0px;
+  }
+  
 }
 
 .subText {

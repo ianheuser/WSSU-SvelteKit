@@ -29,7 +29,9 @@
             One Degree. Multiple<br /> Career Paths.
         </h2>
         {#if careerPathColumns}
-            {@html careerPathColumns}
+            <div class="columns">
+                {@html careerPathColumns}
+            </div>
         {:else}
             <ul>
                 {#each careerPathBullets as bullet}
@@ -84,6 +86,8 @@
         background: var(--white);
         text-align: center;
     }
+
+    
 
 @media (max-width: 980px){
 
