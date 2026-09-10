@@ -49,7 +49,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. <span class='needs-approval'>We offer competitive tuition and financial aid options that puts your graduate degree within reach.</span>",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. <span class='needs-approval'>We offer competitive tuition and financial aid options that put your graduate degree within reach.</span>",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -180,7 +180,7 @@ export const programs = [
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
         realWorldAppHeader: "Lead Every Room",
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
         mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
@@ -252,7 +252,7 @@ export const programs = [
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change and Grant Management & Writing.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
        
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -390,7 +390,7 @@ export const programs = [
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>(Add Example Courses Here)</span>",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
         mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships.',
@@ -464,7 +464,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -527,7 +527,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
@@ -722,7 +722,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "WSSU nursing programs are among the most affordable in the Piedmont Triad region.  We offer competitive tuition and financial aid options that puts your graduate degree within reach.",
+        affordabilityCopy: "WSSU nursing programs are among the most affordable in the Piedmont Triad region.  We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",

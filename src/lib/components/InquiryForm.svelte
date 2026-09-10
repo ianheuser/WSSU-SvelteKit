@@ -3,7 +3,7 @@
     import { asset } from '$app/paths';
     import { programs } from '$lib/scripts/programs.js';
     
-    let { heading,image,description,buttonLabel,imageAlt,thanksMessage,programCode = "" } = $props();
+    let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "" } = $props();
     let program = $state('');
 
     $effect(() => {
