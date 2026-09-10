@@ -64,8 +64,7 @@ p.stat {
   width: clamp(350px, 85%, 1100px);
 }
 .subText {
-  font-size: 12px;
-  margin-top: 26px;
+  margin-top: 13px;
   border-top: solid rgba(256, 256, 256, .5) .5px;
   padding-top: 13px;
   width: clamp(350px, 85%, 1100px);

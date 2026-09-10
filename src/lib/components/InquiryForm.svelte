@@ -87,7 +87,7 @@
 <style>
 
 .form-content h2 {
-  width: 70%;
+  width: 66%;
 }
 
 .form-message {

@@ -357,6 +357,10 @@ select {
   cursor: pointer;
 }
 
+.subText {
+  font-size: clamp(10px, 0.8vw, 20px);
+}
+
 .gold {
   color: var(--gold);
 }

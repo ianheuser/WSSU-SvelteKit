@@ -39,6 +39,7 @@
   text-align: center;
   justify-content: space-evenly;
   align-items: flex-start;
+  gap: 5px;
 }
 
 .stat-stack {
@@ -46,6 +47,7 @@
   align-items: center;
   justify-items: center;
   flex-direction: column;
+  /* flex: 0 1 100%; */
 }
 
 .stat-stack.single-element {
@@ -71,11 +73,6 @@ p.stat {
   padding: 0px;
   width: 100%;
 }
-
-.subText {
-  font-size: clamp(12px, 1.8vw, 20px);
-}
-
 
 .needs-approval.stat-stack .stats{
   color: #ff00ff;

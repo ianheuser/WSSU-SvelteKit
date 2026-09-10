@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-	<title>{program.pageTitle} | WSSU</title>
+	<title>{program.titleOverlay} | WSSU</title>
 	<meta
 		name = "description"
 		content = {program.pageDescription}

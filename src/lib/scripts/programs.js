@@ -65,6 +65,7 @@ export const programs = [
 		href: '/programs/mat',
         programCode: 'MAT',
         titleOverlay: "Master of Arts in Teaching",
+    
         sectionColor: "gold",
         heroReverse: true,
         promoHeader: "No Education Degree Required",
@@ -97,7 +98,7 @@ export const programs = [
         statisticsBar: [
             {
 				value: '92%',
-				description: 'teacher<br /> effectiveness rate'
+				description: 'teacher effectiveness rate'
 			},
 			{
 				value: '88%',
@@ -125,7 +126,6 @@ export const programs = [
         type: 'Master',
         heading: 'Master',
         subHeading: 'of Business Administration',
-        pageTitle: "Master of Business Administration",
         pageDescription: "Explore the Master of Business Administration program at Winston-Salem State University.",
 		href: '/programs/mba',
         programCode: 'MBA',
@@ -173,7 +173,7 @@ export const programs = [
             {
                 value: "3",
                 description: "Concentrations",
-                subText: "AI, Business Analytics, and Leadership Concentrations"
+                subText: "AI, Business Analytics,<br /> and Leadership Concentrations"
             }
         ],
         realWorldAppImage: '/images/mba-real-world-application.webp',
@@ -304,17 +304,17 @@ export const programs = [
         statisticsBar: [
             {
 				value: '99%',
-				description: 'job or doctoral placement rate',
+				description: 'job or doctoral<br /> placement rate',
                 needsApproval: false
 			},
 			{
 				value: '22%',
-				description: 'projected growth in computing careers',
+				description: 'projected growth<br /> in computing careers',
                 needsApproval: false
 			},
 			{
 				value: '67%',
-				description: 'of graduate students receive paid research assistantships',
+				description: 'of graduate students receive<br /> paid research assistantships',
                 needsApproval: false
 			}
         ],
@@ -373,7 +373,7 @@ export const programs = [
         statisticsBar: [
             {
                 value: "100%",
-                description: "by the Commission of Collegiate Nursing Education (CCNE)"
+                description: "by the Commission of Collegiate<br /> Nursing Education (CCNE)"
             },
             {
                 value: "No GRE",
