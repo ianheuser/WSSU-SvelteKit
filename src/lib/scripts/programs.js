@@ -1,61 +1,5 @@
 export const programs = [
 	
-	{
-		fullName: 'Certificate in Data Analytics',
-        label: 'DA',
-        type: 'Certificate',
-        heading: 'Certificate',
-        subHeading: 'in Data Analytics',
-		href: '/programs/data-analytics',
-        programCode: 'DA',
-        titleOverlay: "Certificate in Data Analytics",
-        sectionColor: "blue",
-        heroReverse: true,
-        promoHeader: "Data Analytics (Post-Bacc Certificate)",
-        promoBoxMainCopy: "Boost your BS or BA degree with a Certificate in Data Analytics in just 12 semester hours. The program is designed for professionals in healthcare, computer science, business, education, or those working in any other field who want to advance their data analytical abilities.",
-        
-        leadFormHeader: "Let's Get You Started",
-        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
-		leadFormButtonLabel: "Get Connected",
-        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/data-analytics-lead-form.webp',
-        leadFormImageAlt: 'A classroom setting with students learning data analytics',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.",
-        
-        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.webp',
-        highlightsImageAlt: 'Students collaborating in a lab',
-        highlightsBullets: [
-            "Evening classes",
-			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
-        ],
-        
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
-        careerPathBullets: [
-            "<span class='needs-approval'>Entry Level Data Analyst</span>"
-        ],
-        
-        statisticsBar: [
-            {
-				value: '21%',
-				description: 'job growth from 2024 to 2034'
-			}
-        ],
-        
-        realWorldAppImage: '/images/data-analytics-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
-        realWorldAppHeader: "Lead Every Room",
-        
-        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
-        
-        mottoHeader: "DEPART TO SERVE",
-        mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
-        finalCTA: "Let's Find a Path That Fits You"
-    },
     {
 		fullName: 'Master of Arts in Teaching',
         label: 'MAT',
@@ -398,6 +342,201 @@ export const programs = [
 	},
 
     {
+		fullName: 'Master of Science in Occupational Therapy',
+        label: 'MSOT',
+        type: 'Master',
+        heading: 'Master of Science',
+        subHeading: 'in Occupational Therapy',
+		href: '/programs/msot',
+        programCode: 'msot',
+        titleOverlay: "Master of Science in Occupational Therapy",
+        sectionColor: "gold",
+        heroReverse: false,
+        promoHeader: "Elevate Your Expertise<br /> in Occupational Therapy",
+        promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msot-lead-form.webp',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.webp',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "Evening classes",
+			"Faculty mentorship",
+			"Real-world projects",
+			"State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Please Provide Career Path Options"
+        ],
+        
+        statisticsBar: {
+            value: 'Fully accredited',
+            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
+            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
+        },
+        
+        realWorldAppImage: '/images/msot-real-world-application.webp',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+
+    {
+        fullName: 'Master of Science in Rehabilitation Counseling',
+        label: 'MSRC',
+        type: 'Master',
+        heading: 'Master of Science',
+        subHeading: 'in Rehabilitation Counseling',
+		href: '/programs/msrc',
+
+        programCode: 'msrc',
+        titleOverlay: "Master of Science in Rehabilitation Counseling",
+        sectionColor: "gold",
+        heroReverse: false,
+        promoHeader: "One Degree. Five Areas of Focus.",
+        promoBoxMainCopy: "Choose from five concentration areas: Rehabilitation Counseling, Clinical Mental Health Counseling, Deaf and Hard of Hearing, Transition, and Vocational Evaluation. Curriculum is aligned with eligibility for the Certified Rehabilitation Counselor (CRC) exam and professional counseling licensure.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msrc-lead-form.webp',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.webp',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "100% online",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Student Disability Services",
+            "Nonprofit Leadership",
+            "K-12 Special Education",
+            "State Vocational Rehabilitation",
+            "Veteran Affairs",
+            "College Counseling Centers",
+            "Private Rehabilitation",
+            "Mental Health Counselor"
+        ],
+        
+        statisticsBar: [
+            {
+				value: '95%',
+				description: 'Post-Graduation Employment Rate'
+			},
+			{
+				value: 'Fully<br />Accredited',
+				description: 'by CACREP'
+			},
+            {
+				value: '#3',
+				description: 'Online Counseling Program according to CACREP'
+			}
+		],
+        
+        realWorldAppImage: '/images/msrc-real-world-application.webp',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
+        realWorldAppHeader: "Lead Every Room",
+        realWorldAppSubHeader: "Learn Today. Lead Tomorrow. Serve With Purpose.",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and two federal fellowships to put your graduate degree within reach:<ul><li>RSA Fellowship - Covers tuition and stipend offered</li><li>HBCU Fellowship - Covers tuition, fees, and books</li></ul>",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships.",
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+
+     {
+		fullName: 'Doctor of Nursing Practice',
+        label: 'DNP',
+        type: 'Doctorate',
+        heading: 'Doctor',
+        subHeading: 'of Nursing Practice',
+		href: '/programs/dnp',
+        sectionColor: "green",
+        heroReverse: false,
+        programCode: 'dnp',
+        titleOverlay: "Doctor of Nursing Practice",
+        
+        promoHeader: "Two pathways. One DNP. ",
+        promoBoxMainCopy: "<ul><li><strong>BSN to DNP</strong></li><li>Who it's for: Nurses with a BSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately three years</li><li>Format: Fully online with clinical flexibility</li></ul><ul><li><strong>MSN to DNP</strong></li><li>Who it's for: Nurses with an MSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately two years</li><li>Format: Fully online with clinical flexibility</li></ul>",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/msrc-lead-form.webp',
+        leadFormImageAlt: 'A graduate student helping a patient walk.',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.webp',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "100% online",
+            "Faculty mentorship",
+            "Real-world projects",
+            "State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "Nurse Practitioner",
+            "Psychiatric Nurse",
+            "Nurse Educator",
+            "Certified Nurse-Midwife",
+            "Nurse Anesthetist",
+            "Clinical Nurse Specialist",
+            "Chief Nursing Officer"
+
+        ],
+        
+        statisticsBar: {
+            value: 'Fully Accredited',
+            description: 'by the Commission of Collegiate Nursing Education (CCNE)',
+            needsApproval: true
+        },
+        
+        realWorldAppImage: '/images/msrc-real-world-application.webp',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "WSSU nursing programs are among the most affordable in the Piedmont Triad region.  We offer competitive tuition and financial aid options that put your graduate degree within reach.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections. Our DNP graduates lead in underserved communities, advancing care where it's needed most.",
+        finalCTA: "Let's Find a Path That Fits You"
+	},
+
+
+    {
 		fullName: 'Doctor of Physical Therapy',
         label: 'DPT',
         type: 'Doctorate',
@@ -472,10 +611,66 @@ export const programs = [
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
+	{
+		fullName: 'Certificate in Data Analytics',
+        label: 'DA',
+        type: 'Certificate',
+        heading: 'Certificate',
+        subHeading: 'in Data Analytics',
+		href: '/programs/data-analytics',
+        programCode: 'DA',
+        titleOverlay: "Certificate in Data Analytics",
+        sectionColor: "blue",
+        heroReverse: true,
+        promoHeader: "Data Analytics (Post-Bacc Certificate)",
+        promoBoxMainCopy: "Boost your BS or BA degree with a Certificate in Data Analytics in just 12 semester hours. The program is designed for professionals in healthcare, computer science, business, education, or those working in any other field who want to advance their data analytical abilities.",
+        
+        leadFormHeader: "Let's Get You Started",
+        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
+		leadFormButtonLabel: "Get Connected",
+        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
+        leadFormImage: '/images/data-analytics-lead-form.webp',
+        leadFormImageAlt: 'A classroom setting with students learning data analytics',
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.",
+        
+        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
+        highlightsImage: '/images/innovators.webp',
+        highlightsImageAlt: 'Students collaborating in a lab',
+        highlightsBullets: [
+            "Evening classes",
+			"Faculty mentorship",
+			"Real-world projects",
+			"State-of-the-art labs"
+        ],
+        
+        careerPathHeader: "ONE CERTIFICATION. MULTIPLE CAREER PATHS.",
+        careerPathBullets: [
+            "<span class='needs-approval'>Entry Level Data Analyst</span>"
+        ],
+        
+        statisticsBar: [
+            {
+				value: '21%',
+				description: 'job growth from 2024 to 2034'
+			}
+        ],
+        
+        realWorldAppImage: '/images/data-analytics-real-world-application.webp',
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
+        realWorldAppHeader: "Lead Every Room",
+        
+        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate certificate within reach.",
+        
+        mottoHeader: "DEPART TO SERVE",
+        mottoSubHead: "The Experts & Support Every Community Deserves.",
+        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
+        finalCTA: "Let's Find a Path That Fits You"
+    },
 
 
 	{
-        fullName: 'Post-Graduate Certificate - Family Nurse Practitioner',
+        fullName: 'Certificate in Family Nurse Practitioner',
         label: 'FNP',
         type: 'Certificate',
         heading: 'Post-Graduate Certificate',
@@ -506,7 +701,7 @@ export const programs = [
 			"State-of-the-art labs"
         ],
         
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathHeader: "ONE CERTIFICATION. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
             "Please Provide Career Path Options"
         ],
@@ -527,206 +722,11 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate certificate within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
         mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
-        finalCTA: "Let's Find a Path That Fits You"
-	},
-
-
-
-
-    {
-		fullName: 'Master of Science in Occupational Therapy',
-        label: 'MSOT',
-        type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Occupational Therapy',
-		href: '/programs/msot',
-        programCode: 'msot',
-        titleOverlay: "Master of Science in Occupational Therapy",
-        sectionColor: "gold",
-        heroReverse: false,
-        promoHeader: "Elevate Your Expertise<br /> in Occupational Therapy",
-        promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
-        
-        leadFormHeader: "Let's Get You Started",
-        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
-		leadFormButtonLabel: "Get Connected",
-        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msot-lead-form.webp',
-        leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
-        
-        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.webp',
-        highlightsImageAlt: 'Students collaborating in a lab',
-        highlightsBullets: [
-            "Evening classes",
-			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
-        ],
-        
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
-        careerPathBullets: [
-            "Please Provide Career Path Options"
-        ],
-        
-        statisticsBar: {
-            value: 'Fully accredited',
-            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
-            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
-        },
-        
-        realWorldAppImage: '/images/msot-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
-        realWorldAppHeader: "Lead Every Room",
-        
-        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and scholarships including the Jeffery and Alexis Lucas Occupational Therapy Scholarship, the Olive Anderson Schneider Scholarship, and the Cynthia Sheppard Bell Occupational Therapy Non-Endowed Scholarship to put your graduate degree within reach. Additional funding is also available through organizations like the American Occupational Therapy Foundation.",
-        
-        mottoHeader: "DEPART TO SERVE",
-        mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
-        finalCTA: "Let's Find a Path That Fits You"
-	},
-    {
-        fullName: 'Master of Science in Rehabilitation Counseling',
-        label: 'MSRC',
-        type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Rehabilitation Counseling',
-		href: '/programs/msrc',
-
-        programCode: 'msrc',
-        titleOverlay: "Master of Science in Rehabilitation Counseling",
-        sectionColor: "gold",
-        heroReverse: false,
-        promoHeader: "One Degree. Five Areas of Focus.",
-        promoBoxMainCopy: "Choose from five concentration areas: Rehabilitation Counseling, Clinical Mental Health Counseling, Deaf and Hard of Hearing, Transition, and Vocational Evaluation. Curriculum is aligned with eligibility for the Certified Rehabilitation Counselor (CRC) exam and professional counseling licensure.",
-        
-        leadFormHeader: "Let's Get You Started",
-        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
-		leadFormButtonLabel: "Get Connected",
-        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msrc-lead-form.webp',
-        leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.",
-        
-        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.webp',
-        highlightsImageAlt: 'Students collaborating in a lab',
-        highlightsBullets: [
-            "100% online",
-            "Faculty mentorship",
-            "Real-world projects",
-            "State-of-the-art labs"
-        ],
-        
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
-        careerPathBullets: [
-            "Student Disability Services",
-            "Nonprofit Leadership",
-            "K-12 Special Education",
-            "State Vocational Rehabilitation",
-            "Veteran Affairs",
-            "College Counseling Centers",
-            "Private Rehabilitation",
-            "Mental Health Counselor"
-        ],
-        
-        statisticsBar: [
-            {
-				value: '95%',
-				description: 'Post-Graduation Employment Rate'
-			},
-			{
-				value: 'Fully<br />Accredited',
-				description: 'by CACREP'
-			},
-            {
-				value: '#3',
-				description: 'Online Counseling Program according to CACREP'
-			}
-		],
-        
-        realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
-        realWorldAppHeader: "Lead Every Room",
-        realWorldAppSubHeader: "Learn Today. Lead Tomorrow. Serve With Purpose.",
-        
-        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition, financial aid options, and two federal fellowships to put your graduate degree within reach:<ul><li>RSA Fellowship - Covers tuition and stipend offered</li><li>HBCU Fellowship - Covers tuition, fees, and books</li></ul>",
-        
-        mottoHeader: "DEPART TO SERVE",
-        mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships.",
-        finalCTA: "Let's Find a Path That Fits You"
-	},
-     {
-		fullName: 'Doctor of Nursing Practice',
-        label: 'DNP',
-        type: 'Doctorate',
-        heading: 'Doctor',
-        subHeading: 'of Nursing Practice',
-		href: '/programs/dnp',
-        sectionColor: "green",
-        heroReverse: false,
-        programCode: 'dnp',
-        titleOverlay: "Doctor of Nursing Practice",
-        
-        promoHeader: "Two pathways. One DNP. ",
-        promoBoxMainCopy: "<ul><li><strong>BSN to DNP</strong></li><li>Who it's for: Nurses with a BSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately three years</li><li>Format: Fully online with clinical flexibility</li></ul><ul><li><strong>MSN to DNP</strong></li><li>Who it's for: Nurses with an MSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately two years</li><li>Format: Fully online with clinical flexibility</li></ul>",
-        
-        leadFormHeader: "Let's Get You Started",
-        leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
-		leadFormButtonLabel: "Get Connected",
-        leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormImage: '/images/msrc-lead-form.webp',
-        leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.",
-        
-        highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
-        highlightsImage: '/images/innovators.webp',
-        highlightsImageAlt: 'Students collaborating in a lab',
-        highlightsBullets: [
-            "100% online",
-            "Faculty mentorship",
-            "Real-world projects",
-            "State-of-the-art labs"
-        ],
-        
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
-        careerPathBullets: [
-            "Nurse Practitioner",
-            "Psychiatric Nurse",
-            "Nurse Educator",
-            "Certified Nurse-Midwife",
-            "Nurse Anesthetist",
-            "Clinical Nurse Specialist",
-            "Chief Nursing Officer"
-
-        ],
-        
-        statisticsBar: {
-            value: 'Fully Accredited',
-            description: 'by the Commission of Collegiate Nursing Education (CCNE)',
-            needsApproval: true
-        },
-        
-        realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
-        realWorldAppHeader: "Lead Every Room",
-        
-        affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "WSSU nursing programs are among the most affordable in the Piedmont Triad region.  We offer competitive tuition and financial aid options that put your graduate degree within reach.",
-        
-        mottoHeader: "DEPART TO SERVE",
-        mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections. Our DNP graduates lead in underserved communities, advancing care where it's needed most.",
         finalCTA: "Let's Find a Path That Fits You"
 	}
 

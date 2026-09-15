@@ -3,10 +3,10 @@
     import { asset } from '$app/paths';
     import { programs } from '$lib/scripts/programs.js';
     
-    let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "" } = $props();
+    let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "",programSelectDisabled } = $props();
     let program = $state('');
     let selectedProgramCode = $derived(String(programCode ?? '').trim().toLowerCase());
-    let isProgramOfInterestDisabled = $derived(selectedProgramCode !== '');
+    let isProgramOfInterestDisabled = $derived(programSelectDisabled ?? selectedProgramCode !== '');
 
     $effect(() => {
       program = selectedProgramCode;
@@ -96,7 +96,7 @@
 
 
 .form-content h2 {
-  width: 85%;
+  width: 100%;
 }
 
 .form-message {

@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(20px, 4vw, 42px);
+  font-size: clamp(24px, 4.5vw, 42px);
   margin-top: 0px;
   max-width: 95vw;
   margin-bottom: 15px;
@@ -102,7 +102,7 @@ h3.neon {
   line-height: 1;
   text-transform: uppercase;
   text-wrap-mode: nowrap;
-  font-size: 28px;
+  font-size: clamp(20px, 3vw, 35px);
 }
 
 h4 {
@@ -286,7 +286,6 @@ select {
 .program-type-grid.program-type-slider .program-type {
   grid-area: 1 / 1;
   width: 100%;
-  min-height: 360px;
   flex-basis: auto;
   opacity: 0;
   pointer-events: none;
@@ -315,10 +314,6 @@ select {
 
 .program-list li {
   padding: 0px;
-}
-
-.program-list li a {
-  font-size: 18px;
 }
 
 .program-list li a:hover {

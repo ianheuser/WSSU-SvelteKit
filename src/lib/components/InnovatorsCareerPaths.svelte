@@ -25,9 +25,15 @@
 
     <section class="flex career-paths">
     <div class="section-inner">
-        <h2 class="{sectionColor}">
-            One Degree. Multiple<br /> Career Paths.
-        </h2>
+        {#if sectionColor != 'blue'}
+            <h2 class="{sectionColor}">
+                One Degree. Multiple<br />Career Paths.
+            </h2>
+        {:else}
+            <h2 class="{sectionColor}">
+                One Certification.<br />Multiple Career Paths.
+            </h2>
+        {/if}
         {#if careerPathColumns.length > 0}
             <div class="columns">
                 {@html careerPathColumns}

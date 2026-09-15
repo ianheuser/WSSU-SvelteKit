@@ -1,8 +1,26 @@
 <script> 
+const headerBorderColors = {
+    red: 'var(--red)',
+    gold: 'var(--gold)',
+    blue: 'var(--blue)',
+    green: 'var(--green)'
+};
+
 let { heading, programCode, subHeading = null , image, reverse, sectionColor } = $props();
+let headerBorderColor = $derived(headerBorderColors[sectionColor] ?? headerBorderColors.red);
+
+$effect(() => {
+    document.documentElement.style.setProperty('--site-header-border-color', headerBorderColor);
+
+    return () => {
+        if (document.documentElement.style.getPropertyValue('--site-header-border-color') === headerBorderColor) {
+            document.documentElement.style.removeProperty('--site-header-border-color');
+        }
+    };
+});
 </script>
 
-<section class="flex program-hero { sectionColor }" class:reverse={reverse} >
+<section class="flex program-hero { sectionColor }" class:reverse={reverse}>
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
     <div class="program-hero-content { programCode }">
@@ -128,6 +146,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         position: absolute;
         top: -68px;
         left: -60px;
+        border: solid clamp(6px, 1vw, 9px) var(--site-header-border-color);
     }
 
     .program-hero.reverse .program-code {

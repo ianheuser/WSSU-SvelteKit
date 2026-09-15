@@ -4,21 +4,26 @@
 	import RamAnimation from '$lib/components/RamAnimation.svelte';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
 
-	const programTypeCount = 3;
-
 	let selectedProgramCode = $state('');
 	let activeProgramTypeIndex = $state(0);
 	/** @type {number | null} */
 	let previousProgramTypeIndex = $state(null);
+	/** @type {number | undefined} */
+	let resetPreviousProgramTypeTimeout;
 
 	onMount(() => {
 		const rotationInterval = window.setInterval(() => {
+			window.clearTimeout(resetPreviousProgramTypeTimeout);
 			previousProgramTypeIndex = activeProgramTypeIndex;
-			activeProgramTypeIndex = (activeProgramTypeIndex + 1) % programTypeCount;
+			activeProgramTypeIndex = activeProgramTypeIndex === 0 ? 1 : 0;
+			resetPreviousProgramTypeTimeout = window.setTimeout(() => {
+				previousProgramTypeIndex = null;
+			}, 650);
 		}, 4500);
 
 		return () => {
 			window.clearInterval(rotationInterval);
+			window.clearTimeout(resetPreviousProgramTypeTimeout);
 		};
 	});
 
@@ -66,33 +71,9 @@
 				class="program-type"
 				class:current={activeProgramTypeIndex === 0}
 				class:previous={previousProgramTypeIndex === 0}
-				id="certificatePrograms"
+				id="masterPrograms"
 				aria-hidden={isHiddenProgramType(0) ? 'true' : undefined}
 				inert={isHiddenProgramType(0)}
-			>
-				<h3 class="blue neon">
-					Certificates
-				</h3>
-				<ul class="white program-list">
-					<li>
-						<a href="#contact" onclick={(event) => selectProgram(event, 'DA')}>
-							Data Analytics
-						</a>
-					</li>
-					<li>
-						<a href="#contact" onclick={(event) => selectProgram(event, 'FNP')}>
-							Family Nurse Practitioner Certificate | FNP
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div
-				class="program-type"
-				class:current={activeProgramTypeIndex === 1}
-				class:previous={previousProgramTypeIndex === 1}
-				id="masterPrograms"
-				aria-hidden={isHiddenProgramType(1) ? 'true' : undefined}
-				inert={isHiddenProgramType(1)}
 			>
 				<h3 class="gold neon">
 					Master's Degrees
@@ -137,11 +118,11 @@
 			</div>
 			<div
 				class="program-type"
-				class:current={activeProgramTypeIndex === 2}
-				class:previous={previousProgramTypeIndex === 2}
-				id="doctoratePrograms"
-				aria-hidden={isHiddenProgramType(2) ? 'true' : undefined}
-				inert={isHiddenProgramType(2)}
+				class:current={activeProgramTypeIndex === 1}
+				class:previous={previousProgramTypeIndex === 1}
+				id="doctorateCertificatePrograms"
+				aria-hidden={isHiddenProgramType(1) ? 'true' : undefined}
+				inert={isHiddenProgramType(1)}
 			>
 				<h3 class="neon green">
 					Doctoral Degrees
@@ -158,6 +139,21 @@
 						</a>
 					</li>
 				</ul>
+				<h3 class="blue neon">
+					Certificates
+				</h3>
+				<ul class="white program-list">
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'DA')}>
+							Data Analytics
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onclick={(event) => selectProgram(event, 'FNP')}>
+							Family Nurse Practitioner Certificate | FNP
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -169,7 +165,8 @@
 		image = { asset('/images/landing-form-photo.webp') }
 		imageAlt = "Graduate student meeting with an advisor"
 		thanksMessage = "A member of our admissions team will be in touch soon with details about our programs."
-		programCode=""
+		programCode={selectedProgramCode}
+		programSelectDisabled={false}
 	></InquiryForm>
 
 	<section class="flex column aid-band" id="financial-aid">
@@ -183,9 +180,9 @@
 		<enhanced:img src={ asset("/images/dean-boykin.webp") } alt="Montrale Boykin, Dean, Graduate College" />
 		<blockquote>
 			<p>
-				At WSSU, you'll be prepared and ready to lead in any room you enter. If you're looking for real economic
+				"At WSSU, you'll be prepared and ready to lead in any room you enter. If you're looking for real economic
 				opportunity, social mobility, and a community of students and educators driving change, this is your
-				university!
+				university!"
 			</p>
 			<cite>Dr. Montrale Boykin | Dean, Graduate College</cite>
 		</blockquote>
@@ -193,6 +190,12 @@
 </main>
 
 <style>
+
+
+	.program-list {
+		margin-top: -20px;
+	}
+
 	#financial-aid::before {
 		content: "";
 		position: absolute;
@@ -204,5 +207,3 @@
 		background: linear-gradient(0deg, var(--red) 0%, rgba(198, 0, 0, 0) 100%);
 	}
 </style>
-
-

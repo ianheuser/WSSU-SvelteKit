@@ -192,8 +192,8 @@
 	</a>
 
 	<nav class="desktop-nav" aria-label="Primary navigation">
-		<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
-		<a class="flickerOnRoll" href="https://www.wssu.edu/admissions/paying-for-college.html">Financial Aid</a>
+		<!-- <a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a> -->
+		<a class="flickerOnRoll" href="https://www.wssu.edu/admissions/paying-for-college.html" target="_blank">Financial Aid</a>
 		<a class="flickerOnRoll nav-contact" href="#contact">Contact</a>
 	</nav>
 
@@ -206,15 +206,15 @@
 </header>
 
 <nav bind:this={mobileNav} class="mobile-nav" aria-label="Mobile navigation" hidden>
-	<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
-	<!--
+	<!-- 
+		<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
 		<div class="mobile-subnav">
 			{#each programs as program}
 				<a class="subnav-link" href={ resolve(program.href) }>{ program.fullName }</a>
 			{/each}
-		</div>
+		</div> 
 	-->
-	<a class="flickerOnRoll top-border" href=" https://www.wssu.edu/admissions/paying-for-college.html">Financial Aid</a>
+	<a class="flickerOnRoll top-border" href=" https://www.wssu.edu/admissions/paying-for-college.html" target="_blank">Financial Aid</a>
 	<a class="flickerOnRoll top-border" href="#contact">Contact</a>
 </nav>
 
@@ -231,7 +231,7 @@
   justify-content: space-between;
   min-height: 190px;
   background: var(--black);
-  border-bottom: 6px solid var(--red);
+  border-bottom: 6px solid var(--site-header-border-color, var(--red));
   padding: 0px 50px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.34);
   z-index: 101;
