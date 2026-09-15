@@ -75,7 +75,7 @@
               {/if}
             
           </label>
-          {#if program === "msn" || program === "fnp" }
+          {#if program == "msn" && programCode == ""}
             <label>
               <span>Concentration <b>*</b></span>
               <select name="concentration" required>

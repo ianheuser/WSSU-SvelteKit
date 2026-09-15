@@ -22,6 +22,7 @@
 </section>
 
 <style>
+  
   .stats.blue {
     color: var(--blue);
   }

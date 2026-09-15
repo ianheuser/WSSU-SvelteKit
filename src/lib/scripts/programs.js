@@ -28,7 +28,6 @@ export const programs = [
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
             "Evening classes",
-			"14:1 student-to-faculty ratio",
 			"Faculty mentorship",
 			"Real-world projects",
 			"State-of-the-art labs"
@@ -51,7 +50,7 @@ export const programs = [
         ],
         
         realWorldAppImage: '/images/mat-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teaching Diverse Classrooms, Psychology of Teaching and Learning.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teaching Diverse Classrooms and Psychology of Teaching and Learning.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -247,7 +246,7 @@ export const programs = [
         
         statisticsBar: [
             {
-				value: '99%',
+				value: '98%',
 				description: 'job or doctoral<br />placement rate',
                 needsApproval: false
 			},
