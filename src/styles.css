@@ -455,7 +455,7 @@ p.white {
     padding: 13px 44px;
     border: 3px solid var(--red);
     border-radius: 1.3vw;
-    background: transparent;
+    background: white;
     cursor: pointer;
     font-family: "Tilt Neon", sans-serif;
     font-size: clamp(14px, 3vw, 32px);
@@ -467,9 +467,9 @@ p.white {
 
 .outline-button:hover,
 .outline-button:focus-visible {
-  background: transparent;
+  background: white;
 }
-
+f
 .outline-button.gold {
   border-color: var(--gold);
   color: var(--gold);
@@ -488,7 +488,6 @@ p.white {
 .form-status {
   min-height: 1.4em;
   margin: 0;
-  color: var(--red);
   font-size: 18px;
   text-align: center;
 }

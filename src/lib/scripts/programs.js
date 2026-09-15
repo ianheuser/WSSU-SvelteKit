@@ -49,7 +49,7 @@ export const programs = [
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
-        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. <span class='needs-approval'>We offer competitive tuition and financial aid options that put your graduate degree within reach.</span>",
+        affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",

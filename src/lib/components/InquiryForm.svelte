@@ -5,15 +5,18 @@
     
     let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "" } = $props();
     let program = $state('');
+    let selectedProgramCode = $derived(String(programCode ?? '').trim().toLowerCase());
+    let isProgramOfInterestDisabled = $derived(selectedProgramCode !== '');
 
     $effect(() => {
-      program = programCode.toLowerCase();
+      program = selectedProgramCode;
     });
 </script>
 
 <section class="flex inquiry-section" id="contact">
 		<div class="campus-collage" aria-hidden="true">
 			<enhanced:img class="left" src={ asset("/images/landing-campus-left.webp") } alt="" />
+      <enhanced:img class="right" src={ asset("/images/clock-tower.jpg") } alt="" />
 		</div>
 
 		<div class="photo-card red">
@@ -24,10 +27,10 @@
 		<div class="inquiry-copy flex column">
       <div class="form-message">
         <h2 class="red">Thank you for your submission!</h2>
-        <p class="form-status red">{thanksMessage}</p>
+        <p class="form-status">{thanksMessage}</p>
       </div>
       <div class="form-content">
-        <h2 class="red">{heading}</h2>
+        <h2 class="red">{@html heading}</h2>
         <p class="form-description">{description}</p>
 
         <form
@@ -59,13 +62,18 @@
             </select>
           </label>
           <label>
-            <span>Program of Interest <b>*</b></span>
-            <select name="program" id="programOfInterest" bind:value={program} required>
-              <option value="">Select...</option>
-              {#each programs as indProgram}
-                <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
-              {/each}
-            </select>
+
+              <span>Program of Interest <b>*</b></span>
+              <select name="program" id="programOfInterest" bind:value={program} required disabled={isProgramOfInterestDisabled}>
+                <option value="">Select...</option>
+                {#each programs as indProgram}
+                  <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
+                {/each}
+              </select>
+              {#if isProgramOfInterestDisabled}
+                <input type="hidden" name="program" value={program} />
+              {/if}
+            
           </label>
           {#if program === "msn" || program === "fnp" }
             <label>
@@ -86,14 +94,18 @@
 
 <style>
 
+
 .form-content h2 {
-  width: 66%;
+  width: 85%;
 }
 
 .form-message {
   display: none;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .form-content {
   display: flex;
   flex-direction: column;
@@ -114,7 +126,7 @@ p.form-description {
   overflow: hidden;
   background: var(--white);
   gap: 4vw;
-  padding: 60px 24px 60px;
+  padding: 60px 24px 100px;
   min-height: 600px;
 }
 
@@ -128,16 +140,23 @@ p.form-description {
 }
 
 .campus-collage {
-  position: absolute;
+  
   inset: 0;
   pointer-events: none;
 }
 
 .campus-collage .left {
+  position: absolute;
   left: max(-175px, -12vw);
   top: 3px;
-  width: clamp(260px, 42vw, 732px);
-  opacity: 0.4;
+  width: clamp(260px, 50vw, 700px);
+}
+
+.campus-collage .right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: clamp(260px, 50vw, 700px);
 }
 
 .inquiry-section > .photo-card,
@@ -199,8 +218,14 @@ p.form-description {
 
 
 
-@media (max-width: 980px) {
+
+@media (max-width: 1100px) {
   /* These only apply to screens 980px or less */
+
+  .form-content h2 {
+    white-space: nowrap;
+    width: 100%;
+  }
 
   .inquiry-copy {
     width: clamp(300px,70%,600px);
@@ -212,6 +237,13 @@ p.form-description {
     gap: 40px;
   }
 
+  .inquiry-section .photo-card {
+    display: none;
+  }
+
+  .campus-collage {
+    display: none;
+  }
 }
 
 
@@ -222,9 +254,6 @@ p.form-description {
     flex: 0 1 fit-content;
   }
 
-  .inquiry-section .photo-card {
-    display: none;
-  }
 
   .inquiry-section .photo-card {
     order: 2;
@@ -253,7 +282,7 @@ p.form-description {
   }
 
   .inquiry-section {
-    padding-top: 32px;
+    padding-top: 50px;
   }
 
 }

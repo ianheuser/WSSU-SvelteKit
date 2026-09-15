@@ -12,7 +12,7 @@ export function handleLeadSubmit(event) {
 	const formContent = document.querySelector('.form-content');
 	if (messageContainer && formContent) {
 		formContent.style.display = 'none';
-		messageContainer.style.display = 'block';
+		messageContainer.style.display = 'flex';
 	}
 	
 }

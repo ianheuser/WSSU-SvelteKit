@@ -1,21 +1,20 @@
 <script>
 	import { asset, resolve } from '$app/paths';
-  const homeHref = resolve('/');
 </script>
 
 <footer class="site-footer">
-	<a href={homeHref} class="footer-brand" aria-label="Winston-Salem State University Logo" >
-		<enhanced:img src={ asset("/images/centered-logo.png") } alt="Winston-Salem State University" />
+	<a href={ resolve("/") } class="footer-brand" aria-label="Winston-Salem State University Logo" >
+		<enhanced:img src={ asset("/images/centered-logo.png") } class="footer-logo" alt="Winston-Salem State University" />
 	</a>
 	<address>
 		601 S. Martin Luther King Jr. Drive<br />
 		Winston-Salem, NC 27110 <span>|</span> 336-750-2000
 	</address>
 	<div class="social-links" aria-label="Social links">
-		<a href="https://www.facebook.com/WSSU1892" aria-label="Facebook" target="_blank"><enhanced:img src={ asset("/images/facebook.png") } alt="Facebook Logo" /></a>
-		<a href="http://www.instagram.com/wssu1892" aria-label="Instagram" target="_blank"><enhanced:img src={ asset("/images/instagram.png") } alt="Instagram Logo" /></a>
-		<a href="https://www.youtube.com/wssu1892" aria-label="YouTube" target="_blank"><enhanced:img src={ asset("/images/youtube.png") } alt="You Tube Logo" /></a>
-		<a href="https://www.linkedin.com/company/winston-salem-state-university/" aria-label="LinkedIn" target="_blank"><enhanced:img src={ asset("/images/linked-in.png") }  alt="LinkedIn Logo" /></a>
+		<a href="https://www.facebook.com/WSSU1892" aria-label="Facebook" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/facebook.png") } alt="Facebook Logo" /></a>
+		<a href="http://www.instagram.com/wssu1892" aria-label="Instagram" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/instagram.png") } alt="Instagram Logo" /></a>
+		<a href="https://www.youtube.com/wssu1892" aria-label="YouTube" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/youtube.png") } alt="You Tube Logo" /></a>
+		<a href="https://www.linkedin.com/company/winston-salem-state-university/" aria-label="LinkedIn" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/linked-in.png") }  alt="LinkedIn Logo" /></a>
 	</div>
 </footer>
 
@@ -45,7 +44,7 @@
   margin-top: -65px;
 }
 
-.footer-brand img:first-child {
+.footer-logo {
   width: 312px;
   height: auto;
 }
@@ -84,11 +83,11 @@
   transition: all ease-in .1s;
 }
 
-.social-links a img {
+.social-links a .enhanced-img {
   width: 66%;
 }
 
-.social-links a img:hover {
+.social-links a .enhanced-img:hover {
   opacity: .5;
   transition: all ease-in .1s;
 }
@@ -125,8 +124,8 @@
     margin-top: -83px;
   }
 
-  .footer-brand img:first-child {
-    width: 312px;
+  .footer-logo {
+    width: 200px;
     height: auto;
   }
 

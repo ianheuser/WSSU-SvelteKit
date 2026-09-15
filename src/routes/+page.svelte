@@ -119,11 +119,6 @@
 						</a>
 					</li>
 					<li>
-						<a href="#contact" onclick={(event) => selectProgram(event, 'MCST')}>
-							5-Year (4+1) BS-MS Degree Computer Science and Information Technology | MCST
-						</a>
-					</li>
-					<li>
 						<a href="#contact" onclick={(event) => selectProgram(event, 'MSOT')}>
 							Master of Science in Occupational Therapy | MSOT
 						</a>
@@ -168,13 +163,13 @@
 	</section>
 
 	<InquiryForm
-		heading = "Ready to Step Into the Room?"
+		heading = "Ready to Step<br />Into the Room?"
 		description = "Tell us a little about yourself and our graduate team can help you plan your next move."
 		buttonLabel = "Submit"
 		image = { asset('/images/landing-form-photo.webp') }
 		imageAlt = "Graduate student meeting with an advisor"
 		thanksMessage = "A member of our admissions team will be in touch soon with details about our programs."
-		programCode={selectedProgramCode}
+		programCode=""
 	></InquiryForm>
 
 	<section class="flex column aid-band" id="financial-aid">
@@ -192,9 +187,22 @@
 				opportunity, social mobility, and a community of students and educators driving change, this is your
 				university!
 			</p>
-			<cite>Montrale Boykin | Dean, Graduate College</cite>
+			<cite>Dr. Montrale Boykin | Dean, Graduate College</cite>
 		</blockquote>
 	</section>
 </main>
+
+<style>
+	#financial-aid::before {
+		content: "";
+		position: absolute;
+		top: -50px;
+		left: 0px;
+		right: 0px;
+		height: 50px;
+		background: var(--red);
+		background: linear-gradient(0deg, var(--red) 0%, rgba(198, 0, 0, 0) 100%);
+	}
+</style>
 
 

@@ -193,7 +193,7 @@
 
 	<nav class="desktop-nav" aria-label="Primary navigation">
 		<a class="flickerOnRoll" href={ resolve("/#programs") }>Programs</a>
-		<a class="flickerOnRoll" href="#financial-aid">Financial Aid</a>
+		<a class="flickerOnRoll" href="https://www.wssu.edu/admissions/paying-for-college.html">Financial Aid</a>
 		<a class="flickerOnRoll nav-contact" href="#contact">Contact</a>
 	</nav>
 
@@ -214,7 +214,7 @@
 			{/each}
 		</div>
 	-->
-	<a class="flickerOnRoll top-border" href="#financial-aid">Financial Aid</a>
+	<a class="flickerOnRoll top-border" href=" https://www.wssu.edu/admissions/paying-for-college.html">Financial Aid</a>
 	<a class="flickerOnRoll top-border" href="#contact">Contact</a>
 </nav>
 
