@@ -231,10 +231,9 @@
   justify-content: space-between;
   min-height: 190px;
   background: var(--black);
-  border-bottom: 6px solid var(--site-header-border-color, var(--red));
+  /* border-bottom: var(--border-size) solid var(--site-header-border-color, var(--red)); */
   padding: 0px 50px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.34);
-  z-index: 101;
+  z-index: 105;
 }
 
 .main-logo {
@@ -338,7 +337,7 @@
 .mobile-nav {
   position: fixed;
   z-index: 55;
-  top: var(--header-height);
+  top: 120px;
   left: 0;
   right: 0;
   width: 100%;
@@ -346,7 +345,6 @@
   overflow: hidden;
   background: var(--black);
   color: var(--white);
-  border-bottom: 3px solid var(--red);
   font-family: "Tilt Neon", sans-serif;
   font-size: 22px;
   text-align: center;
@@ -361,6 +359,7 @@
     clip-path 360ms cubic-bezier(0.16, 1, 0.3, 1),
     opacity 240ms ease,
     transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+	z-index: 109;
 }
 
 .mobile-nav[hidden] {

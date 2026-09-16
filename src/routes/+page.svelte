@@ -54,6 +54,7 @@
 </svelte:head>
 
 <main>
+	<div class="header-border red"></div>
 	<section class="flex column landing-hero">
 		<div class="hero-art" aria-hidden="true"></div>
 		<h1 class="hero-title">Be the Ram in the Room</h1>

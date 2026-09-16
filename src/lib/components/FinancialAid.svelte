@@ -12,6 +12,8 @@
 .affordability {
   background: var(--black);
   color: var(--white);
+  border-top: var(--red-border);
+  border-bottom: var(--red-border);
 }
 
 @media (max-width: 720px){

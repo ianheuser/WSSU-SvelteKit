@@ -29,8 +29,8 @@
     background: var(--black);
     color: var(--white);
     text-align: center;
-    border-bottom: 4px solid var(--red);
-    border-top: 4px solid var(--red);
+    border-bottom: var(--red-border);
+    border-top: var(--red-border);
     height: 310px;
 }
 

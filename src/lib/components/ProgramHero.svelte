@@ -20,6 +20,7 @@ $effect(() => {
 });
 </script>
 
+<div class="header-border { sectionColor }"></div>
 <section class="flex program-hero { sectionColor }" class:reverse={reverse}>
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
@@ -36,6 +37,7 @@ $effect(() => {
 
 <style>
     
+   
     .program-hero-content h1, .program-hero-content h3 {
         padding-left: 7%;
         padding-right: 0%;
@@ -66,7 +68,17 @@ $effect(() => {
         align-items: stretch;
         padding: 0px;
     }
-
+/*
+    .program-hero.gold {
+        border-top: solid var(--border-size) var(--gold);
+    }
+    .program-hero.green {
+        border-top: solid var(--border-size) var(--green);
+    }
+    .program-hero.blue {
+        border-top: solid var(--border-size) var(--blue);
+    }
+*/
     .program-hero.reverse {
         flex-direction: row-reverse;
     }
@@ -124,7 +136,8 @@ $effect(() => {
         left: 0;
         right: 0;
         bottom: 0;
-        height: 5px;
+        height: var(--border-size);
+        z-index: 100;
     }
 
 
@@ -146,7 +159,16 @@ $effect(() => {
         position: absolute;
         top: -68px;
         left: -60px;
-        border: solid clamp(6px, 1vw, 9px) var(--site-header-border-color);
+    }
+
+    .program-code.gold {
+        border: solid var(--border-size) var(--gold);
+    }
+    .program-code.green {
+        border: solid var(--border-size) var(--green);
+    }
+    .program-code.blue {
+        border: solid var(--border-size) var(--blue);
     }
 
     .program-hero.reverse .program-code {

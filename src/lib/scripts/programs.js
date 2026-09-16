@@ -672,7 +672,7 @@ export const programs = [
         fullName: 'Certificate in Family Nurse Practitioner',
         label: 'FNP',
         type: 'Certificate',
-        heading: 'Post-Graduate Certificate',
+        heading: 'Certificate',
         subHeading: 'Family Nurse Practitioner',
 		href: '/programs/fnp',
         programCode: 'fnp',

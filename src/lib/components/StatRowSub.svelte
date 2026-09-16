@@ -13,6 +13,8 @@
 </section>
 
 <style>
+
+
   .stats.blue {
     color: var(--blue);
   }
@@ -29,6 +31,8 @@
   background: var(--black);
   color: var(--white);
   text-align: center;
+  border-top: var(--red-border);
+  border-bottom: var(--red-border);
 }
 
 .stats-grid {

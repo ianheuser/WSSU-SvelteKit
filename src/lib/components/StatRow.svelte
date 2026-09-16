@@ -41,6 +41,8 @@
   justify-content: space-evenly;
   align-items: flex-start;
   gap: 5px;
+  border-top: var(--red-border);
+  border-bottom: var(--red-border);
 }
 
 .stat-stack {

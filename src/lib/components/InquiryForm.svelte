@@ -15,13 +15,23 @@
 
 <section class="flex inquiry-section" id="contact">
 		<div class="campus-collage" aria-hidden="true">
-			<enhanced:img class="left" src={ asset("/images/landing-campus-left.webp") } alt="" />
-      <enhanced:img class="right" src={ asset("/images/clock-tower.jpg") } alt="" />
+    {#if programCode != ""}
+      <enhanced:img class="right programs" src={ asset("/images/clock-tower-left.jpg") } alt="" />
+    {:else}
+      <enhanced:img class="left main" src={ asset("/images/landing-campus-left.webp") } alt="" />
+      <enhanced:img class="right main" src={ asset("/images/clock-tower.jpg") } alt="" />
+    {/if}
 		</div>
 
 		<div class="photo-card red">
-			<div class="red-line"></div>
-			<enhanced:img src={ image } alt={ imageAlt } />
+
+      {#if programCode != ""}
+        <div class="red-line from-top"></div>
+      {:else}
+        <div class="red-line"></div>
+      {/if}
+			
+			<enhanced:img src={ image } alt={ imageAlt } class="photo-card-img" />
 		</div>
 
 		<div class="inquiry-copy flex column">
@@ -95,6 +105,7 @@
 <style>
 
 
+
 .form-content h2 {
   width: 100%;
 }
@@ -159,6 +170,13 @@ p.form-description {
   width: clamp(260px, 50vw, 700px);
 }
 
+.campus-collage .programs {
+  position: absolute;
+  bottom: 0px;
+  width: clamp(260px, 50vw, 600px);
+  left: 0px;
+}
+
 .inquiry-section > .photo-card,
 .inquiry-section > .inquiry-copy {
   position: relative;
@@ -216,8 +234,39 @@ p.form-description {
 }
 
 
+.photo-card-img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border: 7px solid var(--red);
+  border-radius: 25px;
+  z-index: 2;
+  position: relative;
+}
 
+.photo-card {
+  flex: 1 1 0px;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 521 / 613;
+  display: flex;
+  justify-content: center;
+}
 
+.red-line {
+    width: 10px;
+    height: 100%;
+    background-color: var(--red);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-5px);
+    bottom: -90%;
+}
+
+.red-line.from-top {
+    top: -90%;
+    bottom: unset;
+}
 
 @media (max-width: 1100px) {
   /* These only apply to screens 980px or less */

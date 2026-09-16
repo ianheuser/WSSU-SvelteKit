@@ -19,6 +19,7 @@
     </div>
 
     <div class="photo-card red">
+        <div class="red-line"></div>
         <enhanced:img src={ image } alt={ imageAlt } />
     </div>
     </section>
@@ -94,9 +95,27 @@
     }
 
 
+.red-line {
+    width: 10px;
+    height: 100%;
+    background-color: var(--red);
+    position: absolute;
+    top: 0px;
+    transform: translateX(-5px);
+    bottom: unset;
+}
+
+
+.innovators-section{ 
+    border-top: var(--red-border);
+    border-bottom: var(--red-border);
+ }
+
 
 @media (max-width: 980px){
-
+    .red-line {
+        display: none;
+    }
     .innovators-section .photo-card {
         bottom: -250px;
         position:absolute;
