@@ -1,20 +1,17 @@
 <script>
     // Default values
     let { stats , sectionColor } = $props();
-    let totalStats = $derived(stats.length);
 </script>
 
 <section class="flex stats-band">
     
   <div class="stats-grid">
+
         {#each stats as stat}
 
-            <div class="stat-stack total-stats-{totalStats}" class:needs-approval={stat.needsApproval} class:single-element={totalStats === 1}>
-                <div class="stats flicker {sectionColor} total-stats-{totalStats}">{@html stat.value}</div>
-                <p class="stat total-stats-{totalStats}">{@html stat.description}</p>
-                {#if stat.subText}
-                  <div class="subText total-stats-{totalStats}">{@html stat.subText}</div>
-                {/if}
+            <div class="stat-stack">
+                <div class="stats flicker {sectionColor}">{@html stat.value}</div>
+                <p class="stat">{@html stat.description}</p>
             </div>
 
         {/each}
@@ -89,7 +86,7 @@
 }
 
 .stats.total-stats-4 {
-  font-size: clamp(30px,6.5vw,70px);
+  font-size: clamp(36px,6.5vw,70px);
 }
 
 .stat-stack.total-stats-3 {
@@ -110,13 +107,16 @@ p.stat {
   color: #ff00ff;
 }
 
+@media( max-width: 980px ) {
+
+  .stats-grid {
+    gap: 25px;
+  }
+
+}
 
 @media( max-width: 720px ) {
   
-  .stats-grid {
-    gap: 15px;
-  }
-
   .stats-band {
     padding: 24px 0 25px;
   }

@@ -68,7 +68,7 @@ export const programs = [
         label: 'MBA',
         type: 'Master',
         heading: 'Master',
-        subHeading: 'of Business Administration',
+        subHeading: 'of Business<br />Administration',
         pageDescription: "Explore the Master of Business Administration program at Winston-Salem State University.",
 		href: '/programs/mba',
         programCode: 'MBA',
@@ -108,17 +108,7 @@ export const programs = [
             "Chief Marketing Officer",
             "Prompt Engineer"
         ],
-        statisticsBar: [
-            {
-                value: "100%",
-                description: "Online MBA"
-            },
-            {
-                value: "3",
-                description: "Concentrations",
-                subText: "AI, Business Analytics,<br />and Leadership Concentrations"
-            }
-        ],
+        statisticsBar: null,
         realWorldAppImage: '/images/mba-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
         realWorldAppHeader: "Lead Every Room",
@@ -134,7 +124,7 @@ export const programs = [
         label: 'MHA',
         type: 'Master',
         heading: 'Master',
-        subHeading: 'of Healthcare Administration',
+        subHeading: 'of Healthcare<br /> Administration',
 		href: '/programs/mha',
         programCode: 'MHA',
         titleOverlay: "Master of Healthcare Administration",
@@ -207,8 +197,8 @@ export const programs = [
 		fullName: 'Master of Science in Computer Science and Information Technology',
         label: 'MCST',
         type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Computer Science and Information Technology',
+        heading: 'Master<br/>of Science',
+        subHeading: 'in Computer Science and<br />Information Technology',
 		href: '/programs/mcst',
         programCode: 'MCST',
         titleOverlay: "Master of Science in Computer Science and Information Technology",
@@ -344,7 +334,7 @@ export const programs = [
 		fullName: 'Master of Science in Occupational Therapy',
         label: 'MSOT',
         type: 'Master',
-        heading: 'Master of Science',
+        heading: 'Master<br />of Science',
         subHeading: 'in Occupational Therapy',
 		href: '/programs/msot',
         programCode: 'msot',
@@ -400,8 +390,8 @@ export const programs = [
         fullName: 'Master of Science in Rehabilitation Counseling',
         label: 'MSRC',
         type: 'Master',
-        heading: 'Master of Science',
-        subHeading: 'in Rehabilitation Counseling',
+        heading: 'Master<br />of Science',
+        subHeading: 'in Rehabilitation<br />Counseling',
 		href: '/programs/msrc',
 
         programCode: 'msrc',
@@ -444,10 +434,10 @@ export const programs = [
         statisticsBar: [
             {
 				value: '95%',
-				description: 'Post-Graduation Employment Rate'
+				description: 'Post-Graduation<br /> Employment Rate'
 			},
 			{
-				value: 'Fully<br />Accredited',
+				value: 'Fully <span class="shrink">Accredited</span>',
 				description: 'by CACREP'
 			},
             {
@@ -642,17 +632,15 @@ export const programs = [
 			"State-of-the-art labs"
         ],
         
-        careerPathHeader: "ONE CERTIFICATION. MULTIPLE CAREER PATHS.",
+        careerPathHeader: "ONE CERTIFICATION.",
         careerPathBullets: [
-            "<span class='needs-approval'>Entry Level Data Analyst</span>"
+            "Entry Level Data Analyst"
         ],
         
-        statisticsBar: [
-            {
-				value: '21%',
-				description: 'job growth from 2024 to 2034'
+        statisticsBar: {
+				value: '21% job growth from 2024 to 2034'
 			}
-        ],
+        ,
         
         realWorldAppImage: '/images/data-analytics-real-world-application.webp',
         realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
@@ -708,11 +696,11 @@ export const programs = [
         statisticsBar: [
 			{
 				value: 'Fully<br />Accredited',
-				description: 'by the Commission of Collegiate Nursing Education (CCNE)'
+				description: 'by the Commission of Collegiate<br /> Nursing Education (CCNE)'
 			},
 			{
 				value: '35% Job<br />Growth',
-				description: 'projected for nurse practitioners through 2034'
+				description: 'projected for nurse<br />practitioners through 2034'
 			}
 		],
         

@@ -3,7 +3,7 @@
     import { asset } from '$app/paths';
     import { programs } from '$lib/scripts/programs.js';
     
-    let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "",programSelectDisabled } = $props();
+    let { heading,image,description,buttonLabel = "Get Connected",imageAlt,thanksMessage,programCode = "",programSelectDisabled= true } = $props();
     let program = $state('');
     let selectedProgramCode = $derived(String(programCode ?? '').trim().toLowerCase());
     let isProgramOfInterestDisabled = $derived(programSelectDisabled ?? selectedProgramCode !== '');

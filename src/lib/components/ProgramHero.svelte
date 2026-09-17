@@ -29,7 +29,7 @@ $effect(() => {
         
         <div class="left-aligned-content" class:reverse={reverse}>
             {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
-            {#if subHeading}<h3 class="hero">{ subHeading }</h3>{/if}
+            {#if subHeading}<h3 class="hero">{@html subHeading }</h3>{/if}
         </div>
 
     </div>
@@ -37,23 +37,49 @@ $effect(() => {
 
 <style>
     
+
+    .program-hero-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        min-height: inherit;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
    
+    h1 { 
+        font-size: clamp(28px, 7vw, 70px);
+    }
+    h3 {
+        font-size: clamp(14px, 2.5vw, 35px);
+    }
+
     .program-hero-content h1, .program-hero-content h3 {
-        padding-left: 7%;
+        padding-left: 0%;
         padding-right: 0%;
     }
 
-    .reverse.left-aligned-content h1, .reverse.left-aligned-content h3 {
-        padding-left: clamp(7%, 7vw, 30%);
-    }
 
     .left-aligned-content {
-        width: 85%;
+        width: fit-content;
+        margin-left: 0%;
+    }
+
+    .reverse.left-aligned-content h1, .reverse.left-aligned-content h3 {
+        padding-left: 0px;
+    }
+
+    .reverse.left-aligned-content h1 { 
+        font-size: clamp(28px, 7vw, 70px);
     }
 
     .reverse.left-aligned-content {
         position: relative;
         text-align: left;
+        margin-left: 13%;
     }
 
     h3.hero {
@@ -113,17 +139,6 @@ $effect(() => {
         pointer-events: none;
     }
 
-    .program-hero-content {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex: 1 1 50%;
-        flex-direction: column;
-        min-height: inherit;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-    }
 
     .program-hero.reverse .program-hero-content {
         align-items: center;
@@ -155,10 +170,16 @@ $effect(() => {
         DISPLAY: INLINE-FLEX;
         JUSTIFY-CONTENT: CENTER;
         ALIGN-ITEMS: end;
-        padding-bottom: 18px;
+        padding-bottom: 15px;
         position: absolute;
-        top: -68px;
+        top: -60px;
         left: -60px;
+    }
+
+    @media (max-width: 1100px) {
+        .program-code {
+            top: -68px;
+        }
     }
 
     .program-code.gold {
@@ -183,7 +204,7 @@ $effect(() => {
         width: 90px;
         height: 90px;
         padding-bottom: 14px;
-        top: -50px;
+        top: -45px;
         left: -45px;
         font-size: 18px;
     }

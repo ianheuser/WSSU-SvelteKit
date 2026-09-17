@@ -1,16 +1,16 @@
 
 <script>
 	import ProgramHero from '$lib/components/ProgramHero.svelte';
-	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
-    import StatRow from '$lib/components/StatRow.svelte';
+	import InnovatorsCareerPathsDA from '$lib/components/InnovatorsCareerDA.svelte';
+    import StatRowDA from '$lib/components/StatRowDA.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
     import HeadingAndText from '$lib/components/HeadingAndText.svelte';
     import FinancialAid from '$lib/components/FinancialAid.svelte';
     import FindAPath from '$lib/components/FindAPath.svelte';
 	import { asset } from '$app/paths';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
-
 	import { programs } from '$lib/scripts/programs.js';
+
 	let programCode = 'DA';
 	const program = programs.find((program) => program.label == programCode);
 	
@@ -57,7 +57,7 @@
 			programCode={ programCode }
 		></InquiryForm>
 			
-		<InnovatorsCareerPaths
+		<InnovatorsCareerPathsDA
 			image = { asset("/images/innovators.webp") }
 			imageAlt = "Students collaborating in a lab"
 			innovationBullets = {program.highlightsBullets}
@@ -65,12 +65,9 @@
 			highlightsHeader = { program.highlightsHeader }
 			careerPathHeader = { program.careerPathHeader }
 			sectionColor = { program.sectionColor }
-		></InnovatorsCareerPaths>
+		></InnovatorsCareerPathsDA>
 
-		<StatRow
-			stats = {program.statisticsBar}
-			sectionColor = { program.sectionColor }
-		></StatRow>
+		<StatRowDA></StatRowDA>
 		
 		<RealWorldApplication
 			heading = { program.realWorldAppHeader }

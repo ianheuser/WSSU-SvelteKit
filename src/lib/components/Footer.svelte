@@ -6,10 +6,17 @@
 	<a href={ resolve("/") } class="footer-brand" aria-label="Winston-Salem State University Logo" >
 		<enhanced:img src={ asset("/images/centered-logo.png") } class="footer-logo" alt="Winston-Salem State University" />
 	</a>
-	<address>
-		601 S. Martin Luther King Jr. Drive<br />
-		Winston-Salem, NC 27110 <span>|</span> 336-750-2000
-	</address>
+	<div class="footer-information">
+    <div class="address-one">
+		601 S. Martin Luther King Jr. Drive
+    </div>
+    <div class="address-two">
+		Winston-Salem, NC 27110 
+    </div>
+	  <div class="phone">
+      336-750-2074
+    </div>
+  </div>
 	<div class="social-links" aria-label="Social links">
 		<!--<a href="https://www.facebook.com/WSSU1892" aria-label="Facebook" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/facebook.png") } alt="Facebook Logo" /></a> -->
 		<a href="https://www.instagram.com/wssugraduatecollege/" aria-label="Instagram" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/instagram.png") } alt="Instagram Logo" /></a>
@@ -19,6 +26,19 @@
 </footer>
 
 <style>
+
+.footer-information {
+  display: flex;
+  flex-direction: row;
+}
+.address-one, .address-two {
+  border-right: 3px solid var(--red);
+  padding-right: 20px;
+}
+
+.address-two, .phone {
+  padding-left: 20px;
+}
 
 .site-footer {
     display: flex;
@@ -31,7 +51,7 @@
     text-align: center;
     border-bottom: var(--red-border);
     border-top: var(--red-border);
-    height: 310px;
+    height: clamp(265px, 26vw, 283px);
 }
 
 .footer-brand {
@@ -47,17 +67,6 @@
 .footer-logo {
   width: 312px;
   height: auto;
-}
-
-.site-footer address {
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 1.32;
-}
-
-.site-footer address span {
-  color: var(--red-bright);
 }
 
 .social-links {
@@ -97,11 +106,19 @@
   .site-footer {
     gap: 8px;
     padding: 42px 16px 18px;
-    height: 200px;
+    height: 220px;
   }
 
-  .site-footer address {
-    font-size: 14px;
+  .footer-information {
+    flex-direction: column;
+  }
+  .address-one, .address-two {
+    border-right: unset;
+    padding-right: unset;
+  }
+
+  .address-two, .phone {
+    padding-left: unset;
   }
 
   .social-links {
