@@ -42,18 +42,18 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         width: 100%;
         position: fixed;
         z-index: 102;
-        height: 194px;
+        height: 197px;
         top: 0px;
     }
 
     .header-border.gold {
-        border-bottom: 4px solid var(--gold);
+        border-bottom: 6px solid var(--gold);
     }
     .header-border.green {
-        border-bottom: 4px solid var(--green);
+        border-bottom: 6px solid var(--green);
     }
     .header-border.blue {
-        border-bottom: 4px solid var(--blue);
+        border-bottom: 6px solid var(--blue);
     }
    
     h1 { 
