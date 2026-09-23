@@ -21,11 +21,12 @@ $effect(() => {
 </script>
 
 <div class="header-border { sectionColor }"></div>
+<p class="program-code { sectionColor }">{ programCode }</p>
+
 <section class="flex program-hero { sectionColor }" class:reverse={reverse}>
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
     <div class="program-hero-content { programCode }">
-        <p class="program-code { sectionColor }">{ programCode }</p>
         
         <div class="left-aligned-content" class:reverse={reverse}>
             {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
@@ -45,9 +46,30 @@ $effect(() => {
         flex: 1 1 50%;
         flex-direction: column;
         min-height: inherit;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         text-align: left;
+        padding-left: 5%;
+    }
+
+    .header-border {
+        height: calc(var(--border-size) + 1px);
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        z-index: 102;
+        height: 195px;
+        top: 0px;
+    }
+
+    .header-border.gold {
+        border-bottom: 3px solid var(--gold);
+    }
+    .header-border.green {
+        border-bottom: 3px solid var(--green);
+    }
+    .header-border.blue {
+        border-bottom: 3px solid var(--blue);
     }
    
     h1 { 
@@ -155,12 +177,9 @@ $effect(() => {
         z-index: 100;
     }
 
-
     .program-code {
-        width: 125px;
-        /* max-width: 125px; */
-        height: 125px;
-        /* max-height: 140px; */
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 1);
         font-family: "Tilt Neon", sans-serif;
@@ -171,15 +190,11 @@ $effect(() => {
         JUSTIFY-CONTENT: CENTER;
         ALIGN-ITEMS: end;
         padding-bottom: 15px;
-        position: absolute;
-        top: -60px;
-        left: -60px;
-    }
-
-    @media (max-width: 1100px) {
-        .program-code {
-            top: -68px;
-        }
+        position: fixed;
+        top: 114px;
+        left: 50%;
+        z-index: 101;
+        transform: translateX(-50%);
     }
 
     .program-code.gold {
@@ -197,17 +212,22 @@ $effect(() => {
         right: -60px;
     }
 
+@media (max-width: 980px){
+    .header-border {
+        height: 122px;
+        top: 0px;
+    }
+    .program-code{
+        width: 120px;
+        height: 120px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 12px;
+        top: 58px;
+    }
+}
     
 @media (max-width: 720px){
-
-    .program-code {
-        width: 90px;
-        height: 90px;
-        padding-bottom: 14px;
-        top: -45px;
-        left: -45px;
-        font-size: 18px;
-    }
 
   .program-hero-image {
     flex-basis: 50%;
@@ -219,9 +239,18 @@ $effect(() => {
     min-height: 216px;
   }
 
-  .program-hero-content > p:last-child {
-    font-size: 15px;
-  }
+ 
+
+  .program-code{
+        width: 80px;
+        height: 80px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        top: 84px;
+    }
 
 }
+
+
 </style>

@@ -16,25 +16,7 @@
   --red-border: var(--border-size) solid var(--red);
 }
 
- .header-border {
-    height: calc(var(--border-size) + 1px);
-    background-color: var(--red);
-    width: 100%;
-    position: fixed;
-    z-index: 102;
-    top: 190px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.34);
-  }
 
- .header-border.gold {
-    background-color: var(--gold);
-  }
-  .header-border.green {
-    background-color: var(--green);
-  }
-  .header-border.blue {
-    background-color: var(--blue);
-  }
   
 .lead-room-section.background-gold .image-contain:before {
   background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
@@ -382,10 +364,6 @@ ul.special li:not(:last-child)::after {
 }
 
 @media (max-width: 980px){
-
-  .header-border {
-    top: 120px;
-  }
 
   .columns {
     flex-direction: column;

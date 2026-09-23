@@ -305,7 +305,7 @@ export const programs = [
         ,
         statisticsBar: [
             {
-                value: "100%",
+                value: "Accredited",
                 description: "by the Commission of Collegiate Nursing Education (CCNE)"
             },
             {
@@ -369,8 +369,8 @@ export const programs = [
         
         statisticsBar: {
             value: 'Fully accredited',
-            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE)',
-            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
+            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE®)',
+            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE®), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
         },
         
         realWorldAppImage: '/images/msot-real-world-application.webp',
@@ -438,7 +438,7 @@ export const programs = [
 			},
 			{
 				value: 'Fully <span class="shrink">Accredited</span>',
-				description: 'by CACREP'
+				description: 'by the Council for Accreditation of Counseling and Related Educational Programs (CACREP)'
 			},
             {
 				value: '#3',

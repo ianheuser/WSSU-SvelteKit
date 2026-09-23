@@ -13,7 +13,7 @@
           Business Analytics
         </div>
         <div class="concentration">
-          Finance
+          Leadership
         </div>
       </div>
     </div>
