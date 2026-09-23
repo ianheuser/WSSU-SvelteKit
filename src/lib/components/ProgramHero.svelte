@@ -58,18 +58,18 @@ $effect(() => {
         width: 100%;
         position: fixed;
         z-index: 102;
-        height: 195px;
+        height: 194px;
         top: 0px;
     }
 
     .header-border.gold {
-        border-bottom: 3px solid var(--gold);
+        border-bottom: 4px solid var(--gold);
     }
     .header-border.green {
-        border-bottom: 3px solid var(--green);
+        border-bottom: 4px solid var(--green);
     }
     .header-border.blue {
-        border-bottom: 3px solid var(--blue);
+        border-bottom: 4px solid var(--blue);
     }
    
     h1 { 
@@ -214,8 +214,7 @@ $effect(() => {
 
 @media (max-width: 980px){
     .header-border {
-        height: 122px;
-        top: 0px;
+        height: 125px;
     }
     .program-code{
         width: 120px;
