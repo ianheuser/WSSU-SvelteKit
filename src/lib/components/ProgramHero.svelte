@@ -74,6 +74,7 @@ $effect(() => {
    
     h1 { 
         font-size: clamp(28px, 7vw, 70px);
+        margin-top: 0px;
     }
     h3 {
         font-size: clamp(14px, 2.5vw, 35px);
