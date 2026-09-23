@@ -142,6 +142,27 @@ li {
     text-indent: 0;
     text-align: center;
 }
+
+
+    .header-border {
+        height: calc(var(--border-size) + 1px);
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        z-index: 102;
+        height: 194px;
+        top: 0px;
+    }
+
+    .header-border.red {
+        border-bottom: 4px solid var(--red);
+    }
+
+    @media (max-width: 980px){
+      .header-border {
+          height: 125px;
+      }
+    }
 .program-finder p {
     font-size: 18px;
     margin: 0px;
