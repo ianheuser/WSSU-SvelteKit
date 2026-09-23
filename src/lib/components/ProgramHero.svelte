@@ -33,7 +33,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         align-items: flex-start;
         justify-content: center;
         text-align: left;
-        padding-left: 6%;
+        padding-left: 7%;
     }
 
     .header-border {
