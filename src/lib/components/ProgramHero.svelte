@@ -1,23 +1,7 @@
 <script> 
-const headerBorderColors = {
-    red: 'var(--red)',
-    gold: 'var(--gold)',
-    blue: 'var(--blue)',
-    green: 'var(--green)'
-};
 
 let { heading, programCode, subHeading = null , image, reverse, sectionColor } = $props();
-let headerBorderColor = $derived(headerBorderColors[sectionColor] ?? headerBorderColors.red);
 
-$effect(() => {
-    document.documentElement.style.setProperty('--site-header-border-color', headerBorderColor);
-
-    return () => {
-        if (document.documentElement.style.getPropertyValue('--site-header-border-color') === headerBorderColor) {
-            document.documentElement.style.removeProperty('--site-header-border-color');
-        }
-    };
-});
 </script>
 
 <div class="header-border { sectionColor }"></div>
@@ -49,7 +33,7 @@ $effect(() => {
         align-items: flex-start;
         justify-content: center;
         text-align: left;
-        padding-left: 5%;
+        padding-left: 6%;
     }
 
     .header-border {
