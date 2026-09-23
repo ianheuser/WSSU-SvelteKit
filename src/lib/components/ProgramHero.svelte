@@ -101,7 +101,7 @@ $effect(() => {
     .reverse.left-aligned-content {
         position: relative;
         text-align: left;
-        margin-left: 13%;
+        margin-left: 5%;
     }
 
     h3.hero {
@@ -163,7 +163,7 @@ $effect(() => {
 
 
     .program-hero.reverse .program-hero-content {
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
     }
 
