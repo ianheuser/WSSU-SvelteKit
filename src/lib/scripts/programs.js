@@ -58,7 +58,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">ensuring every child has access to excellent education.</span>',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class="needs-approval">ensuring every child has access to excellent education.</span>',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -82,7 +82,7 @@ export const programs = [
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at mbadirector@wssu.edu or 336-750-2280. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/mba-highlights.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
@@ -116,7 +116,7 @@ export const programs = [
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships supported by accessible faculty who provide research, conference, and networking opportunities.',
         finalCTA: "Let's Find a Path That Fits You"
     },
     {
@@ -138,7 +138,7 @@ export const programs = [
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Healthcare Administration program and how WSSU graduate study prepares you to become a leader in your field.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/mha-highlights.webp',
         
@@ -162,7 +162,7 @@ export const programs = [
             "Consulting Firms",
             "Quality Control",
             "Health Information Technology",
-            "Research & Grant Proposal"
+            "Research & Grant Proposals"
         ],
 
         statisticsBar: [
@@ -182,14 +182,14 @@ export const programs = [
 
         realWorldAppHeader: "LEAD EVERY ROOM",
         realWorldAppImage: '/images/mha-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change and Grant Management & Writing.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change, and Grant Management & Writing.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
        
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships <span class="needs-approval">with Advocate, Novant, AHEC, and NAHSE.</span>',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships with Advocate, Novant, <span class="needs-approval">Area Health Education Centers (NC AHEC), and National Associate of Health Services Executives.</span>',
         finalCTA: "Let's Find a Path That Fits You"
     
 	},
@@ -198,7 +198,7 @@ export const programs = [
         label: 'MCST',
         type: 'Master',
         heading: 'Master<br/>of Science',
-        subHeading: 'in Computer Science and<br />Information Technology',
+        subHeading: 'in Computer Science<br />and Information<br />Technology',
 		href: '/programs/mcst',
         programCode: 'MCST',
         titleOverlay: "Master of Science in Computer Science and Information Technology",
@@ -213,7 +213,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/mcst-lead-form.webp',
         leadFormImageAlt: 'Graduate student meeting with an advisor',
-        leadFormPostSubmitCopy: "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrows expert.",
+        leadFormPostSubmitCopy: "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrow's expert.<br /><br />Have questions in the meantime? Connect with us at jonese@wssu.edu or 336-750-2485. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -253,7 +253,7 @@ export const programs = [
         ],
         
         realWorldAppImage: '/images/mcst-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in cryptography, database management, hardware security, data science, and artificial intelligence.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Cryptography, Database Management, Hardware Security, Data Science, and Artificial Intelligence.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -261,7 +261,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join WSSU's \"Ramily\" network of 24,000 alumni and build lasting professional connections through corporate partnerships and the Association for Computing Machinery.",
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships and the Association for Computing Machinery.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 	{	
@@ -283,7 +283,7 @@ export const programs = [
         leadFormImageAlt: 'A student and professor working together on a project in a lab with a microscope.',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at graduatenursingosa@wssu.edu or 336-750-2513. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
@@ -295,7 +295,7 @@ export const programs = [
             "State-of-the-art labs"
         ],
 
-        careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
+        careerPathHeader: "ONE DEGREE. TWO PATHWAYS.",
         careerPathBullets: [
             "Executive Nurse Educator & Leadership (ENEL)",
             "Family Nurse Practitioner (FNP)"
@@ -304,13 +304,14 @@ export const programs = [
             "<ul class='special'><li><strong>Executive Nurse Educator<br />& Leadership (ENEL)</strong></li><li>Total semester hours: 39 hours</li><li>Clinical / practicum hours: 500 hours</li><li>Time to completion: 4 semesters (full-time)</li><li>Format: Fully online</li></ul><ul class='special'><li><strong>Family Nurse Practitioner (FNP)</strong></li><li class='needs-approval'>Total semester hours: XX hours</li><li class='needs-approval'>Clinical hours: XX hours</li><li>Time to completion: Approximately two to three years</li><li>Format: Fully online with clinical placements</li></ul>"
         ,
         statisticsBar: [
-            {
-                value: "Accredited",
-                description: "by the Commission of Collegiate Nursing Education (CCNE)"
-            },
+            
             {
                 value: "No GRE",
                 description: "required for admission"
+            },
+            {
+                value: "Accredited",
+                description: "by the Commission of Collegiate Nursing Education (CCNE)"
             },
             {
                 value: "No MAT",
@@ -326,7 +327,7 @@ export const programs = [
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships.',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -340,7 +341,7 @@ export const programs = [
         programCode: 'msot',
         titleOverlay: "Master of Science in Occupational Therapy",
         sectionColor: "gold",
-        heroReverse: false,
+        heroReverse: true,
         promoHeader: "Elevate Your Expertise<br /> in Occupational Therapy",
         promoBoxMainCopy: "Advance your training for a career in occupational therapy with hands-on learning and immersive fieldwork. WSSU undergrads can apply to the Early Assurance Program by September 1st of their senior year and step into professional practice with the skills and confidence to succeed.",
         
@@ -350,7 +351,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msot-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at otdept@wssu.edu. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -369,12 +370,12 @@ export const programs = [
         
         statisticsBar: {
             value: 'Fully accredited',
-            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE®)',
-            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE®), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
+            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE<sup>®</sup>)',
+            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE<sup>®</sup>), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
         },
         
         realWorldAppImage: '/images/msot-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy Courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -382,7 +383,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.",
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships and community partners including the Community Care Clinic, United Health Center, the Enrichment Center, the Winston-Salem Rescue Mission, and Greentree Peer Center.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -407,7 +408,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.<br /><br/>Have questions in the meantime? Connect with us at ehabcounseling@wssu.edu or 336-750-8945. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -437,7 +438,7 @@ export const programs = [
 				description: 'Post-Graduation<br /> Employment Rate'
 			},
 			{
-				value: 'Fully <span class="shrink">Accredited</span>',
+				value: '<span class="shrink">Accredited</span>',
 				description: 'by the Council for Accreditation of Counseling and Related Educational Programs (CACREP)'
 			},
             {
@@ -456,7 +457,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections through corporate partnerships.",
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -481,7 +482,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at graduatenursingosa@wssu.edu or 336-750-2513. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -520,7 +521,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: "Join the WSSU 'Ramily' network of 24,000 alumni and build lasting professional connections. Our DNP graduates lead in underserved communities, advancing care where it's needed most.",
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections. Our DNP graduates lead in underserved communities, advancing care where it\'s needed most.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -545,7 +546,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/dpt-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor of Physical Therapy program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor of Physical Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br/><br />Have questions in the meantime? Connect with us at DPTadmissions@wssu.edu or 336-750-2190. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -596,7 +597,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships. Our Community Care Clinic, developed in partnership with the Intergenerational Center, is one of the largest and most comprehensive free, pro bono physical therapy clinics in NC, serving more than 25,000 clients since 2000. ',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships. Our Community Care Clinic, developed in partnership with the Intergenerational Center, is one of the largest and most comprehensive free, pro bono physical therapy clinics in NC, serving more than 25,000 clients since 2000. ',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
@@ -620,7 +621,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/data-analytics-lead-form.webp',
         leadFormImageAlt: 'A classroom setting with students learning data analytics',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at jonese@wssu.edu or 336-750-2480. We\’re happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -631,10 +632,13 @@ export const programs = [
 			"Real-world projects",
 			"State-of-the-art labs"
         ],
-        
-        careerPathHeader: "ONE CERTIFICATION.",
+        careerPathHeader: "ONE CERTIFICATION.<br />MULTIPLE SKILLS.",
         careerPathBullets: [
-            "Entry Level Data Analyst"
+            "Data Visualization",
+            "Data Mining",
+            "Pattern Recognition",
+            "Forecasting",
+            "Qualitative & Quantitative Analysis"
         ],
         
         statisticsBar: {
@@ -651,7 +655,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connection through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships using data to solve problems and improve outcomes in the communities and industries that need them most.',
         finalCTA: "Let's Find a Path That Fits You"
     },
 
@@ -676,7 +680,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/fnp-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at halecl@wssu.edu or 336-750-2513. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -688,7 +692,7 @@ export const programs = [
 			"State-of-the-art labs"
         ],
         
-        careerPathHeader: "ONE CERTIFICATION. MULTIPLE CAREER PATHS.",
+        careerPathHeader: "ONE CERTIFICATION.<br />MULTIPLE CAREER PATHS.",
         careerPathBullets: [
             "Please Provide Career Path Options"
         ],
@@ -705,7 +709,7 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/fnp-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.</span>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval herzog'>Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.</span>",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -713,7 +717,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join the WSSU "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships that improve access to primary care and support better patient outcomes in underserved and rural communities.',
         finalCTA: "Let's Find a Path That Fits You"
 	}
 

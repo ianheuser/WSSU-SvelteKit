@@ -1,5 +1,5 @@
 <script>
-    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns = '' } = $props();
+    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns = '', careerPathHeader = 'ONE DEGREE. MULTIPLE CAREER PATHS.' } = $props();
 </script>
 
 <section class="flex innovators-section">
@@ -26,15 +26,11 @@
 
     <section class="flex career-paths">
     <div class="section-inner">
-        {#if sectionColor != 'blue'}
-            <h2 class="{sectionColor}">
-                One Degree. Multiple<br />Career Paths.
-            </h2>
-        {:else}
-            <h2 class="{sectionColor}">
-                One Certification.<br />Multiple Career Paths.
-            </h2>
-        {/if}
+        
+        <h2 class="{sectionColor}">
+            {@html careerPathHeader}
+        </h2>
+        
         {#if careerPathColumns.length > 0}
             <div class="columns">
                 {@html careerPathColumns}

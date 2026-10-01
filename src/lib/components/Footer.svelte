@@ -1,9 +1,9 @@
 <script>
-	import { asset, resolve } from '$app/paths';
+	import { asset } from '$app/paths';
 </script>
 
 <footer class="site-footer">
-	<a href={ resolve("/") } class="footer-brand" aria-label="Winston-Salem State University Logo" >
+	<a href="https://www.wssu.edu/admissions/graduate-professional-experience.html" class="footer-brand" aria-label="Winston-Salem State University Logo" >
 		<enhanced:img src={ asset("/images/centered-logo.png") } class="footer-logo" alt="Winston-Salem State University" />
 	</a>
 	<div class="footer-information">
@@ -21,7 +21,7 @@
 		<!--<a href="https://www.facebook.com/WSSU1892" aria-label="Facebook" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/facebook.png") } alt="Facebook Logo" /></a> -->
 		<a href="https://www.instagram.com/wssugraduatecollege/" aria-label="Instagram" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/instagram.png") } alt="Instagram Logo" /></a>
 		<!-- <a href="https://www.youtube.com/wssu1892" aria-label="YouTube" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/youtube.png") } alt="You Tube Logo" /></a> -->
-		<a href="https://www.linkedin.com/company/winston-salem-state-university/" aria-label="LinkedIn" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/linked-in.png") }  alt="LinkedIn Logo" /></a>
+		<a href="https://www.linkedin.com/in/wssu-graduate-college-baa9bb331/" aria-label="LinkedIn" target="_blank"><enhanced:img class="enhanced-img" src={ asset("/images/linked-in.png") }  alt="LinkedIn Logo" /></a>
 	</div>
 </footer>
 

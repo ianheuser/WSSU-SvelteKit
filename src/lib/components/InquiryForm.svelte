@@ -37,7 +37,7 @@
 		<div class="inquiry-copy flex column">
       <div class="form-message">
         <h2 class="red">Thank you for your submission!</h2>
-        <p class="form-status">{thanksMessage}</p>
+        <p class="form-status">{@html thanksMessage}</p>
       </div>
       <div class="form-content">
         <h2 class="red">{@html heading}</h2>

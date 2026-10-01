@@ -187,7 +187,7 @@
 </script>
 
 <header class="site-header">
-	<a class="brand" href={ resolve("/") } aria-label="Winston-Salem State University Graduate College home">
+	<a class="brand" href="https://www.wssu.edu/admissions/graduate-professional-experience.html" aria-label="Winston-Salem State University Graduate College home">
 		<enhanced:img src={ asset("/images/new-logo.png") } class="main-logo" alt="Winston-Salem State University Graduate College" />
 	</a>
 

@@ -28,7 +28,7 @@
     <div class="section-inner">
 
             <h2 class="{sectionColor}">
-                One Certification
+                One Certification. Multiple Skills.
             </h2>
       
         {#if careerPathColumns.length > 0}

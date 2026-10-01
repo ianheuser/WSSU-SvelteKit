@@ -54,13 +54,16 @@
 </svelte:head>
 
 <main>
+
 	<div class="header-border red"></div>
+
 	<section class="flex column landing-hero">
 		<div class="hero-art" aria-hidden="true"></div>
 		<h1 class="hero-title">Be the Ram in the Room</h1>
 	</section>
 
 	<section class="flex column program-finder" id="programs">
+		
 		<h2>Find the program<br />that prepares you to lead</h2>
 
 		<div
@@ -146,7 +149,7 @@
 				<ul class="white program-list">
 					<li>
 						<a href="#contact" onclick={(event) => selectProgram(event, 'DA')}>
-							Data Analytics
+							Data Analytics | DA
 						</a>
 					</li>
 					<li>

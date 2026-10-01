@@ -64,6 +64,7 @@
 			careerPathBullets = {program.careerPathBullets}
 			sectionColor = { program.sectionColor }
 			careerPathColumns = {program.careerPathColumns}
+			careerPathHeader = { program.careerPathHeader }
 		></InnovatorsCareerPaths>
 
 		<StatRow

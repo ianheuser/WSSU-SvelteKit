@@ -15,8 +15,6 @@
   --border-size: clamp(2px, .5vw, 6px);
   --red-border: var(--border-size) solid var(--red);
 }
-
-
   
 .lead-room-section.background-gold .image-contain:before {
   background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
@@ -811,4 +809,9 @@ p.white {
   }
 
 
+}
+
+.herzog {
+  background-color: #ff00ff;
+  color: white;
 }

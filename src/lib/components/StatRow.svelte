@@ -85,7 +85,7 @@
 }
 
 .stats.total-stats-3 {
-  font-size: clamp(28px,6.5vw,70px)
+  font-size: clamp(24px,6vw,70px)
 }
 
 .stats.total-stats-4 {
