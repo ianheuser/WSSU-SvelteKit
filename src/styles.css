@@ -12,7 +12,7 @@
   --header-height: 190px;
   scroll-padding-top: var(--header-height);
   --base-font-size: clamp(15px, 2vw, 28px);
-  --border-size: clamp(2px, .5vw, 6px);
+  --border-size: clamp(2.5px, .3vw, 4px);
   --red-border: var(--border-size) solid var(--red);
 }
   
@@ -457,8 +457,8 @@ p.white {
     align-items: center;
     justify-content: center;
     padding: 13px 44px;
-    border: 3px solid var(--red);
-    border-radius: 1.3vw;
+    border: var(--border-size) solid var(--red);
+    border-radius: clamp(8px, 1vw, 20px);
     background: white;
     cursor: pointer;
     font-family: "Tilt Neon", sans-serif;

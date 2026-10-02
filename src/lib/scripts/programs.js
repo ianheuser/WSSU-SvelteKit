@@ -537,8 +537,8 @@ export const programs = [
         titleOverlay: "Doctor of Physical Therapy",
         sectionColor: "green",
         heroReverse: false,
-        promoHeader: "700+ APPLICATIONS. 30 SEATS. ARE YOU ONE?",
-        promoBoxMainCopy: "Our highly competitive program is one of the most affordable in the nation, combining innovative simulation technology with hands-on community clinic experience to prepare you for autonomous practice.",
+        promoHeader: "ONLY HBCU WITH AN ACCREDITED PT RESIDENCY",
+        promoBoxMainCopy: "Our program is one of the most affordable in the nation, combining innovative simulation technology with hands-on community clinic experience to prepare you for autonomous practice.",
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
@@ -581,10 +581,6 @@ export const programs = [
 			{
 				value: '100%',
 				description: 'Employment Rate'
-			},
-			{
-				value: 'Only',
-				description: 'HBCU in the Nation with a Residency Program'
 			}
 		],
         

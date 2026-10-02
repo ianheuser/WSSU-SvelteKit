@@ -42,7 +42,7 @@
   left: 0px;
   right: 0px;
   top: 0px;
-  height: 100px;
+  height: 400px;
   pointer-events: none;
 }
 
