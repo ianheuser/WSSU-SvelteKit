@@ -88,10 +88,8 @@ export const programs = [
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
         highlightsBullets: [
             "100% online",
-            "Evening classes",
             "Faculty mentorship",
-            "Real-world projects",
-            "State-of-the-art labs"
+            "Real-world projects"
         ],
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
@@ -138,7 +136,7 @@ export const programs = [
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Healthcare Administration program and how WSSU graduate study prepares you to become a leader in your field.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Healthcare Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at MHAadmissions@wssu.edu or 336-750-3394. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/mha-highlights.webp',
         
@@ -375,7 +373,7 @@ export const programs = [
         },
         
         realWorldAppImage: '/images/msot-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Occupational Therapy courses including Applied Community Practice, Lifespan Courses that cover Pediatrics through the Older Adult, and Assistive Technology 1 and 2.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through Occupational Therapy coursework, including Applied Community Practice, Lifespan I, II, and III (pediatrics through older adults), and Assistive Technology I and II.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -416,8 +414,7 @@ export const programs = [
         highlightsBullets: [
             "100% online",
             "Faculty mentorship",
-            "Real-world projects",
-            "State-of-the-art labs"
+            "Real-world projects"
         ],
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
@@ -488,7 +485,6 @@ export const programs = [
         highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
-            "100% online",
             "Faculty mentorship",
             "Real-world projects",
             "State-of-the-art labs"
@@ -623,7 +619,7 @@ export const programs = [
         highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
-            "Evening classes",
+            "Online classes",
 			"Faculty mentorship",
 			"Real-world projects",
 			"State-of-the-art labs"

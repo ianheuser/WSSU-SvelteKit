@@ -1,7 +1,7 @@
 
 <script>
 	import ProgramHero from '$lib/components/ProgramHero.svelte';
-	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
+	import InnovatorsCareerPathsMBA from '$lib/components/InnovatorsCareerPathsMBA.svelte';
     import StatRowMBA from '$lib/components/StatRowMBA.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
     import HeadingAndText from '$lib/components/HeadingAndText.svelte';
@@ -58,13 +58,12 @@
 			programCode={ programCode }
 		></InquiryForm>
 			
-		<InnovatorsCareerPaths
+		<InnovatorsCareerPathsMBA
 			image = { asset("/images/innovators.webp") }
 			imageAlt = "Students collaborating in a lab"
 			innovationBullets = {program.highlightsBullets}
-			careerPathBullets = {program.careerPathBullets}
 			sectionColor = { program.sectionColor }
-		></InnovatorsCareerPaths>
+		></InnovatorsCareerPathsMBA>
 
 		<StatRowMBA></StatRowMBA>
 		
