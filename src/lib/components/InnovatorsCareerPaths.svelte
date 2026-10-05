@@ -1,5 +1,5 @@
 <script>
-    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns = '', careerPathHeader = 'ONE DEGREE. MULTIPLE CAREER PATHS.' } = $props();
+    let { innovationBullets , careerPathBullets, image, imageAlt, sectionColor, careerPathColumns = '', careerPathHeader = 'ONE DEGREE. MULTIPLE CAREER PATHS.', innoBulletsFPO = false} = $props();
 </script>
 
 <section class="flex innovators-section">
@@ -11,9 +11,9 @@
             <br />
             Visionaries.
         </h2>
-        <ul>
+        <ul class='inno-pad'>
             {#each innovationBullets as bullet}
-                <li>{ bullet }</li>
+                <li class:needs-approval={innoBulletsFPO}>{@html bullet }</li>
             {/each}
         </ul>
     </div>
@@ -52,7 +52,6 @@
 </section>
 
 <style>
-
 
     .innovators-section {
         flex-wrap: nowrap;
@@ -108,6 +107,9 @@
  }
 
 
+    ul.inno-pad {
+        padding-top: 20px;
+    }
 @media (max-width: 980px){
     .red-line {
         display: none;

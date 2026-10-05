@@ -64,6 +64,7 @@
 			innovationBullets = {program.highlightsBullets}
 			careerPathBullets = {program.careerPathBullets}
 			sectionColor = { program.sectionColor }
+			innoBulletsFPO = { true }
 		></InnovatorsCareerPaths>
 
 		<StatRow

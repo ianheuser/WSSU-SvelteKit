@@ -551,7 +551,7 @@ export const programs = [
             "Hands-on training",
             "Faculty mentorship",
             "Real-world patient care",
-            "Motion analysis in the Human Performance and Gait Lab"
+            "Motion analysis in the Human<br />Performance and Gait Lab"
         ],
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
