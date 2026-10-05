@@ -219,7 +219,8 @@ export const programs = [
         highlightsBullets: [
             "Evening classes",
 			"Faculty mentorship",
-			"Real-world projects"
+			"Real-world projects",
+			"State-of-the-art labs"
         ],
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
@@ -620,8 +621,7 @@ export const programs = [
         highlightsBullets: [
             "Online classes",
 			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
+			"Real-world projects"
         ],
         careerPathHeader: "ONE CERTIFICATION.<br />MULTIPLE SKILLS.",
         careerPathBullets: [
