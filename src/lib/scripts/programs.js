@@ -548,10 +548,10 @@ export const programs = [
         highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'Students collaborating in a lab',
         highlightsBullets: [
-            "Evening classes",
-			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
+            "Hands-on training",
+            "Faculty mentorship",
+            "Real-world patient care",
+            "Motion analysis in the Human Performance and Gait Lab"
         ],
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
