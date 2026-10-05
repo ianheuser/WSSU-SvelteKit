@@ -82,7 +82,7 @@ export const programs = [
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at mbadirector@wssu.edu or 336-750-2280. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Business Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:mbadirector@wssu.edu' class='email-link'>mbadirector@wssu.edu</a> or 336-750-2280. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/mba-highlights.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
@@ -136,7 +136,7 @@ export const programs = [
         leadFormImageAlt: 'A student posing for an individual class portrait',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Healthcare Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at MHAadmissions@wssu.edu or 336-750-3394. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Healthcare Administration program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:MHAadmissions@wssu.edu' class='email-link'>MHAadmissions@wssu.edu</a> or 336-750-3394. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/mha-highlights.webp',
         
@@ -211,7 +211,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/mcst-lead-form.webp',
         leadFormImageAlt: 'Graduate student meeting with an advisor',
-        leadFormPostSubmitCopy: "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrow's expert.<br /><br />Have questions in the meantime? Connect with us at jonese@wssu.edu or 336-750-2485. We are happy to help.",
+        leadFormPostSubmitCopy: "Watch your inbox for details about the MCST program and see how WSSU graduate study lights your path to become tomorrow's expert.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:jonese@wssu.edu' class='email-link'>jonese@wssu.edu</a> or 336-750-2485. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -281,7 +281,7 @@ export const programs = [
         leadFormImageAlt: 'A student and professor working together on a project in a lab with a microscope.',
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at graduatenursingosa@wssu.edu or 336-750-2513. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Nursing program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:graduatenursingosa@wssu.edu' class='email-link'>graduatenursingosa@wssu.edu</a> or 336-750-2513. We are happy to help.",
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
@@ -349,7 +349,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msot-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at otdept@wssu.edu. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Occupational Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:otdept@wssu.edu' class='email-link'>otdept@wssu.edu</a>. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -406,7 +406,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.<br /><br/>Have questions in the meantime? Connect with us at ehabcounseling@wssu.edu or 336-750-8945. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.<br /><br/>Have questions in the meantime? Connect with us at <a href='mailto:ehabcounseling@wssu.edu' class='email-link'>ehabcounseling@wssu.edu</a> or 336-750-8945. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -479,7 +479,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at graduatenursingosa@wssu.edu or 336-750-2513. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor in Nursing Practice program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:graduatenursingosa@wssu.edu' class='email-link'>graduatenursingosa@wssu.edu</a> or 336-750-2513. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -542,7 +542,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/dpt-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor of Physical Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br/><br />Have questions in the meantime? Connect with us at DPTadmissions@wssu.edu or 336-750-2190. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Doctor of Physical Therapy program and how WSSU graduate study prepares you to become a leader in your field.<br/><br />Have questions in the meantime? Connect with us at <a href='mailto:DPTadmissions@wssu.edu' class='email-link'>DPTadmissions@wssu.edu</a> or 336-750-2190. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -613,7 +613,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/data-analytics-lead-form.webp',
         leadFormImageAlt: 'A classroom setting with students learning data analytics',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at jonese@wssu.edu or 336-750-2480. We\’re happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Certificate in Data Analytics program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:jonese@wssu.edu' class='email-link'>jonese@wssu.edu</a> or 336-750-2480. We\’re happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -672,7 +672,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/fnp-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at halecl@wssu.edu or 336-750-2513. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Family Nurse Practitioner Certificate program and how WSSU graduate study prepares you to become a leader in your field.<br /><br />Have questions in the meantime? Connect with us at <a href='mailto:halecl@wssu.edu' class='email-link'>halecl@wssu.edu</a> or 336-750-2513. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',

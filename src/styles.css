@@ -19,7 +19,10 @@
 strong {
   font-weight: 600;
 }
-
+.email-link {
+  color: var(--red);
+  text-decoration: underline;
+}
 .no-split {
   white-space: nowrap;
 }
