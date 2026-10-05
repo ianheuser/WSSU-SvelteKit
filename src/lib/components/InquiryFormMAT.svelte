@@ -118,7 +118,7 @@
     width: 1200px;
     display: none;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 18px;
 }
 
