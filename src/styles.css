@@ -15,7 +15,15 @@
   --border-size: clamp(2.5px, .3vw, 4px);
   --red-border: var(--border-size) solid var(--red);
 }
-  
+
+strong {
+  font-weight: 600;
+}
+
+.no-split {
+  white-space: nowrap;
+}
+
 .lead-room-section.background-gold .image-contain:before {
   background: linear-gradient(180deg, rgba(215, 168, 14, 1) 0%, rgba(215, 168, 14, 0) 20%);
 }

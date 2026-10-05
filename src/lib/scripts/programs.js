@@ -41,16 +41,16 @@ export const programs = [
         statisticsBar: [
             {
 				value: '92%',
-				description: 'teacher effectiveness rate'
+				description: 'Teacher Effectiveness Rate'
 			},
 			{
 				value: '88%',
-				description: 'employer satisfaction'
+				description: 'Employer Satisfaction'
 			}
         ],
         
         realWorldAppImage: '/images/mat-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Teaching Diverse Classrooms and Psychology of Teaching and Learning.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Teaching Diverse Classrooms</strong> and <strong>Psychology of Teaching and Learning</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -108,7 +108,7 @@ export const programs = [
         ],
         statisticsBar: null,
         realWorldAppImage: '/images/mba-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Prompt Engineering</strong>, <strong>Value Chain Management</strong>, <strong>Predictive Modeling for Business Decisions</strong>, <strong>Applications in Artificial Intelligence</strong>, and <strong>Ethics and Artificial Intelligence</strong>.",
         realWorldAppHeader: "Lead Every Room",
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
@@ -180,7 +180,7 @@ export const programs = [
 
         realWorldAppHeader: "LEAD EVERY ROOM",
         realWorldAppImage: '/images/mha-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Health Law, Ethics & Policy, Healthcare, Information Systems Management, Patient Centeredness & Change, and Grant Management & Writing.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Health Law</strong>, <strong>Ethics & Policy</strong>, <strong>Healthcare Information Systems Management</strong>, <strong>Patient Centeredness & Change</strong>, and <strong>Grant Management & Writing</strong>.",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
@@ -235,23 +235,23 @@ export const programs = [
         statisticsBar: [
             {
 				value: '98%',
-				description: 'job or doctoral<br />placement rate',
+				description: 'Job Or Doctoral<br />Placement Rate',
                 needsApproval: false
 			},
 			{
 				value: '22%',
-				description: 'projected growth<br />in computing careers',
+				description: 'Projected Growth<br />In Computing Careers',
                 needsApproval: false
 			},
 			{
 				value: '67%',
-				description: 'of graduate students receive paid research assistantships',
+				description: 'Of Graduate Students Receive Paid Research Assistantships',
                 needsApproval: false
 			}
         ],
         
         realWorldAppImage: '/images/mcst-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Cryptography, Database Management, Hardware Security, Data Science, and Artificial Intelligence.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Cryptography</strong>, <strong>Database Management</strong>, <strong>Hardware Security</strong>, <strong>Data Science</strong>, and <strong>Artificial Intelligence</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -266,7 +266,7 @@ export const programs = [
         fullName: 'Master of Science in Nursing',
         label: 'MSN',
         type: 'Master',
-        heading: 'Master<br /> of Science',
+        heading: 'Master<br /><span class="no-split">of Science</span>',
         subHeading: 'in Nursing',
 		href: '/programs/msn',
         programCode: 'MSN',
@@ -305,21 +305,21 @@ export const programs = [
             
             {
                 value: "No GRE",
-                description: "required for admission"
+                description: "Required For Admission"
             },
             {
                 value: "Accredited",
-                description: "by the Commission of Collegiate Nursing Education (CCNE)"
+                description: "By The Commission Of Collegiate Nursing Education (CCNE)"
             },
             {
                 value: "No MAT",
-                description: "required for admission"
+                description: "Required For Admission"
             }
         ],
 
         realWorldAppHeader: "LEAD EVERY ROOM",
         realWorldAppImage: '/images/msn-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'>(Add Example Courses Here)</span>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval'><strong>(Add Example Courses Here)</strong></span>",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
         affordabilityCopy: "Our graduate programs are among the most affordable in the Piedmont Triad region. We offer competitive tuition and financial aid options that put your graduate degree within reach.",
@@ -367,13 +367,13 @@ export const programs = [
         ],
         
         statisticsBar: {
-            value: 'Fully accredited',
-            description: 'by The Accreditation Council for Occupational Therapy Education (ACOTE<sup>®</sup>)',
-            subText: 'Accreditation Council for Occupational Therapy Education (ACOTE<sup>®</sup>), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
+            value: 'Accredited',
+            description: 'By The Accreditation Council For Occupational Therapy Education (ACOTE<sup>®</sup>)',
+            subText: 'Accreditation Council For Occupational Therapy Education (ACOTE<sup>®</sup>), 7501 Wisconsin Avenue, Suite 510E, Bethesda, MD 20814. (301) 652-6611. <a href="https://www.acoteonline.org" target="_blank">acoteonline.org</a>'
         },
         
         realWorldAppImage: '/images/msot-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through Occupational Therapy coursework, including Applied Community Practice, Lifespan I, II, and III (pediatrics through older adults), and Assistive Technology I and II.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through Occupational Therapy coursework, including <strong>Applied Community Practice</strong>, <strong>Lifespan I, II, and III</strong> (pediatrics through older adults), and <strong>Assistive Technology I and II</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -436,16 +436,16 @@ export const programs = [
 			},
 			{
 				value: '<span class="shrink">Accredited</span>',
-				description: 'by the Council for Accreditation of Counseling and Related Educational Programs (CACREP)'
+				description: 'By The Council For Accreditation Of Counseling And Related Educational Programs (CACREP)'
 			},
             {
 				value: '#3',
-				description: 'Online Counseling Program according to CACREP'
+				description: 'Online Counseling Program According To CACREP'
 			}
 		],
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Counseling Techniques & Helping Relationships, Crisis & Trauma Counseling, Career Development & Vocational Rehabilitation, Assessment & Case Management,   Psychopathology & Treatment, Clinical Practicum & Internship Training.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Counseling Techniques & Helping Relationships</strong>, <strong>Crisis & Trauma Counseling</strong>, <strong>Career Development & Vocational Rehabilitation</strong>, <strong>Assessment & Case Management</strong>, <strong>Psychopathology & Treatment</strong>, and <strong>Clinical Practicum & Internship Training</strong>.",
         realWorldAppHeader: "Lead Every Room",
         realWorldAppSubHeader: "Learn Today. Lead Tomorrow. Serve With Purpose.",
         
@@ -504,12 +504,12 @@ export const programs = [
         
         statisticsBar: {
             value: 'Fully Accredited',
-            description: 'by the Commission of Collegiate Nursing Education (CCNE)',
+            description: 'By The Commission Of Collegiate Nursing Education (CCNE)',
             needsApproval: true
         },
         
         realWorldAppImage: '/images/msrc-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Advanced Pathophysiology, Advanced Pharmacology, Health Care Policy, Organization and Finance and Organizational and Systems Leadership in Health Care.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Advanced Pathophysiology</strong>, <strong>Advanced Pharmacology</strong>, <strong>Health Care Policy, Organization and Finance</strong>, and <strong>Organizational and Systems Leadership in Health Care</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -572,7 +572,7 @@ export const programs = [
 			},
             {
 				value: 'Top 15',
-				description: 'Nationally for Affordability'
+				description: 'Nationally For Affordability'
 			},
 			{
 				value: '100%',
@@ -581,7 +581,7 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/dpt-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Anatomy, Orthopedics, Neurorehabilitation, Cardiopulmonary, and Therapeutic Exercise.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Anatomy</strong>, <strong>Orthopedics</strong>, <strong>Neurorehabilitation</strong>, <strong>Cardiopulmonary</strong>, and <strong>Therapeutic Exercise</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -634,12 +634,12 @@ export const programs = [
         ],
         
         statisticsBar: {
-				value: '21% job growth from 2024 to 2034'
+				value: '21% Job Growth From 2024 To 2034'
 			}
         ,
         
         realWorldAppImage: '/images/data-analytics-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in Prompt Engineering, Value Chain Management, Predictive Modeling for Business Decisions, Applications in Artificial Intelligence, and Ethics and Artificial Intelligence.",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Prompt Engineering</strong>, <strong>Value Chain Management</strong>, <strong>Predictive Modeling for Business Decisions</strong>, <strong>Applications in Artificial Intelligence</strong>, and <strong>Ethics and Artificial Intelligence</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -692,16 +692,16 @@ export const programs = [
         statisticsBar: [
 			{
 				value: 'Fully<br />Accredited',
-				description: 'by the Commission of Collegiate<br /> Nursing Education (CCNE)'
+				description: 'By The Commission Of Collegiate<br /> Nursing Education (CCNE)'
 			},
 			{
 				value: '35% Job<br />Growth',
-				description: 'projected for nurse<br />practitioners through 2034'
+				description: 'Projected For Nurse<br />Practitioners Through 2034'
 			}
 		],
         
         realWorldAppImage: '/images/fnp-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval herzog'>Advanced Health Assessment, Primary Health care of Adults/Older Adults, and of Children in Families and Advanced Pharmacology.</span>",
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <span class='needs-approval herzog'><strong>Advanced Health Assessment</strong>, <strong>Primary Health care of Adults/Older Adults, and of Children in Families</strong>, and <strong>Advanced Pharmacology</strong>.</span>",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
@@ -714,4 +714,3 @@ export const programs = [
 	}
 
 ];
-

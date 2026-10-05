@@ -10,7 +10,7 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
 <section class="flex program-hero { sectionColor }" class:reverse={reverse}>
     <div class="program-hero-image" aria-hidden="true" style:--hero-image={`url("${image}")`}></div>
 
-    <div class="program-hero-content { programCode }">
+    <div class="program-hero-content { programCode }" class:reverse={reverse}>
         
         <div class="left-aligned-content" class:reverse={reverse}>
             {#if heading}<h1 class={sectionColor}>{@html heading}</h1>{/if}
@@ -34,6 +34,12 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         justify-content: center;
         text-align: left;
         padding-left: 7%;
+    }
+
+    .program-hero-content.reverse {
+        padding-left: 0%;
+        padding-right: 10%;
+        align-items: flex-end;
     }
 
     .header-border {
@@ -146,12 +152,6 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         pointer-events: none;
     }
 
-
-    .program-hero.reverse .program-hero-content {
-        align-items: flex-start;
-        text-align: left;
-    }
-
     .program-hero::after {
         content: "";
         position: absolute;
@@ -197,6 +197,23 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         right: -60px;
     }
 
+
+@media (max-width: 1400px){
+    
+    .program-hero-content.reverse {
+        padding-left: 9%;
+    }
+
+}
+
+@media (max-width: 1100px){
+    
+    .program-hero-content.reverse {
+        padding-left: 0%;
+        padding-right: 7%;
+    }
+}
+
 @media (max-width: 980px){
     .header-border {
         height: 125px;
@@ -208,6 +225,10 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
         font-weight: bold;
         padding-bottom: 12px;
         top: 58px;
+    }
+    .program-hero-content.reverse {
+        padding-left: 0%;
+        padding-right: 5%;
     }
 }
     

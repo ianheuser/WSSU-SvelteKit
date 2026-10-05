@@ -3,7 +3,7 @@
   
     <div class="container">
       <div class="stats flicker blue">
-        21% job growth from 2024 to 2034
+        21% Job Growth From 2024 To 2034
       </div>
       
     </div>

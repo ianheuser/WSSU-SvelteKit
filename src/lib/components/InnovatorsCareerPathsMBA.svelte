@@ -119,6 +119,9 @@
 
 <style>
 
+    .innovators-copy {
+        gap: 25px;
+    }
     .career-path-columns{
         display: flex;
         gap: 25px;
