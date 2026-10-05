@@ -12,7 +12,7 @@
   --header-height: 190px;
   scroll-padding-top: var(--header-height);
   --base-font-size: clamp(15px, 2vw, 28px);
-  --border-size: clamp(2.5px, .3vw, 4px);
+  --border-size: clamp(3px, .5vw, 4px);
   --red-border: var(--border-size) solid var(--red);
 }
 
