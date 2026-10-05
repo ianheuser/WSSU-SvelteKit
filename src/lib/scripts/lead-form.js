@@ -10,9 +10,18 @@ export function handleLeadSubmit(event) {
 	// Show the success message.
 	const messageContainer = document.querySelector('.form-message');
 	const formContent = document.querySelector('.form-content');
+	const matContacts = document.querySelector('.mat-contacts');
+	const collage = document.querySelector('.campus-collage.mat');
 	if (messageContainer && formContent) {
 		formContent.style.display = 'none';
 		messageContainer.style.display = 'flex';
 	}
+	if (matContacts) {
+		matContacts.style.display = 'flex';
+	}
+	if (collage) {
+		collage.style.display = 'none';
+	}
+	
 	
 }

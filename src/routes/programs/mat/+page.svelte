@@ -8,7 +8,7 @@
     import FinancialAid from '$lib/components/FinancialAid.svelte';
     import FindAPath from '$lib/components/FindAPath.svelte';
 	import { asset } from '$app/paths';
-	import InquiryForm from '$lib/components/InquiryForm.svelte';
+	import InquiryFormMAT from '$lib/components/InquiryFormMAT.svelte';
 
 	import { programs } from '$lib/scripts/programs.js';
 	let programCode = 'MAT';
@@ -48,7 +48,7 @@
 			paragraph = { program.promoBoxMainCopy }
 		></HeadingAndText>
 		
-		<InquiryForm
+		<InquiryFormMAT
 			heading = { program.leadFormHeader }
 			description = { program.leadFormCopy }
 			buttonLabel = "Get Connected"
@@ -56,7 +56,7 @@
 			imageAlt = { program.leadFormImageAlt }
 			thanksMessage = { program.leadFormPostSubmitCopy }
 			programCode={ programCode }
-		></InquiryForm>
+		></InquiryFormMAT>
 			
 		<InnovatorsCareerPaths
 			image = { asset("/images/innovators.webp") }
