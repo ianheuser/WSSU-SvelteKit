@@ -219,8 +219,7 @@ export const programs = [
         highlightsBullets: [
             "Evening classes",
 			"Faculty mentorship",
-			"Real-world projects",
-			"State-of-the-art labs"
+			"Real-world projects"
         ],
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
