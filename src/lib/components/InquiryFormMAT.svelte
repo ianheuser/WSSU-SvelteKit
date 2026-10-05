@@ -282,7 +282,7 @@ p.form-description {
 }
 
 .red-line {
-    width: 10px;
+    width: var(--border-size);
     height: 100%;
     background-color: var(--red);
     position: absolute;

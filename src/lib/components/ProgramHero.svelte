@@ -53,13 +53,13 @@ let { heading, programCode, subHeading = null , image, reverse, sectionColor } =
     }
 
     .header-border.gold {
-        border-bottom: 6px solid var(--gold);
+        border-bottom: var(--border-size) solid var(--gold);
     }
     .header-border.green {
-        border-bottom: 6px solid var(--green);
+        border-bottom: var(--border-size) solid var(--green);
     }
     .header-border.blue {
-        border-bottom: 6px solid var(--blue);
+        border-bottom: var(--border-size) solid var(--blue);
     }
    
     h1 { 
