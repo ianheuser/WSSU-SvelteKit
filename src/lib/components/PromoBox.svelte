@@ -104,10 +104,12 @@
   margin-top: 40px;
   margin-bottom: 40px;
   appearance: base-select;
-  background: var(--red);
+  background: white;
   border-radius: 7px;
+  border-color: white;
   padding: 13px 29px;
   z-index: 2;
+  color: black;
 }
 
 .pathway-options::picker-icon {
