@@ -18,10 +18,11 @@
 
 select {
   appearance: base-select;
+  align-items: center;
 }
 
 select::picker-icon {
-  font-size: 21px;
+  font-size: clamp(15px, 2vw, 20px);
 }
 
 strong {
