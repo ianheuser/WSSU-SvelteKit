@@ -186,7 +186,7 @@ export const programs = [
        
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships with Advocate, Novant, <span class="needs-approval">Area Health Education Centers (NC AHEC), and National Associate of Health Services Executives.</span>',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships with Advocate, Novant, Area Health Education Centers (NC AHEC), and National Associate of Health Services Executives (NAHSE).',
         finalCTA: "Let's Find a Path That Fits You"
     
 	},
@@ -272,8 +272,8 @@ export const programs = [
         titleOverlay: "Master of Science in Nursing",
         sectionColor: "gold",
         heroReverse: true,
-        promoHeader: "Fully Online MSN",
-        promoBoxMainCopy: "WSSU's MSN program prepares registered nurses for advanced roles in education and practice, offering flexible pathways that align with your professional goals.",
+        promoHeader: "Earn Your MSN Fully Online",
+        promoBoxMainCopy: "Choose your focus: advanced practice, or education and leadership.",
         
         leadFormHeader: "Let's Get You Started",
         leadFormImage: '/images/msn-lead-form.webp',
@@ -291,7 +291,7 @@ export const programs = [
             "Real-world projects",
             "State-of-the-art labs"
         ],
-
+        
         careerPathHeader: "ONE DEGREE. TWO PATHWAYS.",
         careerPathBullets: [
             "Executive Nurse Educator & Leadership (ENEL)",
@@ -405,7 +405,7 @@ export const programs = [
         leadFormFields: ["Name", "Email", "Program of Interest", "Get Connected"],
         leadFormImage: '/images/msrc-lead-form.webp',
         leadFormImageAlt: 'A graduate student helping a patient walk.',
-        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.<br /><br/>Have questions in the meantime? Connect with us at <a href='mailto:ehabcounseling@wssu.edu' class='email-link'>ehabcounseling@wssu.edu</a> or 336-750-8945. We are happy to help.",
+        leadFormPostSubmitCopy: "Thank you! Information is on the way. Watch your email for information about the Master of Science in Rehabilitation Counseling program and how WSSU graduate study prepares you to become a leader in your field.<br /><br/>Have questions in the meantime? Connect with us at <a href='mailto:rehabcounseling@wssu.edu' class='email-link'>rehabcounseling@wssu.edu</a> or 336-750-8945. We are happy to help.",
         
         highlightsHeader: "INNOVATORS. PROBLEM-SOLVERS. VISIONARIES.",
         highlightsImage: '/images/innovators.webp',
@@ -469,8 +469,8 @@ export const programs = [
         programCode: 'dnp',
         titleOverlay: "Doctor of Nursing Practice",
         
-        promoHeader: "Two pathways. One DNP. ",
-        promoBoxMainCopy: "<ul><li><strong>BSN to DNP</strong></li><li>Who it's for: Nurses with a BSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately three years</li><li>Format: Fully online with clinical flexibility</li></ul><ul><li><strong>MSN to DNP</strong></li><li>Who it's for: Nurses with an MSN</li><li class='needs-approval'>Total semester hours: [XX credit hours]</li><li class='needs-approval'>Minimum clinical hours: [XX hours]</li><li>Time to completion: Approximately two years</li><li>Format: Fully online with clinical flexibility</li></ul>",
+        promoHeader: "Your Fully Online DNP Starts Here",
+        promoBoxMainCopy: "Two distinct pathways to prepare you for the highest level of advanced nursing practice.",
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",

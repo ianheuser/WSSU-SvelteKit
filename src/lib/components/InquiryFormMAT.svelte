@@ -84,23 +84,23 @@
         <div class="mat-contact">
           <div class="mat-contact-name"><strong>Birth to Kindergarten Education</strong></div> 
           <div class="mat-contact-number">336-750-2420</div>
-          <div class="mat-contact-email">roseboroughlb@wssu.edu</div>
+          <div class="email-link">roseboroughlb@wssu.edu</div>
         </div>
         <div class="mat-contact">
           <div class="mat-contact-name"><strong>Elementary Education</strong></div>
           <div class="mat-contact-number">336-750-8337</div>
-          <div class="mat-contact-email">tafaridn@wssu.edu</div>
+          <div class="email-link">tafaridn@wssu.edu</div>
         </div>
       
         <div class="mat-contact">
           <div class="mat-contact-name"><strong>Middle Grades Education</strong></div>
           <div class="mat-contact-number">336-750-2708</div>
-          <div class="mat-contact-email">johnsondt@wssu.edu</div>
+          <div class="email-link">johnsondt@wssu.edu</div>
         </div>
         <div class="mat-contact">
           <div class="mat-contact-name"><strong>Special Education</strong></div>
           <div class="mat-contact-number">336-750-2378</div>
-          <div class="mat-contact-email">whitehurstac@wssu.edu</div>
+          <div class="email-link">whitehurstac@wssu.edu</div>
         </div>
       
     </div>

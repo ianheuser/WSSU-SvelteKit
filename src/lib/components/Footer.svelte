@@ -81,7 +81,7 @@
   justify-content: center;
   width: 69px;
   height: 69px;
-  border: 4px solid var(--red);
+  border: var(--border-size) solid var(--red);
   border-radius: 50%;
   background: var(--white);
   color: var(--black);

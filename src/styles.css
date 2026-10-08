@@ -12,8 +12,16 @@
   --header-height: 190px;
   scroll-padding-top: var(--header-height);
   --base-font-size: clamp(15px, 2vw, 28px);
-  --border-size: clamp(2px, 0.5vw, 6px);
+  --border-size: clamp(4.5px, 0.65vw, 6px);
   --red-border: var(--border-size) solid var(--red);
+}
+
+select {
+  appearance: base-select;
+}
+
+select::picker-icon {
+  font-size: 21px;
 }
 
 strong {
@@ -258,7 +266,7 @@ select {
     var(--black);
   color: var(--white);
   text-align: center;
-  border-bottom: var(--red) 2px solid;
+  border-bottom: var(--red) var(--border-size) solid;
 }
 
 .program-type-grid {

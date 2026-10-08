@@ -74,7 +74,7 @@
           <label>
 
               <span>Program of Interest <b>*</b></span>
-              <select name="program" id="programOfInterest" bind:value={program} required disabled={isProgramOfInterestDisabled}>
+              <select name="program" id="programOfInterest" bind:value={program} required class:is-disabled={isProgramOfInterestDisabled} disabled={isProgramOfInterestDisabled}>
                 <option value="">Select...</option>
                 {#each programs as indProgram}
                   <option value={indProgram.label.toLowerCase()}>{indProgram.fullName}</option>
@@ -104,7 +104,9 @@
 
 <style>
 
-
+#programOfInterest.is-disabled {
+  appearance: none;
+}
 
 .form-content h2 {
   width: 100%;

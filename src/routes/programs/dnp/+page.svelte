@@ -4,12 +4,11 @@
 	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
     import StatRowSub from '$lib/components/StatRowSub.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
-    import HeadingAndColumns from '$lib/components/HeadingAndColumns.svelte';
+    import PromoBox from '$lib/components/PromoBox.svelte';
     import FinancialAid from '$lib/components/FinancialAid.svelte';
     import FindAPath from '$lib/components/FindAPath.svelte';
 	import { asset } from '$app/paths';
 	import InquiryForm from '$lib/components/InquiryForm.svelte';
-
 	import { programs } from '$lib/scripts/programs.js';
 	let programCode = 'DNP';
 	const program = programs.find((program) => program.label == programCode);
@@ -42,10 +41,11 @@
 			sectionColor = { program.sectionColor }
 		></ProgramHero>
 		
-		<HeadingAndColumns 
+		<PromoBox
+			programCode = { program.label }
 			heading = { program.promoHeader }
-			content = { program.promoBoxMainCopy }
-		></HeadingAndColumns>
+			paragraph = { program.promoBoxMainCopy }
+		></PromoBox>
 		
 		<InquiryForm
 			heading = { program.leadFormHeader }
