@@ -142,7 +142,6 @@ export const programs = [
         
         highlightsImageAlt: 'A student and a teacher going over a project on a tablet.',
         highlightsBullets: [
-            "Flexible online format",
             "Faculty mentorship",
             "Real-world projects",
             "State-of-the-art labs"
@@ -581,7 +580,8 @@ export const programs = [
 		],
         
         realWorldAppImage: '/images/dpt-real-world-application.webp',
-        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through courses in <strong>Anatomy</strong>, <strong>Orthopedics</strong>, <strong>Neurorehabilitation</strong>, <strong>Cardiopulmonary</strong>, and <strong>Therapeutic Exercise</strong>.",
+        
+        realWorldAppCopy: "Gain the skills, confidence, and real-world opportunities to advance your career through Occupational Therapy coursework, including <strong>Applied Community Practice</strong>, <strong>Lifespan I, II, and III (pediatrics through older adults)</strong>, and <strong>Assistive Technology I and II</strong>.",
         realWorldAppHeader: "Lead Every Room",
         
         affordabilityHeader: "AFFORDABILITY WITHOUT COMPROMISE",
