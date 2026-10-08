@@ -10,7 +10,7 @@
         pathwaySelect.addEventListener("change", (event) => {
 
           if (event.target.value !== "") {
-            descriptionContainer.style.display = "block";
+            descriptionContainer.style.display = "flex";
           } else {
             descriptionContainer.style.display = "none";
           }
@@ -20,7 +20,7 @@
             });
             const selected = document.getElementById(event.target.value);
             if (selected) {
-                selected.style.display = "block";
+                selected.style.display = "flex";
             }
         });
     });
@@ -57,14 +57,17 @@
         {#if programCode == 'MSN'}
           <div id="advanced-practice" class="pathway-description">
             <p>A 51 credit hour curriculum that prepares you to provide primary care to patients and families in a wide range of settings.</p>
+            <div class="divider"></div>
             <ul>
               <li>672 practicum hours</li>
               <li>About two years full time, three years part time</li>
               <li>Eligible for national FNP certification</li>
             </ul>
           </div>
+
           <div id="education-leadership" class="pathway-description">
             <p>A 39 credit hour curriculum that prepares you to teach in undergraduate nursing programs and step into clinical education and staff development roles.</p>
+            <div class="divider"></div>
             <ul>
               <li>240 clinical practicum hours</li>
               <li>About two years full time, three years part time</li>
@@ -74,6 +77,7 @@
         {:else if programCode == 'DNP'}
           <div id="bsn-dnp" class="pathway-description">
             <p>A 78-semester-hour curriculum with a clinical focus in the Family Nurse Practitioner (FNP) specialization.</p>
+            <div class="divider"></div>
             <ul>
               <li>Minimum 1,182 clinical hours</li>
               <li>About three years to complete</li>
@@ -82,6 +86,7 @@
           </div>
           <div id="msn-dnp" class="pathway-description">
             <p>A 33-semester-hour curriculum built for nurses who already hold a master's degree in advanced nursing practice.</p>
+            <div class="divider"></div>
             <ul>
               <li>Minimum 510 clinical hours</li>
               <li>About two years to complete</li>
@@ -95,6 +100,17 @@
 </section>
 
 <style>
+.pathway-description {
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  height: 3px;
+  background: white;
+  width: 10px;
+  margin-top: 15px;
+}
 
 .pathway-descriptions, .pathway-description {
   display: none;
@@ -118,7 +134,7 @@
 }
 
 .pathway-descriptions {
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: clamp(7px, 0.65vw, 10px);
     padding: 60px 0px 40px;
     margin-top: -73px;
