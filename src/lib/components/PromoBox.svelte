@@ -121,10 +121,11 @@
     padding: 60px 0px 40px;
     margin-top: -73px;
     width: clamp(360px, 80vw, 1200px);
+    margin-bottom: 30px;
 }
 
 .headingAndText {
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
   background: var(--red);
   color: var(--white);
   text-align: center;
@@ -168,7 +169,7 @@
 @media (max-width: 720px){
 
   .headingAndText {
-    padding: 30px 0px;
+    padding: 30px 0px 0px;
   }
 
 
