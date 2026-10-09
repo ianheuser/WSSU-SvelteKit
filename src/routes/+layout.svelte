@@ -2,7 +2,7 @@
 	import { onDestroy } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 	import favicon from '$lib/assets/favicon.svg';
-
+	import PopUp from '$lib/components/PopUp.svelte';
 	// Global styles + self-hosted fonts. Vite bundles these, and with
 	// kit.inlineStyleThreshold set the CSS is inlined into the HTML so nothing
 	// on the critical path is a separate request.
@@ -39,7 +39,11 @@
 </svelte:head>
 
 <Header />
-
+<PopUp
+	heading="Still Exploring Your Options?"
+	paragraph="See what other programs we have to offer"
+	link="https://www.wssu.edu/admissions/programs/index.html#grad"
+/>
 {@render children()}
 
 <Footer />

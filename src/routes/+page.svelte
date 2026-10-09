@@ -54,7 +54,8 @@
 </svelte:head>
 
 <main>
-
+	
+	
 	<div class="header-border red"></div>
 
 	<section class="flex column landing-hero">
