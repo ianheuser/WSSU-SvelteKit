@@ -55,7 +55,7 @@
       <div class="pathway-descriptions">
 
         {#if programCode == 'MSN'}
-          <div id="advanced-practice" class="pathway-description">
+          <div id="advanced-practice" class="pathway-description advanced-practice">
             <p>A 51 credit hour curriculum that prepares you to provide primary care to patients and families in a wide range of settings.</p>
             <div class="divider"></div>
             <ul>
@@ -65,7 +65,7 @@
             </ul>
           </div>
 
-          <div id="education-leadership" class="pathway-description">
+          <div id="education-leadership" class="pathway-description education-leadership">
             <p>A 39 credit hour curriculum that prepares you to teach in undergraduate nursing programs and step into clinical education and staff development roles.</p>
             <div class="divider"></div>
             <ul>
@@ -75,7 +75,7 @@
             </ul>
           </div>
         {:else if programCode == 'DNP'}
-          <div id="bsn-dnp" class="pathway-description">
+          <div id="bsn-dnp" class="pathway-description bsn-dnp">
             <p>A 78-semester-hour curriculum with a clinical focus in the Family Nurse Practitioner (FNP) specialization.</p>
             <div class="divider"></div>
             <ul>
@@ -84,7 +84,7 @@
               <li>Eligible for national FNP certification</li>
             </ul>
           </div>
-          <div id="msn-dnp" class="pathway-description">
+          <div id="msn-dnp" class="pathway-description msn-dnp">
             <p>A 33-semester-hour curriculum built for nurses who already hold a master's degree in advanced nursing practice.</p>
             <div class="divider"></div>
             <ul>
@@ -100,6 +100,37 @@
 </section>
 
 <style>
+
+
+
+.msn-dnp  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bsn-dnp  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-leadership  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-leadership p {
+  text-align: center;
+  width: 80%;
+}
+
+.advanced-practice  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pathway-description {
   flex-direction: column;
   align-items: center;
@@ -134,11 +165,11 @@
 }
 
 .pathway-descriptions {
-    border: 3px solid white;
+      border: 3px solid white;
     border-radius: clamp(7px, 0.65vw, 10px);
     padding: 60px 0px 40px;
     margin-top: -73px;
-    width: clamp(360px, 80vw, 1200px);
+    width: 67%;
     margin-bottom: 30px;
 }
 
@@ -165,6 +196,12 @@
   flex-direction: column;
   align-items: center;
   color: white;
+}
+
+
+.pathway-section p {
+  font-size: var(--base-font-size);
+  text-wrap: balance;
 }
 
 @media (max-width: 1100px){
@@ -197,12 +234,19 @@
 
   .pathway-descriptions {
     margin-top: -73px;
+    width: 90%;
+    
   }
   .pathway-options {
     width: 80%;
     align-items: center;
   }
-
+  .pathway-section p {
+    width: 90%;
+  }
 }
+
+
+
 
 </style>

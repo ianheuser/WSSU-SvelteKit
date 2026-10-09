@@ -12,7 +12,7 @@ export const programs = [
     
         sectionColor: "gold",
         heroReverse: true,
-        promoHeader: "No Education Degree Required",
+        promoHeader: "Your Path to Teaching Starts Here",
         promoBoxColumns: [
             "Birth-Kindergarten Education",
             "Elementary Education",
@@ -41,7 +41,7 @@ export const programs = [
         
         careerPathHeader: "ONE DEGREE. MULTIPLE CAREER PATHS.",
         careerPathBullets: [
-            "Teaching","Research","Special Services","Special Education"
+            "Teaching","Research","Youth Services & Adult Services"
         ],
         
         statisticsBar: [
@@ -64,7 +64,7 @@ export const programs = [
         
         mottoHeader: "DEPART TO SERVE",
         mottoSubHead: "The Experts & Support Every Community Deserves.",
-        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships <span class="needs-approval">ensuring every child has access to excellent education.</span>',
+        mottoCopy: 'Join WSSU\'s "Ramily" network of 24,000 alumni and build lasting professional connections through corporate partnerships ensuring every child has access to excellent education.',
         finalCTA: "Let's Find a Path That Fits You"
 	},
 
