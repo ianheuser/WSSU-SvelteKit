@@ -16,7 +16,7 @@
   --red-border: var(--border-size) solid var(--red);
 }
 
-h2 {
+h2, p, li, h3,h4{
   text-wrap: balance;
 }
 
@@ -108,7 +108,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(14px, 2.35vw, 35px);
+  font-size: clamp(14px, 2vw, 35px);
   text-transform: uppercase;
   margin: 0px 0px 10px;
   font-weight: 600;

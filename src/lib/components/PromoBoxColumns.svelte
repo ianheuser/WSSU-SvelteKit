@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  font-size: 18px;
+  font-size: var(--base-font-size);
   font-weight: 600;
   line-height: 1.35;
 }
@@ -85,15 +85,14 @@
   }
 }
 
-@media (max-width: 720px) { 
-  .promoBox .column {
-    font-size: 12px;
-  }
-}
+
 
 @media (max-width: 620px) {
   .promoBox {
     padding-top: 30px;
+  }
+  .no-wrap-text {
+    text-wrap: balance;
   }
 
   .promoBox .columns {
