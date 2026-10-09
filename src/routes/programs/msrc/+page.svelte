@@ -4,7 +4,7 @@
 	import InnovatorsCareerPaths from '$lib/components/InnovatorsCareerPaths.svelte';
     import StatRow from '$lib/components/StatRow.svelte';
     import RealWorldApplication from '$lib/components/RealWorldApplication.svelte';
-    import HeadingAndText from '$lib/components/HeadingAndText.svelte';
+    import PromoBoxColumns from '$lib/components/PromoBoxColumns.svelte';
     import FinancialAid from '$lib/components/FinancialAid.svelte';
     import FindAPath from '$lib/components/FindAPath.svelte';
 	import { asset } from '$app/paths';
@@ -42,10 +42,10 @@
 			sectionColor = { program.sectionColor }
 		></ProgramHero>
 		
-		<HeadingAndText 
+		<PromoBoxColumns 
 			heading = { program.promoHeader }
-			paragraph = { program.promoBoxMainCopy }
-		></HeadingAndText>
+			columns = { program.promoBoxColumns }
+		></PromoBoxColumns>
 		
 		<InquiryForm
 			heading = { program.leadFormHeader }

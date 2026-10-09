@@ -13,7 +13,13 @@ export const programs = [
         sectionColor: "gold",
         heroReverse: true,
         promoHeader: "No Education Degree Required",
-        promoBoxMainCopy: "The Master of Arts in Teaching offers a nationwide licensure pathway for anyone with a bachelor's degree who wants to become an educator and make a difference in the classroom.",
+        promoBoxColumns: [
+            "Birth-Kindergarten Education",
+            "Elementary Education",
+            "Middle Grades Education",
+            "Special Education",
+            "Health and Physical Education"
+        ],
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
@@ -397,7 +403,13 @@ export const programs = [
         sectionColor: "gold",
         heroReverse: false,
         promoHeader: "One Degree. Five Areas of Focus.",
-        promoBoxMainCopy: "Choose from five concentration areas: Rehabilitation Counseling, Clinical Mental Health Counseling, Deaf and Hard of Hearing, Transition, and Vocational Evaluation. Curriculum is aligned with eligibility for the Certified Rehabilitation Counselor (CRC) exam and professional counseling licensure.",
+        promoBoxColumns: [
+            "Rehabilitation Counseling",
+            "Clinical Mental Health Counseling",
+            "Deaf and Hard of Hearing",
+            "Transition",
+            "Vocational Evaluation"
+        ],
         
         leadFormHeader: "Let's Get You Started",
         leadFormCopy: "Tell us a little about yourself and our graduate team will reach out soon.",
