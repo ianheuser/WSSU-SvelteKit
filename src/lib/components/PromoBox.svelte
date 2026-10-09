@@ -205,7 +205,7 @@
 }
 
 .pathway-section li {
-  line-height: 19px;
+  line-height: clamp(18px, 2.5vw, 32px);
 }
 
 @media (max-width: 1100px){
