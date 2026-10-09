@@ -33,7 +33,7 @@
 <section class="flex column headingAndText ">
 
     <h2>{@html heading}</h2>
-    <p>{@html paragraph}</p>
+    <p class="subber">{@html paragraph}</p>
 
     <div class="pathway-section">
     
@@ -102,6 +102,9 @@
 <style>
 
 
+.headingAndText .subber {
+  text-wrap: nowrap; 
+}
 
 .msn-dnp  {
   display: flex;
@@ -169,7 +172,7 @@
     border-radius: clamp(7px, 0.65vw, 10px);
     padding: 60px 0px 40px;
     margin-top: -73px;
-    width: 67%;
+    width: 75%;
     margin-bottom: 30px;
 }
 
@@ -230,6 +233,10 @@
   .headingAndText {
     padding: 30px 0px 0px;
   }
+
+  .headingAndText .subber {
+  text-wrap: balance; 
+}
 
 
 }

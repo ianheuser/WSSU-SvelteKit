@@ -16,7 +16,7 @@
   --red-border: var(--border-size) solid var(--red);
 }
 
-h2, li, p {
+h2 {
   text-wrap: balance;
 }
 
