@@ -181,6 +181,7 @@
   background: var(--red);
   color: var(--white);
   text-align: center;
+  gap: 20px;
 }
 
 .headingAndText p {
