@@ -20,7 +20,7 @@
         document.body.style.overflow = 'hidden';
         document.documentElement.style.overflow = 'hidden';
       };
-      const openTimeout = window.setTimeout(openPopUp, 90000);
+      const openTimeout = window.setTimeout(openPopUp, 1000);
 
       return () => window.clearTimeout(openTimeout);
 
@@ -42,10 +42,12 @@
 
 <style>
 
-
+.popUp {
+  background-color: rgba(255,255,255,0.9);
+}
 
 .popUpBackground, .popUpSection {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -78,12 +80,12 @@
   width: clamp(300px, 40%, 350px);
   padding: 30px 0px;
   position: absolute;
-  top: 300px;
+  top: 50%;
   z-index: 1000;
   border-radius: 10px;
   height: fit-content;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .popUp h2{
