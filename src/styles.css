@@ -16,6 +16,10 @@
   --red-border: var(--border-size) solid var(--red);
 }
 
+h2, li, p {
+  text-wrap: balance;
+}
+
 select {
   appearance: base-select;
   align-items: center;

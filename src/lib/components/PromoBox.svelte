@@ -199,9 +199,13 @@
 }
 
 
-.pathway-section p {
+.pathway-section p, .pathway-section li {
   font-size: var(--base-font-size);
   text-wrap: balance;
+}
+
+.pathway-section li {
+  line-height: 19px;
 }
 
 @media (max-width: 1100px){
