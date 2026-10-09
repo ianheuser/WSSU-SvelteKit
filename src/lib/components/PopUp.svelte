@@ -10,16 +10,20 @@
       closeElements.forEach(el => {
         el.addEventListener('click', () => {
           popUpSection.style.display = 'none';
+          document.body.style.overflow = 'unset';
+          document.documentElement.style.overflow = 'unset';
         });
       });
 
       const openPopUp = () => {
         popUpSection.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
       };
       const openTimeout = window.setTimeout(openPopUp, 90000);
 
       return () => window.clearTimeout(openTimeout);
-      
+
     });
 
 </script>
@@ -37,6 +41,8 @@
 </section>
 
 <style>
+
+
 
 .popUpBackground, .popUpSection {
   position: absolute;

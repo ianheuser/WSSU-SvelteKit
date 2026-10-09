@@ -110,16 +110,17 @@
 <style>
 
 .mat-contacts {
-   display: flex;
+    display: flex;
     flex-direction: row;
-    gap: 40px;
-    /* margin-top: 50px; */
+    gap: 24px;
+    margin-top: -20px;
     z-index: 1;
-    width: 1200px;
+    width: 100%;
     display: none;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 18px;
+    max-width: 1100px;
 }
 
 .mat-contact {
@@ -127,7 +128,7 @@
   flex-direction: column;
   gap: 4px;
   border-top: 3px solid var(--red);
-  padding-top: 10px;
+  padding-top: 18px;
 }
 
 
