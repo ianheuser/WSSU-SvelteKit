@@ -37,7 +37,7 @@
 
     <div class="pathway-section">
     
-      <select id="pathway-options" name="pathway-options" class="pathway-options">
+      <select id="pathway-optccccions" name="pathway-options" class="pathway-options">
         {#if programCode == 'MSN'}
           <option value="" selected>Choose Your Focus</option>
         {:else if programCode == 'DNP'}
@@ -168,7 +168,7 @@
 }
 
 .pathway-descriptions {
-      border: 3px solid white;
+      aaasxcborder: 3px solid white;
     border-radius: clamp(7px, 0.65vw, 10px);
     padding: 60px 0px 40px;
     margin-top: -73px;
