@@ -47,7 +47,7 @@
 </section>
 
 <style>
-   
+
 .popUpBackground, .popUpSection {
   top: 0;
   left: 0;
@@ -98,13 +98,14 @@
 .popUp h2{
   margin-bottom: 10px;
   color: var(--red);
+  font-size: clamp(24px,5.5vw,65px)
 }
 
 .popUp p {
   margin: 0px auto;
     padding: 5px 0px 10px;
     width: 65%;
-    font-size: var(--base-font-size);
+    font-size: clamp(16px,2.5vw,36px);
 }
 
 
