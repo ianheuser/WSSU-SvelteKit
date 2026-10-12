@@ -1,29 +1,6 @@
 <script>
-    import { onMount } from 'svelte';
     let { programCode = "", heading, paragraph } = $props();
-
-    onMount(() => {
-        const pathwaySelect = document.getElementById("pathway-options");
-        const pathwayDescriptions = document.querySelectorAll(".pathway-description");
-        const descriptionContainer = document.querySelector(".pathway-descriptions");
-
-        pathwaySelect.addEventListener("change", (event) => {
-
-          if (event.target.value !== "") {
-            descriptionContainer.style.display = "flex";
-          } else {
-            descriptionContainer.style.display = "none";
-          }
-
-            pathwayDescriptions.forEach((desc) => {
-                desc.style.display = "none";
-            });
-            const selected = document.getElementById(event.target.value);
-            if (selected) {
-                selected.style.display = "flex";
-            }
-        });
-    });
+    let selectedPathway = $state('');
    
     
 </script>
@@ -37,11 +14,11 @@
 
     <div class="pathway-section">
     
-      <select id="pathway-optccccions" name="pathway-options" class="pathway-options">
+      <select id="pathway-options" name="pathway-options" class="pathway-options" bind:value={selectedPathway}>
         {#if programCode == 'MSN'}
-          <option value="" selected>Choose Your Focus</option>
+          <option value="">Choose Your Focus</option>
         {:else if programCode == 'DNP'}
-          <option value="" selected>Choose Your Pathway</option>
+          <option value="">Choose Your Pathway</option>
         {/if}
         {#if programCode == 'MSN'}
           <option value="advanced-practice">Family Nurse Practitioner (FNP)</option>
@@ -52,10 +29,10 @@
         {/if}
       </select>
 
-      <div class="pathway-descriptions">
+      <div class="pathway-descriptions" class:is-visible={selectedPathway !== ''}>
 
         {#if programCode == 'MSN'}
-          <div id="advanced-practice" class="pathway-description advanced-practice">
+          <div id="advanced-practice" class="pathway-description advanced-practice" class:is-visible={selectedPathway === 'advanced-practice'}>
             <p>A 51 credit hour curriculum that prepares you to provide primary care to patients and families in a wide range of settings.</p>
             <div class="divider"></div>
             <ul>
@@ -65,7 +42,7 @@
             </ul>
           </div>
 
-          <div id="education-leadership" class="pathway-description education-leadership">
+          <div id="education-leadership" class="pathway-description education-leadership" class:is-visible={selectedPathway === 'education-leadership'}>
             <p>A 39 credit hour curriculum that prepares you to teach in undergraduate nursing programs and step into clinical education and staff development roles.</p>
             <div class="divider"></div>
             <ul>
@@ -75,7 +52,7 @@
             </ul>
           </div>
         {:else if programCode == 'DNP'}
-          <div id="bsn-dnp" class="pathway-description bsn-dnp">
+          <div id="bsn-dnp" class="pathway-description bsn-dnp" class:is-visible={selectedPathway === 'bsn-dnp'}>
             <p>A 78-semester-hour curriculum with a clinical focus in the Family Nurse Practitioner (FNP) specialization.</p>
             <div class="divider"></div>
             <ul>
@@ -84,7 +61,7 @@
               <li>Eligible for national FNP certification</li>
             </ul>
           </div>
-          <div id="msn-dnp" class="pathway-description msn-dnp">
+          <div id="msn-dnp" class="pathway-description msn-dnp" class:is-visible={selectedPathway === 'msn-dnp'}>
             <p>A 33-semester-hour curriculum built for nurses who already hold a master's degree in advanced nursing practice.</p>
             <div class="divider"></div>
             <ul>
@@ -150,6 +127,11 @@
   display: none;
 }
 
+.pathway-descriptions.is-visible,
+.pathway-description.is-visible {
+  display: flex;
+}
+
 .pathway-options {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -168,7 +150,7 @@
 }
 
 .pathway-descriptions {
-      aaasxcborder: 3px solid white;
+    border: 3px solid white;
     border-radius: clamp(7px, 0.65vw, 10px);
     padding: 60px 0px 40px;
     margin-top: -73px;
@@ -238,7 +220,9 @@
   .headingAndText .subber {
   text-wrap: balance; 
 }
-
+.pathway-section {
+  margin-top: -30px;
+}
 
 }
 

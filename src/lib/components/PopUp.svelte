@@ -76,7 +76,7 @@
   text-decoration: underline;
 }
 .popUp {
-  background:rgba(255,255,255,0.8);
+  background:rgba(255,255,255,0.9);
   color: var(--black);
   text-align: center;
   width: clamp(300px,50%,450px);
@@ -92,7 +92,6 @@
   border: solid var(--red) 2px;
   outline: var(--red) solid 3px;
   outline-offset: 4px;
-  box-shadow: 0px 0px 20px 1px var(--red);
 }
 
 .popUp h2{
@@ -104,7 +103,7 @@
   margin: 0px auto;
     padding: 5px 0px 10px;
     width: 80%;
-    font-size: clamp(14px, var(--base-font-size), 20px);
+    font-size: var(--base-font-size);
 }
 
 @media (max-width: 720px){
