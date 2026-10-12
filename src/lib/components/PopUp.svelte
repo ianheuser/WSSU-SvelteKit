@@ -76,22 +76,23 @@
   text-decoration: underline;
 }
 .popUp {
-  background:rgba(255,255,255,0.9);
-  color: var(--black);
-  text-align: center;
-  width: clamp(300px,50%,450px);
-  padding: 30px 55px;
-  position: absolute;
-  top: 50%;
-  z-index: 1000;
-  border-radius: 10px;
-  height: fit-content;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
-  border: solid var(--red) 2px;
-  outline: var(--red) solid 3px;
-  outline-offset: 4px;
+    color: var(--black);
+    text-align: center;
+    z-index: 1000;
+    border: solid var(--red) 2px;
+    outline: white solid 2px;
+    outline-offset: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    align-items: center;
+    width: clamp(300px, 50%, 450px);
+    height: fit-content;
+    padding: 30px 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 9px 8px #cc112c;
 }
 
 .popUp h2{
