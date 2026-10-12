@@ -104,8 +104,9 @@
   margin: 0px auto;
     padding: 5px 0px 10px;
     width: 80%;
-    font-size: var(--base-font-size);
+    font-size: clamp(14px, var(--base-font-size), 20px);
 }
+
 
 @media (max-width: 720px){
 
