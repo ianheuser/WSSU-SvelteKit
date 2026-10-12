@@ -34,7 +34,7 @@
 <section class="flex column popUpSection">
   <div class="popUpBackground closePop"></div>
   <div class="popUp column flex">
-    <div class="popUpClose closePop">X</div>
+    <!-- <div class="popUpClose closePop">X</div>-->
     <h2>Still Exploring<br />Your Options?</h2>
     <p>{@html paragraph}</p>
     {#if link}
@@ -85,9 +85,9 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     align-items: center;
-    width: clamp(300px, 50%, 450px);
+    width: clamp(300px, 70%, 950px);
     height: fit-content;
-    padding: 30px 55px;
+    padding: 8vw 55px 8vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,15 +103,15 @@
 .popUp p {
   margin: 0px auto;
     padding: 5px 0px 10px;
-    width: 80%;
-    font-size: clamp(14px, var(--base-font-size), 20px);
+    width: 65%;
+    font-size: var(--base-font-size);
 }
 
 
 @media (max-width: 720px){
 
   .popUp {
-    padding: 30px 0px;
+    padding: 20px 0px;
   }
 
 }
