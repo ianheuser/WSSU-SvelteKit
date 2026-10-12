@@ -41,7 +41,7 @@
 <Header />
 <PopUp
 	heading="Still Exploring Your Options?"
-	paragraph="See what other programs we have to offer"
+	paragraph="See what other programs we have to offer!"
 	link="https://www.wssu.edu/admissions/programs/index.html#grad"
 />
 {@render children()}
