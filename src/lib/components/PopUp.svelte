@@ -87,7 +87,7 @@
   align-items: center;
   width: clamp(300px, 70%, 950px);
   height: fit-content;
-  padding: clamp(30px,8vw,70px) 55px;
+  padding: clamp(30px,8vw,110px) 55px;
   position: absolute;
   top: 50%;
   left: 50%;
